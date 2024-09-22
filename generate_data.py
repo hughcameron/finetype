@@ -1,152 +1,30 @@
-import datetime
+import argparse
+
+import mimesis
+from mimesis import Fieldset
+from mimesis.locales import Locale
 import inspect
+import datetime
 import json
 
-from faker import Faker
-from tqdm import tqdm  # Import tqdm
+import argparse
 
-RUNCOUNT = 1000  # Number of times to run each method
+from tqdm import tqdm
+from mimesis import random
 
-LOCALES = [
-    "ar_AA",
-    "ar_AE",
-    "ar_BH",
-    "ar_EG",
-    "ar_JO",
-    "ar_PS",
-    "ar_SA",
-    "az_AZ",
-    "bg_BG",
-    "bn_BD",
-    "bs_BA",
-    "cs_CZ",
-    "da_DK",
-    "de_AT",
-    "de_CH",
-    "de_DE",
-    "dk_DK",
-    "el_CY",
-    "el_GR",
-    "en_AU",
-    "en_BD",
-    "en_CA",
-    "en_GB",
-    "en_IE",
-    "en_IN",
-    "en_MS",
-    "en_NZ",
-    "en_PH",
-    "en_PK",
-    "en_TH",
-    "en_US",
-    "es_AR",
-    "es_CA",
-    "es_CL",
-    "es_CO",
-    "es_ES",
-    "es_MX",
-    "et_EE",
-    "fa_IR",
-    "fi_FI",
-    "fil_PH",
-    "fr_BE",
-    "fr_CA",
-    "fr_CH",
-    "fr_FR",
-    # 'fr_QC',
-    "ga_IE",
-    "he_IL",
-    "hi_IN",
-    "hr_HR",
-    "hu_HU",
-    "hy_AM",
-    "id_ID",
-    "it_CH",
-    "it_IT",
-    "ja_JP",
-    "ka_GE",
-    "ko_KR",
-    "lb_LU",
-    "lt_LT",
-    "lv_LV",
-    "mt_MT",
-    "ne_NP",
-    "nl_BE",
-    "nl_NL",
-    "no_NO",
-    "or_IN",
-    "pl_PL",
-    "pt_BR",
-    "pt_PT",
-    "ro_RO",
-    "ru_RU",
-    "sk_SK",
-    "sl_SI",
-    "sq_AL",
-    "sv_SE",
-    "ta_IN",
-    "th_TH",
-    "tl_PH",
-    "tr_TR",
-    "tw_GH",
-    "uk_UA",
-    "vi_VN",
-    "yo_NG",
-    "zh_CN",
-    "zh_TW",
-    "zu_ZA",
-]
-
-RESTRICTED_METHODS = [
-    "bothify",
-    "lexify",
-    "hexify",
-    "numerify",
-    "random_elements",
-    "random_digit_not_null_or_empty",
-    "random_number",
-    "random_digit_above_two",
-    "random_element",
-    "random_choices",
-    "random_letters",
-    "random_uppercase_letter",
-    "random_sample",
-    "random_digit_or_empty",
-    "random_int",
-    "random_letter",
-    "random_digit",
-    "random_lowercase_letter",
-    "random_digit_not_null",
-    "pydecimal",
-    "pylist",
-    "pystr_format",
-    "pybool",
-    "pystruct",
-    "pytuple",
-    "pyint",
-    "pyobject",
-    "pystr",
-    "pyiterable",
-    "pyset",
-    "pyfloat",
-    "pydict",
-    "pytimezone",
-]
+parser = argparse.ArgumentParser(description="Generate fake data using mimesis with given depth and output file.")
+parser.add_argument('--values', type=int, default=1000, help='Number of times to run each method (default: 1000)')
+parser.add_argument('--output', type=str, default='data/type_domain.ndjson', help='Output file to write the generated data (default: data/type_domain.ndjson)')
+parser.add_argument('--seed', type=int, default=42, help='Seed for the random generator (default: 42)')
+args = parser.parse_args()
 
 
-# Function to safely serialize values
-def serialize_value(value):
-    if isinstance(value, (datetime.date, datetime.datetime)):
-        return value.isoformat()
-    if isinstance(value, str):
-        # Attempt to convert numeric strings to numbers
-        if value.isdigit():
-            return int(value)
-        try:
-            return float(value)
-        except ValueError:
-            pass  # Keep as string if not a number
-    return value  # Return the value as is
+VALUES = args.values
+OUTFILE = args.output
+SEED = args.seed
+
+
+random.global_seed = SEED
 
 
 # Function to determine the type of the value
@@ -193,77 +71,67 @@ def get_value_type(value):
     else:
         return "Any"
 
+# Get the list of locales
+locales_list = [locale for locale in Locale]
 
-# Open a file for writing ndjson data
-with open("data/fake_data.ndjson", "w", encoding="utf-8") as file:
+# Calculate total iterations for progress bar
+total_iterations = 0
+for locale in locales_list:
+    providers = dir(mimesis.Generic(locale))
+    for provider_name in providers:
+        provider = getattr(mimesis.Generic(locale), provider_name)
+        methods = [func for func in dir(provider) if callable(getattr(provider, func)) and not func.startswith('_')]
+        total_iterations += len(methods)
 
-    # Iterate over all available locales with tqdm progress bar
-    for locale in tqdm(LOCALES, desc="Locales"):
-        fake = Faker(locale)
-        providers = fake.get_providers()
-        provider_methods = {}
+# Start tqdm progress bar
+with tqdm(total=total_iterations, desc="Generating data") as pbar, open(OUTFILE, 'w', encoding='utf-8') as ndjson_file:
 
-        # Collect all provider methods for the current locale
-        for provider in providers:
-            provider_name = provider.__provider__.split(".")[-1]
-            for method_name in dir(provider):
-                if (
-                    not method_name.startswith("_")
-                    and method_name not in RESTRICTED_METHODS
-                ):
-                    method = getattr(provider, method_name)
-                    if callable(method):
-                        # Check if the method can be called without required arguments
-                        sig = inspect.signature(method)
-                        if all(
-                            param.default != inspect.Parameter.empty
-                            or param.kind
-                            in (
-                                inspect.Parameter.VAR_POSITIONAL,
-                                inspect.Parameter.VAR_KEYWORD,
-                            )
-                            for param in sig.parameters.values()
-                        ):
-                            if provider_name not in provider_methods:
-                                provider_methods[provider_name] = set()
-                            provider_methods[provider_name].add(method_name)
+    # For each locale
+    for locale in locales_list:
 
-        # Generate and write fake data for each provider method with tqdm progress bar
-        for provider_name, methods in provider_methods.items():
-            for method in tqdm(
-                methods, desc=f"{locale} - {provider_name}", leave=False
-            ):
-                for _ in range(RUNCOUNT):  # Generate RUNCOUNT values
+        # Instantiate a Fieldset object
+        fs = Fieldset(locale=locale, i=VALUES)  # Generate VALUES values at once
+        # Get the data providers
+        providers = dir(mimesis.Generic(locale))
+        # For each provider
+        for provider_name in providers:
+            provider = getattr(mimesis.Generic(locale), provider_name)
+            # Get all methods of the provider
+            methods = [func for func in dir(provider)
+                       if callable(getattr(provider, func)) and not func.startswith('_')]
+            # For each method
+            for method_name in methods:
+                method = getattr(provider, method_name)
+                # Check if method accepts no required arguments
+                sig = inspect.signature(method)
+                params = sig.parameters
+                if all(p.default != inspect.Parameter.empty or
+                       p.kind == inspect.Parameter.VAR_POSITIONAL or
+                       p.kind == inspect.Parameter.VAR_KEYWORD
+                       for p in params.values()):
+                    # Generate 1000 values at once
                     try:
-                        value = getattr(fake, method)()
+                        # Generate values using Fieldset
+                        values = fs(f"{provider_name}.{method_name}")
+                        # Determine data type from the first value
+                        if values:
+                            data_type = get_value_type(values[0])
+                            # Write data to ndjson file
+                            for value in values:
+                                data = {
+                                    'locale': locale.value,
+                                    'provider_name': provider_name,
+                                    'method': method_name,
+                                    'data_type': data_type,
+                                    'value': value
+                                }
+                                ndjson_file.write(json.dumps(data, ensure_ascii=False) + "\n")
+                    except Exception:
+                        # If there's an error, skip
+                        pass
+                else:
+                    # Method requires arguments, skip
+                    pass
+                pbar.update(1)
 
-                        # Exclude binary values
-                        if isinstance(value, bytes):
-                            continue  # Skip binary values
-
-                        # Safely serialize the value
-                        serialized_value = serialize_value(value)
-
-                        # Determine the type of the value
-                        data_type = get_value_type(serialized_value)
-
-                        # Create a dictionary to hold the data
-                        data = {
-                            "locale": locale,
-                            "provider": provider_name,
-                            "method": method,
-                            "data_type": data_type,
-                            "value": serialized_value,
-                        }
-                        # Write the JSON object to the ndjson file
-                        file.write(json.dumps(data, ensure_ascii=False) + "\n")
-                    except Exception as e:
-                        # Optionally, you can log the error or skip it
-                        error_data = {
-                            "locale": locale,
-                            "provider": provider_name,
-                            "method": method,
-                            "error": str(e),
-                        }
-                        # Write the error data to the ndjson file
-                        file.write(json.dumps(error_data, ensure_ascii=False) + "\n")
+print(f"Data generation complete. Saved to {OUTFILE}.")
