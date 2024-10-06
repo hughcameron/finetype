@@ -1,4 +1,4 @@
-use classifier::data::DbPediaDataset;
+use classifier::data::FineTypeDataset;
 
 use burn::tensor::backend::AutodiffBackend;
 
@@ -9,9 +9,9 @@ type ElemType = f32;
 type ElemType = burn::tensor::f16;
 
 pub fn launch<B: AutodiffBackend>(device: B::Device) {
-    classifier::inference::infer::<B, DbPediaDataset>(
+    classifier::inference::infer::<B, FineTypeDataset>(
         device,
-        "/tmp/classifier-db-pedia",
+        "/tmp/classifier-finetype",
         // Samples from the test dataset, but you are free to test with your own text.
         vec![
             " Magnus Eriksson is a Swedish former footballer who played as a forward.".to_string(),

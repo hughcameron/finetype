@@ -4,7 +4,7 @@ use burn::{
     tensor::backend::AutodiffBackend,
 };
 
-use classifier::{data::DbPediaDataset, training::ExperimentConfig};
+use classifier::{data::FineTypeDataset, training::ExperimentConfig};
 
 #[cfg(not(feature = "f16"))]
 #[allow(dead_code)]
@@ -18,12 +18,12 @@ pub fn launch<B: AutodiffBackend>(devices: Vec<B::Device>) {
         AdamConfig::new().with_weight_decay(Some(WeightDecayConfig::new(5e-5))),
     );
 
-    classifier::training::train::<B, DbPediaDataset>(
+    classifier::training::train::<B, FineTypeDataset>(
         devices,
-        DbPediaDataset::train(),
-        DbPediaDataset::test(),
+        FineTypeDataset::train(),
+        FineTypeDataset::test(),
         config,
-        "/tmp/classifier-db-pedia",
+        "/tmp/classifier-finetype",
     );
 }
 

@@ -1,7 +1,7 @@
-// The AgNewsDataset and DbPediaDataset structs are examples of specific text
-// classification datasets.  Each dataset struct has a field for the underlying
+// The FineTypeDataset struct is an examples of specific text
+// classification datasets. The dataset struct has a field for the underlying
 // SQLite dataset and implements methods for accessing and processing the data.
-// Each dataset is also provided with specific information about its classes via
+// The dataset is also provided with specific information about its classes via
 // the TextClassificationDataset trait. These implementations are designed to be used
 // with a machine learning framework for tasks such as training a text classification model.
 use burn::data::dataset::{source::huggingface::HuggingfaceDatasetLoader, Dataset, SqliteDataset};
@@ -20,89 +20,21 @@ pub trait TextClassificationDataset: Dataset<TextClassificationItem> {
     fn class_name(label: usize) -> String; // Returns the name of the class given its label
 }
 
-// Struct for items in the AG News dataset
+/// Struct for items in the FineType dataset
 #[derive(Clone, Debug, serde::Serialize, serde::Deserialize)]
-pub struct AgNewsItem {
-    pub text: String, // The text for classification
-    pub label: usize, // The label of the text (classification category)
-}
-
-// Struct for the AG News dataset
-pub struct AgNewsDataset {
-    dataset: SqliteDataset<AgNewsItem>, // Underlying SQLite dataset
-}
-
-// Implement the Dataset trait for the AG News dataset
-impl Dataset<TextClassificationItem> for AgNewsDataset {
-    /// Returns a specific item from the dataset
-    fn get(&self, index: usize) -> Option<TextClassificationItem> {
-        self.dataset
-            .get(index)
-            .map(|item| TextClassificationItem::new(item.text, item.label)) // Map AgNewsItems to TextClassificationItems
-    }
-
-    /// Returns the length of the dataset
-    fn len(&self) -> usize {
-        self.dataset.len()
-    }
-}
-
-// Implement methods for constructing the AG News dataset
-impl AgNewsDataset {
-    /// Returns the training portion of the dataset
-    pub fn train() -> Self {
-        Self::new("train")
-    }
-
-    /// Returns the testing portion of the dataset
-    pub fn test() -> Self {
-        Self::new("test")
-    }
-
-    /// Constructs the dataset from a split (either "train" or "test")
-    pub fn new(split: &str) -> Self {
-        let dataset: SqliteDataset<AgNewsItem> = HuggingfaceDatasetLoader::new("ag_news")
-            .dataset(split)
-            .unwrap();
-        Self { dataset }
-    }
-}
-
-/// Implements the TextClassificationDataset trait for the AG News dataset
-impl TextClassificationDataset for AgNewsDataset {
-    /// Returns the number of unique classes in the dataset
-    fn num_classes() -> usize {
-        4
-    }
-
-    /// Returns the name of a class given its label
-    fn class_name(label: usize) -> String {
-        match label {
-            0 => "World",
-            1 => "Sports",
-            2 => "Business",
-            3 => "Technology",
-            _ => panic!("invalid class"),
-        }
-        .to_string()
-    }
-}
-
-/// Struct for items in the DbPedia dataset
-#[derive(Clone, Debug, serde::Serialize, serde::Deserialize)]
-pub struct DbPediaItem {
+pub struct FineTypeItem {
     pub title: String,   // The title of the item
     pub content: String, // The content of the item
     pub label: usize,    // The label of the item (classification category)
 }
 
-/// Struct for the DbPedia dataset
-pub struct DbPediaDataset {
-    dataset: SqliteDataset<DbPediaItem>, // Underlying SQLite dataset
+/// Struct for the FineType dataset
+pub struct FineTypeDataset {
+    dataset: SqliteDataset<FineTypeItem>, // Underlying SQLite dataset
 }
 
-/// Implements the Dataset trait for the DbPedia dataset
-impl Dataset<TextClassificationItem> for DbPediaDataset {
+/// Implements the Dataset trait for the FineType dataset
+impl Dataset<TextClassificationItem> for FineTypeDataset {
     /// Returns a specific item from the dataset
     fn get(&self, index: usize) -> Option<TextClassificationItem> {
         self.dataset.get(index).map(|item| {
@@ -119,8 +51,8 @@ impl Dataset<TextClassificationItem> for DbPediaDataset {
     }
 }
 
-/// Implement methods for constructing the DbPedia dataset
-impl DbPediaDataset {
+/// Implement methods for constructing the FineType dataset
+impl FineTypeDataset {
     /// Returns the training portion of the dataset
     pub fn train() -> Self {
         Self::new("train")
@@ -133,15 +65,15 @@ impl DbPediaDataset {
 
     /// Constructs the dataset from a split (either "train" or "test")
     pub fn new(split: &str) -> Self {
-        let dataset: SqliteDataset<DbPediaItem> = HuggingfaceDatasetLoader::new("dbpedia_14")
+        let dataset: SqliteDataset<FineTypeItem> = HuggingfaceDatasetLoader::new("FineType_01")
             .dataset(split)
             .unwrap();
         Self { dataset }
     }
 }
 
-/// Implement the TextClassificationDataset trait for the DbPedia dataset
-impl TextClassificationDataset for DbPediaDataset {
+/// Implement the TextClassificationDataset trait for the FineType dataset
+impl TextClassificationDataset for FineTypeDataset {
     /// Returns the number of unique classes in the dataset
     fn num_classes() -> usize {
         14
