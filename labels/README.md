@@ -1,4 +1,4 @@
-# finetype
+# Finetype
 
 
 
