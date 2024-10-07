@@ -1,0 +1,4062 @@
+address.address:
+  provider: address
+  method: address
+  universal: false
+  designation: locale_specific
+  locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+  release_priority: 3
+  samples:
+    - Ανυμέδοντος 1310
+    - Werdmühlestrasse 936
+    - Hríbová ulica 698
+    - Klimkovičova ulica 106
+address.calling_code:
+  provider: address
+  method: calling_code
+  universal: false
+  designation: locale_specific
+  locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+  release_priority: 3
+  samples:
+    - "+254"
+    - "+1649"
+    - "+56"
+    - "+691"
+address.city:
+  provider: address
+  method: city
+  universal: false
+  designation: locale_specific
+  locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+  release_priority: 3
+  samples:
+    - "金昌市 "
+    - Veľký Šariš
+    - Ikast
+    - 朔州市
+address.continent:
+  provider: address
+  method: continent
+  universal: false
+  designation: locale_specific
+  locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+  release_priority: 3
+  samples:
+    - 欧洲
+    - Austrálie
+    - 北美
+    - 南极洲
+address.coordinates:
+  provider: address
+  method: coordinates
+  designation: broad_object
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  notes: Find a universal format
+  samples:
+    - longitude: 93.879009
+      latitude: 11.210438
+    - longitude: 14.598737
+      latitude: -34.608442
+    - longitude: -76.433368
+      latitude: -28.211153
+    - longitude: 109.541079
+      latitude: -35.078751
+address.country:
+  provider: address
+  method: country
+  universal: false
+  designation: locale_specific
+  locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+  release_priority: 3
+  samples:
+    - 百慕大
+    - Russische Föderation
+    - 巴布亚新几内亚
+    - 南蘇丹
+address.country_code:
+  provider: address
+  method: country_code
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  notes: "Split out country codes: ISO 3166"
+  samples:
+    - BV
+    - ES
+    - BO
+    - BW
+address.country_emoji_flag:
+  provider: address
+  method: country_emoji_flag
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - "\U0001F1F2\U0001F1FF"
+    - "\U0001F1E9\U0001F1FF"
+    - "\U0001F1F5\U0001F1ED"
+    - "\U0001F1F0\U0001F1F2"
+address.default_country:
+  provider: address
+  method: default_country
+  designation: duplicate
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  notes: Duplicate of country
+  samples:
+    - Sverige
+    - Hrvatska
+    - Eesti
+    - Eesti
+address.federal_subject:
+  provider: address
+  method: federal_subject
+  universal: false
+  designation: locale_specific
+  locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+  release_priority: 3
+  samples:
+    - Campobasso
+    - Rieti
+    - Красноярский край
+    - Härjedalen
+address.get_current_locale:
+  provider: address
+  method: get_current_locale
+  designation: system_internal
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - de-ch
+    - en-ca
+    - es
+    - de-ch
+address.iata_code:
+  provider: address
+  method: iata_code
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 4
+  samples:
+    - TOC
+    - YUT
+    - BIF
+    - PUJ
+address.icao_code:
+  provider: address
+  method: icao_code
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 4
+  samples:
+    - KASN
+    - MRAO
+    - CTU5
+    - KHRL
+address.isd_code:
+  provider: address
+  method: isd_code
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 4
+  samples:
+    - "+1671"
+    - "+508"
+    - "+973"
+    - "+995"
+address.latitude:
+  provider: address
+  method: latitude
+  designation: broad_numbers
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - 11.756225
+    - -11.231773
+    - -32.140263
+    - 46.229073
+address.longitude:
+  provider: address
+  method: longitude
+  designation: broad_numbers
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - 29.416876
+    - 152.838118
+    - 65.208019
+    - -163.900545
+address.postal_code:
+  provider: address
+  method: postal_code
+  universal: false
+  designation: locale_specific
+  locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+  release_priority: 3
+  samples:
+    - "89801"
+    - "22563"
+    - "27697"
+    - "33197"
+address.prefecture:
+  provider: address
+  method: prefecture
+  universal: false
+  designation: locale_specific
+  locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+  release_priority: 3
+  samples:
+    - Oost-Vlaanderen
+    - العقبة
+    - Шығыс Қазақстан облысы
+    - Павлодар облысы
+address.province:
+  provider: address
+  method: province
+  universal: false
+  designation: locale_specific
+  locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+  release_priority: 3
+  samples:
+    - Extremadura
+    - Pardubický
+    - Brussels Hoofdstedelijk Gewest
+    - Luxembourg
+address.region:
+  provider: address
+  method: region
+  universal: false
+  designation: locale_specific
+  locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+  release_priority: 3
+  samples:
+    - Castilla y León
+    - 广西壮族自治区
+    - جنوب سيناء
+    - البحيرة
+address.state:
+  provider: address
+  method: state
+  universal: false
+  designation: locale_specific
+  locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+  release_priority: 3
+  samples:
+    - 内蒙古自治区
+    - Trenčiansky
+    - 新疆维吾尔自治区
+    - 甘肃省
+address.street_name:
+  provider: address
+  method: street_name
+  universal: false
+  designation: locale_specific
+  locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+  release_priority: 3
+  samples:
+    - Zoltán
+    - Huron
+    - 구촌반촌
+    - 망미번영
+address.street_number:
+  provider: address
+  method: street_number
+  designation: broad_numbers
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - "690"
+    - "980"
+    - "54"
+    - "382"
+address.street_suffix:
+  provider: address
+  method: street_suffix
+  universal: false
+  designation: locale_specific
+  locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+  release_priority: 3
+  samples:
+    - 四条
+    - katu
+    - 街
+    - 三条
+address.zip_code:
+  provider: address
+  method: zip_code
+  universal: false
+  designation: locale_specific
+  locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+  release_priority: 4
+  samples:
+    - "10120"
+    - 415 54
+    - "93385"
+    - "74752"
+code.ean:
+  provider: code
+  method: ean
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 4
+  samples:
+    - "02276804"
+    - "38540345"
+    - "38540345"
+    - "45884366"
+code.imei:
+  provider: code
+  method: imei
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 4
+  samples:
+    - "353918055910752"
+    - "358815055831878"
+    - "353285048986657"
+    - "358815055831878"
+code.isbn:
+  provider: code
+  method: isbn
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 4
+  samples:
+    - 1-31561-976-6
+    - 1-18225-458-9
+    - 881-1-80108-728-7
+    - 1-07967-013-0
+code.issn:
+  provider: code
+  method: issn
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 4
+  samples:
+    - 5488-8413
+    - 8515-0751
+    - 8515-0751
+    - 3085-4768
+code.locale_code:
+  provider: code
+  method: locale_code
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 3
+  samples:
+    - ve
+    - ms
+    - be
+    - mk
+code.pin:
+  provider: code
+  method: pin
+  designation: broad_numbers
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - "1821"
+    - "2583"
+    - "2583"
+    - "3799"
+cryptographic.hash:
+  provider: cryptographic
+  method: hash
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  notes: Split out hash types - eg MD5, SHA256
+  samples:
+    - 782f396493a95bf4b2c5f6643404621f975b01e095733675dcf17b0808dfe484
+    - 147c708cac6f5f92616e6fe78db88eeecbccc49d
+    - c287f44a0050fdecce27ad0dd1ec51a0fa2313b42809228806e01b0c48e12c9b
+    - 1a54b0fb647c23e56cfdb86377698fedae0a2b50f009f51efeea8b03afa1ac5998d69224b60297d5932766df507edce4
+cryptographic.mnemonic_phrase:
+  provider: cryptographic
+  method: mnemonic_phrase
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - pipe spray injury clever pilot force cruel large panel parrot garden initial ability swim hungry special hen learn fringe have ten clock merry prevent
+    - pipe spray injury clever pilot force cruel large panel parrot garden initial ability swim hungry special hen learn fringe have ten clock merry prevent
+    - assist recycle climb alcohol resource galaxy design spend upgrade ready best coil ability benefit card hybrid expect sleep move tennis august chronic helmet soup
+    - together book best boost shuffle valley blue wise agent favorite entire vanish
+cryptographic.token_hex:
+  provider: cryptographic
+  method: token_hex
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - afe8e9b633dd1a328790fc14f96afd91105e78aa80376df02ab82c22da814458
+    - 5ecf33f9a5e30a532e4e6b88d8fc8bc02718735331149c04a5c2809242e4a5f5
+    - 5e482605cbacb745e941925dce441e3896ea501479de26e01560513a16d231a8
+    - 4c72c7c31ea8c8a39e51ae770aeb74a44b91ebe55f019c70930264a3160fdb3b
+cryptographic.token_urlsafe:
+  provider: cryptographic
+  method: token_urlsafe
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - UR3XeRqBcJDb5ykO4nuYt4AmaDjr64tfzN7F3Ylk3rc
+    - bN68tplvo5DL04xZ28KetZPVdOVJowpMfo_gV6HVAU0
+    - UqVWzTmtSWrpoxTKw2mUhd-M_pjdZIwWTkoY4OOLC84
+    - YPvpDz5TAQ1SMCDVSA977EGIo-FDi03-RG1JUeJuRLA
+cryptographic.uuid:
+  provider: cryptographic
+  method: uuid
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 5
+  samples:
+    - edfe23b1-147c-4263-9701-6cce10484f3a
+    - d5df8b77-26e5-4c82-b5a5-f3ace4fdfc13
+    - 8d44498f-603c-46a3-81d1-cc3031f8a38c
+    - 556f6897-cb8e-4551-bb5c-9cfed76a6811
+datetime.century:
+  provider: datetime
+  method: century
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 3
+  notes: Rename to Roman Numberals
+  samples:
+    - XXI
+    - VII
+    - VII
+    - XIV
+datetime.day_of_month:
+  provider: datetime
+  method: day_of_month
+  designation: broad_numbers
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - 2
+    - 25
+    - 6
+    - 21
+datetime.day_of_week:
+  provider: datetime
+  method: day_of_week
+  designation: duplicate
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  notes: Duplicate of structured datetimes
+  samples:
+    - 月曜日
+    - Sunday
+    - 金曜日
+    - 土曜日
+datetime.formatted_date:
+  provider: datetime
+  method: formatted_date
+  designation: duplicate
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  notes: Duplicate of structured datetimes
+  samples:
+    - 14/04/2022
+    - 11. 09. 28
+    - 28.09.2011
+    - 12.04.2016
+datetime.formatted_datetime:
+  provider: datetime
+  method: formatted_datetime
+  designation: duplicate
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  notes: Duplicate of structured datetimes
+  samples:
+    - 2024/11/15 03:48:11
+    - 06.08.2024 03:48:58
+    - 05. 12. 2024 17:52:05
+    - 02. 09. 2024 16:26:41
+datetime.formatted_time:
+  provider: datetime
+  method: formatted_time
+  designation: duplicate
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  notes: Duplicate of structured datetimes
+  samples:
+    - 14:47:01
+    - 06:50:32
+    - 07:54:50
+    - 19:01:27
+datetime.get_current_locale:
+  provider: datetime
+  method: get_current_locale
+  designation: system_internal
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - tr
+    - kk
+    - sv
+    - sv
+datetime.gmt_offset:
+  provider: datetime
+  method: gmt_offset
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 4
+  samples:
+    - UTC -03:00
+    - UTC -04:00
+    - UTC +09:00
+    - UTC -04:00
+datetime.month:
+  provider: datetime
+  method: month
+  designation: duplicate
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  notes: Duplicate of structured datetimes
+  samples:
+    - March
+    - شباط
+    - Oktober
+    - Mars
+datetime.periodicity:
+  provider: datetime
+  method: periodicity
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Viikoittain
+    - Årlig
+    - Viikoittain
+    - 毎月
+datetime.timestamp:
+  provider: datetime
+  method: timestamp
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 5
+  samples:
+    - 1724586435
+    - 1730886660
+    - 1732064388
+    - 1719245710
+datetime.timezone:
+  provider: datetime
+  method: timezone
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 5
+  samples:
+    - Pacific/Palau
+    - Atlantic/Madeira
+    - Atlantic/Madeira
+    - Antarctica/Syowa
+datetime.week_date:
+  provider: datetime
+  method: week_date
+  designation: duplicate
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  notes: Duplicate of structured datetimes
+  samples:
+    - 2018-W44
+    - 2023-W33
+    - 2018-W37
+    - 2021-W30
+datetime.year:
+  provider: datetime
+  method: year
+  designation: duplicate
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  notes: Duplicate of structured datetimes
+  samples:
+    - 2012
+    - 2011
+    - 2011
+    - 2011
+development.boolean:
+  provider: development
+  method: boolean
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 3
+  samples:
+    - false
+    - false
+    - false
+    - false
+development.calver:
+  provider: development
+  method: calver
+  designation: duplicate
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  notes: Duplicate of structured datetimes
+  samples:
+    - 2017.11.7
+    - 2017.11.7
+    - 2021.4.5
+    - 2019.2.27
+development.ility:
+  provider: development
+  method: ility
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - process capabilities
+    - robustness
+    - serviceability
+    - understandability
+development.os:
+  provider: development
+  method: os
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Mint
+    - Arch
+    - macOS
+    - Arch
+development.programming_language:
+  provider: development
+  method: programming_language
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Transact-SQL
+    - D
+    - Mathematica
+    - D
+development.software_license:
+  provider: development
+  method: software_license
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - General Public License (LGPL)
+    - Common Development and Distribution License (CDDL-1.0)
+    - Common Development and Distribution License (CDDL-1.0)
+    - The BSD 3-Clause License
+development.stage:
+  provider: development
+  method: stage
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Beta
+    - Alpha
+    - Stable
+    - Alpha
+development.system_quality_attribute:
+  provider: development
+  method: system_quality_attribute
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - credibility
+    - repeatability
+    - confidentiality
+    - reproducibility
+development.version:
+  provider: development
+  method: version
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 3
+  samples:
+    - 74.29.5
+    - 76.95.77
+    - 48.60.50
+    - 13.16.7
+file.extension:
+  provider: file
+  method: extension
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 3
+  samples:
+    - .dat
+    - .exe
+    - .csv
+    - .dat
+file.file_name:
+  provider: file
+  method: file_name
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 3
+  samples:
+    - many.pps
+    - letter.flac
+    - letter.flac
+    - human.m4v
+file.mime_type:
+  provider: file
+  method: mime_type
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 4
+  samples:
+    - video/vnd.dece.mp4
+    - image/vnd.fujixerox.edmics-mmr
+    - text/calendar
+    - text/vnd.radisys.msml-basic-layout
+file.size:
+  provider: file
+  method: size
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - 82 bytes
+    - 96 TB
+    - 10 bytes
+    - 22 MB
+finance.bank:
+  provider: finance
+  method: bank
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Райффайзенбанк
+    - Банк Интеза
+    - The Royal Bank of Scotland plc
+    - Royal Bank of Scotland Group plc
+finance.company:
+  provider: finance
+  method: company
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Dolphin Integration
+    - Oracle Corporation
+    - Укрпластик
+    - Дельта Вілмар СНД
+finance.company_type:
+  provider: finance
+  method: company_type
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - مجمع
+    - شركة
+    - Общество с ограниченной ответственностью
+    - Публичное акционерное общество
+finance.cryptocurrency_iso_code:
+  provider: finance
+  method: cryptocurrency_iso_code
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 3
+  samples:
+    - ETH
+    - XZC
+    - USDT
+    - XLM
+finance.cryptocurrency_symbol:
+  provider: finance
+  method: cryptocurrency_symbol
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Ł
+    - ₿
+    - Ξ
+    - Ξ
+finance.currency_iso_code:
+  provider: finance
+  method: currency_iso_code
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 3
+  samples:
+    - EUR
+    - BRL
+    - UAH
+    - UAH
+finance.currency_symbol:
+  provider: finance
+  method: currency_symbol
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - €
+    - R$
+    - ₴
+    - ₴
+finance.get_current_locale:
+  provider: finance
+  method: get_current_locale
+  designation: system_internal
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - ar-dz
+    - fi
+    - ar-dz
+    - ar-dz
+finance.price:
+  provider: finance
+  method: price
+  designation: broad_numbers
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - 876.66
+    - 1448.49
+    - 1448.71
+    - 1159.41
+finance.price_in_btc:
+  provider: finance
+  method: price_in_btc
+  designation: broad_numbers
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - 1.916513
+    - 0.3576236
+    - 1.4102728
+    - 1.047611
+finance.stock_exchange:
+  provider: finance
+  method: stock_exchange
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - HKEX
+    - HKEX
+    - NYSE
+    - Euronext
+finance.stock_name:
+  provider: finance
+  method: stock_name
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Tetraphase Pharmaceuticals
+    - Webster Financial Corporation
+    - Webster Financial Corporation
+    - VectoIQ Acquisition Corp.
+finance.stock_ticker:
+  provider: finance
+  method: stock_ticker
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 3
+  samples:
+    - ASR
+    - HDSN
+    - DOOO
+    - BWMCU
+food.dish:
+  provider: food
+  method: dish
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Farcidure
+    - Dobradinha
+    - Запіканка м'ясна з печінкою і пшоном
+    - Порося смажене фаршироване
+food.drink:
+  provider: food
+  method: drink
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - شاي بالزعتر
+    - Bier
+    - voda
+    - Weine
+food.fruit:
+  provider: food
+  method: fruit
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Groseille
+    - Πεπόνι
+    - Figo
+    - Romã
+food.get_current_locale:
+  provider: food
+  method: get_current_locale
+  designation: system_internal
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - fr
+    - fr
+    - en-gb
+    - en-gb
+food.spices:
+  provider: food
+  method: spices
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Saigon cinnamon
+    - Koper
+    - Açafrão
+    - Hortelã
+food.vegetable:
+  provider: food
+  method: vegetable
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Chayote
+    - Patison
+    - كرافس
+    - ثوم
+hardware.cpu:
+  provider: hardware
+  method: cpu
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Intel® Core i3
+    - Apple M1 Pro
+    - Intel® Core i5
+    - Intel® Core i3
+hardware.cpu_codename:
+  provider: hardware
+  method: cpu_codename
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Cannonlake
+    - Skylake
+    - Haswell
+    - Haswell
+hardware.cpu_frequency:
+  provider: hardware
+  method: cpu_frequency
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - 2.8GHz
+    - 4.2GHz
+    - 4.2GHz
+    - 3.3GHz
+hardware.generation:
+  provider: hardware
+  method: generation
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - 4th Generation
+    - 9th Generation
+    - 9th Generation
+    - 9th Generation
+hardware.graphics:
+  provider: hardware
+  method: graphics
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Nvidia GTX 980
+    - AMD Radeon RX 6950 XT
+    - AMD Radeon RX 6800
+    - Nvidia RTX 3050
+hardware.manufacturer:
+  provider: hardware
+  method: manufacturer
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - HP
+    - Acer
+    - Toshiba
+    - Samsung
+hardware.phone_model:
+  provider: hardware
+  method: phone_model
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - iPhone 11 Pro Max
+    - Google Pixel 6 Pro
+    - Google Pixel 6 Pro
+    - iPhone 11 Pro
+hardware.ram_size:
+  provider: hardware
+  method: ram_size
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - 12GB
+    - 128GB
+    - 128GB
+    - 12GB
+hardware.ram_type:
+  provider: hardware
+  method: ram_type
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - DDR2
+    - DDR
+    - DDR3
+    - DDR
+hardware.resolution:
+  provider: hardware
+  method: resolution
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - 1152x768
+    - 1280x1024
+    - 1280x1024
+    - 2880x1920
+hardware.screen_size:
+  provider: hardware
+  method: screen_size
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - 15.4″
+    - 13.3″
+    - 17″
+    - 34″
+hardware.ssd_or_hdd:
+  provider: hardware
+  method: ssd_or_hdd
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Kingston 512GB HDD
+    - Intel 256GB HDD
+    - Micron 128GB SSD
+    - Samsung 4TB HDD
+internet.asn:
+  provider: internet
+  method: asn
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 5
+  samples:
+    - AS1952918746
+    - AS2172758221
+    - AS63384489
+    - AS4161807236
+internet.content_type:
+  provider: internet
+  method: content_type
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - audio/ogg
+    - image/fits
+    - image/vnd.djvu
+    - text/vnd.a
+internet.dsn:
+  provider: internet
+  method: dsn
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - couchbase://forest.coop:8092
+    - mysql://atlanta.pf:3306
+    - rabbitmq://worm.lifeinsurance:5672
+    - memcached://schools.cat:11211
+internet.hostname:
+  provider: internet
+  method: hostname
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - specializing.asia
+    - arrangement.aero
+    - arrangement.aero
+    - ultram.gov
+internet.http_method:
+  provider: internet
+  method: http_method
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - PATCH
+    - PATCH
+    - POST
+    - OPTIONS
+internet.http_request_headers:
+  provider: internet
+  method: http_request_headers
+  designation: broad_object
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Referer: https://frequently.org/2021/01/13/want-tops-beauty-berkeley-sheet-transfers-securities-belgium-manner-charles-rt-taught
+      Authorization: Bearer 744d3267764849756b4b54323630396353485036755052726334785353584a675051356f74394c31615a2b6c2b626e425a74797152307861626971764c3546312b3361456134465a7364593757415a3748707a6a53673d3d
+      Cookie: csrftoken=fmyX7THCL4RBmbQ1aZVBGQwnbNmW0HD7iRuGcWazRTE=; cnet=telling
+      User-Agent: Opera/9.80 (Windows NT 6.1; U; sv) Presto/2.7.62 Version/11.01
+      X-CSRF-Token: 43425662306d2f41416c652b44536d513377333654783758454771556c334f66623335376a4549462f70633d
+      Content-Type: application/vnd.radisys.msml-dialog-base+xml
+      Content-Length: 2502
+      Connection: close
+      Cache-Control: no-store
+      Accept: "*/*"
+      Host: sale.com
+      Accept-Language: "*"
+    - Referer: https://naked.moscow/2019/11/04/businesses-birds-fox-base-businesses-used-between-geographic-captain-reviewer-frequent-teen
+      Authorization: Bearer 316d4c74746f334143472f6953526c7067785351307042504849416f726c4a47335756517a6969376c6e72515744776252624f32306e77687144412b2b3677724f735a4472317558494f6d7255616d65362f384744773d3d
+      Cookie: csrftoken=lmbUyu+n1uaeDrgZXjirxp+aEA+sYCrjG3mBLespAdU=; headquarters=savings
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0.2 Waterfox/40.0.2
+      X-CSRF-Token: 306a4e6d676d547375696b7071702b434c56655a6c78566b78674e516b65305974506261794468395330553d
+      Content-Type: application/rlmi+xml
+      Content-Length: 2303
+      Connection: close
+      Cache-Control: must-revalidate
+      Accept: "*/*"
+      Host: piano.biz
+      Accept-Language: "*"
+    - Referer: https://attempted.amsterdam/2015/08/23/jean-tried-combo-statements-failed
+      Authorization: Bearer 5979734768552b74734c32574b4c654736424e47784577466d46536b313150375249493233634e545768326e447366786344776535497a646e3664465a64576d627961486252364b6a6a76326d666b684943575450513d3d
+      Cookie: csrftoken=RQmFgdVxkBoZuiAy6phxfRAQkgMZNpv6yFR05nIGdLw=; setup=door
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36
+      X-CSRF-Token: 6c394247483373332f7263506a346854784d5874494a59654d5677416e4633754b486144344b32377938733d
+      Content-Type: text/rfc822-headers
+      Content-Length: 8624
+      Connection: keep-alive
+      Cache-Control: no-cache
+      Accept: message/global-delivery-status
+      Host: cache.info
+      Accept-Language: "*"
+    - Referer: https://naked.moscow/2019/11/04/businesses-birds-fox-base-businesses-used-between-geographic-captain-reviewer-frequent-teen
+      Authorization: Bearer 316d4c74746f334143472f6953526c7067785351307042504849416f726c4a47335756517a6969376c6e72515744776252624f32306e77687144412b2b3677724f735a4472317558494f6d7255616d65362f384744773d3d
+      Cookie: csrftoken=lmbUyu+n1uaeDrgZXjirxp+aEA+sYCrjG3mBLespAdU=; headquarters=savings
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:40.0) Gecko/20100101 Firefox/40.0.2 Waterfox/40.0.2
+      X-CSRF-Token: 306a4e6d676d547375696b7071702b434c56655a6c78566b78674e516b65305974506261794468395330553d
+      Content-Type: application/rlmi+xml
+      Content-Length: 2303
+      Connection: close
+      Cache-Control: must-revalidate
+      Accept: "*/*"
+      Host: piano.biz
+      Accept-Language: "*"
+internet.http_response_headers:
+  provider: internet
+  method: http_response_headers
+  designation: broad_object
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Allow: "*"
+      Age: 29868
+      Server: Apache/2.4.1 (Unix)
+      Content-Type: audio/vnd.nuera.ecelp9600
+      X-Request-ID: 3777e943bcca9fc1d728d878676e19b6
+      Content-Language: ar-dz
+      Content-Location: ready/metabolism/modified/circuit
+      Set-Cookie: csrftoken=Oo2Z3cbxRyxIJeRtTooTxLLnHfT9LkH+wtp352zMDcc=; empty=penalty; Secure
+      Upgrade-Insecure-Requests: 1
+      X-Content-Type-Options: nosniff
+      X-XSS-Protection: 1
+      Connection: close
+      X-Frame-Options: SAMEORIGIN
+      Content-Encoding: "*"
+      Cross-Origin-Opener-Policy: same-origin-allow-popups
+      Cross-Origin-Resource-Policy: same-origin
+      Strict-Transport-Security: max-age=29868
+    - Allow: "*"
+      Age: 10343
+      Server: Apache/2.4.1 (Unix)
+      Content-Type: text/vnd.latex-z
+      X-Request-ID: 2b27045f9ef701d7da44de9889e52d73
+      Content-Language: es-sv
+      Content-Location: phil/examine/timing/interview
+      Set-Cookie: csrftoken=Oc6gbLMSL7I/IOXIkep3YJ0D51pHN7l02iiU6wTgtec=; play=launched; Domain=appliance.biz
+      Upgrade-Insecure-Requests: 1
+      X-Content-Type-Options: nosniff
+      X-XSS-Protection: 1
+      Connection: keep-alive
+      X-Frame-Options: SAMEORIGIN
+      Content-Encoding: gzip
+      Cross-Origin-Opener-Policy: same-origin-allow-popups
+      Cross-Origin-Resource-Policy: cross-origin
+      Strict-Transport-Security: max-age=10343
+    - Allow: "*"
+      Age: 25112
+      Server: cloudflare
+      Content-Type: audio/vnd.dece.audio
+      X-Request-ID: 519a7e5cdc42567d27802dbf26f40cc9
+      Content-Language: ar-sy
+      Content-Location: breaking/presents/today/coal
+      Set-Cookie: csrftoken=SppuPoPyd9HrrEfzQMT7zJPHGmQfC4ggOF9dUUvWIJU=; playstation=upgrade; Domain=wichita.help
+      Upgrade-Insecure-Requests: 1
+      X-Content-Type-Options: nosniff
+      X-XSS-Protection: 1
+      Connection: keep-alive
+      X-Frame-Options: DENY
+      Content-Encoding: gzip
+      Cross-Origin-Opener-Policy: same-origin-allow-popups
+      Cross-Origin-Resource-Policy: cross-origin
+      Strict-Transport-Security: max-age=25112
+    - Allow: "*"
+      Age: 608
+      Server: nginx/1.14.0 (Ubuntu)
+      Content-Type: video/vnd.sealed.swf
+      X-Request-ID: cd6e2cc29bee0668e89c3c6f12506262
+      Content-Language: da
+      Content-Location: modification/monday/convert/understood
+      Set-Cookie: csrftoken=/uN/Iyw5e6RmUOysZJN0cfmeTLjzRJnTds/j5BW+jDU=; obtained=apparently; HttpOnly
+      Upgrade-Insecure-Requests: 1
+      X-Content-Type-Options: nosniff
+      X-XSS-Protection: 1
+      Connection: close
+      X-Frame-Options: DENY
+      Content-Encoding: br
+      Cross-Origin-Opener-Policy: same-origin
+      Cross-Origin-Resource-Policy: cross-origin
+      Strict-Transport-Security: max-age=608
+internet.http_status_code:
+  provider: internet
+  method: http_status_code
+  designation: broad_numbers
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - 423
+    - 414
+    - 414
+    - 408
+internet.http_status_message:
+  provider: internet
+  method: http_status_message
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - 431 Request Header Fields Too Large
+    - 102 Processing
+    - 208 Already Reported
+    - 417 Expectation Failed
+internet.ip_v4:
+  provider: internet
+  method: ip_v4
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 5
+  samples:
+    - 144.3.174.237
+    - 36.226.41.18
+    - 60.203.228.152
+    - 215.186.198.147
+internet.ip_v4_with_port:
+  provider: internet
+  method: ip_v4_with_port
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 5
+  samples:
+    - 26.205.129.28:24232
+    - 119.105.114.39:2158
+    - 154.29.53.61:37506
+    - 252.7.226.79:36794
+internet.ip_v6:
+  provider: internet
+  method: ip_v6
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 5
+  samples:
+    - 50f4:1a9d:7060:bf0c:c14c:d2ca:7dbf:1bc2
+    - e855:dc75:c158:3e6c:d0c:5e3:b6f:4c8
+    - 7ed4:701d:ddd3:563c:a117:f7f2:f8b2:3c54
+    - 46aa:b8a5:a7f7:ac38:d730:b5c1:5d40:11e2
+internet.mac_address:
+  provider: internet
+  method: mac_address
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 5
+  samples:
+    - 00:16:3e:26:7f:da
+    - 00:16:3e:10:96:a3
+    - 00:16:3e:0e:c0:8a
+    - 00:16:3e:7f:4f:10
+internet.path:
+  provider: internet
+  method: path
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - damages/sample
+    - student/shoes/compact/takes/associations/ordinary/specified/revenues
+    - daily/determining/assessment/containing/reasonable/interface/matters/innovation/tourist/holder
+    - excess/insight/tired/electronics/faith/highest/defense
+internet.port:
+  provider: internet
+  method: port
+  designation: broad_numbers
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - 41655
+    - 36629
+    - 41957
+    - 18197
+internet.public_dns:
+  provider: internet
+  method: public_dns
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 5
+  samples:
+    - 8.8.8.8
+    - 149.112.112.112
+    - 149.112.112.112
+    - 94.140.14.14
+internet.query_parameters:
+  provider: internet
+  method: query_parameters
+  designation: broad_object
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - musical: culture
+      provider: minimum
+      wants: garden
+      romantic: lawyer
+      democracy: interface
+      sleeve: breast
+      channel: pending
+      establishing: johnson
+      robin: larger
+    - environment: associated
+      proposal: dvds
+      bike: compatible
+      panama: egg
+      cuts: obviously
+      python: confidence
+      bell: jewish
+      premier: maine
+      bigger: academic
+      buying: critical
+    - crime: instructions
+      literacy: supplies
+      event: attachment
+      adjustable: back
+      devices: votes
+    - gun: mysql
+      doctor: biz
+internet.query_string:
+  provider: internet
+  method: query_string
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 3
+  samples:
+    - craig=problems&plug=simpson&wrap=although&ringtone=gateway&turns=portrait&committee=croatia&gnome=edit&my=customers&instrument=sizes
+    - easily=par&director=rates&save=disk
+    - hiv=did&le=herself&rf=concepts&micro=queen&mississippi=websites
+    - engineer=lady&rom=nyc&rain=welfare
+internet.slug:
+  provider: internet
+  method: slug
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 3
+  samples:
+    - breaks-refers-deputy-cause-bluetooth-ref-mars-names-alpha-between-deals-nine
+    - small-something-discussion-marketplace-columbus-pda-fortune-pci-son-limit-fy-ties
+    - suggested-additional-trim-indicator-po-vol-population-announcement-town-pa
+    - numerous-payable-donations-dogs-semi-diego-movie-interaction
+internet.special_ip_v4:
+  provider: internet
+  method: special_ip_v4
+  designation: duplicate
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  notes: Duplicate of ip_v4
+  samples:
+    - 10.231.32.164
+    - 127.237.102.166
+    - 192.175.48.188
+    - 172.18.169.243
+internet.stock_image_url:
+  provider: internet
+  method: stock_image_url
+  designation: duplicate
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  notes: Duplicate of url
+  samples:
+    - https://source.unsplash.com/1920x1080?
+    - https://source.unsplash.com/1920x1080?
+    - https://source.unsplash.com/1920x1080?
+    - https://source.unsplash.com/1920x1080?
+internet.tld:
+  provider: internet
+  method: tld
+  designation: duplicate
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  notes: Duplicate of top level domain
+  samples:
+    - .bz
+    - .co
+    - .nl
+    - .gi
+internet.top_level_domain:
+  provider: internet
+  method: top_level_domain
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 4
+  samples:
+    - .py
+    - .zw
+    - .zw
+    - .th
+internet.uri:
+  provider: internet
+  method: uri
+  designation: duplicate
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  notes: Duplicate of url
+  samples:
+    - https://enhancing.sc/2017/08/08/anymore-compiled-favorites-populations-sponsored-database-included-prize
+    - https://protein.taipei/2023/05/11/zero-breakfast-cloud
+    - https://protein.taipei/2023/05/11/zero-breakfast-cloud
+    - https://assigned.gy/2013/10/15/informational-claimed-bracelet-manga-gbp-announcements-legislation-tall-pee-labels-computers-aim
+internet.url:
+  provider: internet
+  method: url
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 4
+  samples:
+    - https://demo.alsace/
+    - https://accidents.financialaid/
+    - https://ratings.international/
+    - https://career.nagoya/
+internet.user_agent:
+  provider: internet
+  method: user_agent
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 5
+  samples:
+    - Mozilla/5.0 (Windows NT 6.1; Trident/7.0; ATT; rv:11.0) like Gecko
+    - Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36
+    - Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36
+    - Mozilla/4.0 (compatible; MSIE 5.0; Windows 98) Opera 6.0 [en]
+numeric.float_number:
+  provider: numeric
+  method: float_number
+  designation: broad_numbers
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - -937.2263700833053
+    - -214.20274978780208
+    - -444.4428424052054
+    - 182.5062197349198
+numeric.floats:
+  provider: numeric
+  method: floats
+  designation: broad_numbers
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - - 0.423154872039479
+      - 0.417242601335495
+      - 0.845606014826862
+      - 0.651653802475287
+      - 0.174554128053597
+      - 0.449065102742407
+      - 0.917183978320881
+      - 0.954849331393268
+      - 0.57061844872506
+      - 0.850020663420467
+    - - 0.090604142668591
+      - 0.671173012064459
+      - 0.165171983407751
+      - 0.755341979898547
+      - 0.797597304948065
+      - 0.060828130931534
+      - 0.216178509704333
+      - 0.096036544017405
+      - 0.014557479766731
+      - 0.55935257330326
+    - - 0.090604142668591
+      - 0.671173012064459
+      - 0.165171983407751
+      - 0.755341979898547
+      - 0.797597304948065
+      - 0.060828130931534
+      - 0.216178509704333
+      - 0.096036544017405
+      - 0.014557479766731
+      - 0.55935257330326
+    - - 0.038301781927957
+      - 0.357676174423763
+      - 0.823802520768196
+      - 0.038484854937546
+      - 0.069863504543175
+      - 0.403431772254367
+      - 0.648931988838334
+      - 0.717683501893769
+      - 0.73522437105902
+      - 0.398217132078632
+numeric.increment:
+  provider: numeric
+  method: increment
+  designation: broad_numbers
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - 1
+    - 3
+    - 4
+    - 2
+numeric.integer_number:
+  provider: numeric
+  method: integer_number
+  designation: broad_numbers
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - 451
+    - 440
+    - 440
+    - 536
+numeric.integers:
+  provider: numeric
+  method: integers
+  designation: broad_object
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - - 0
+      - 4
+      - 3
+      - 7
+      - 9
+      - 4
+      - 0
+      - 1
+      - 8
+      - 4
+    - - 7
+      - 5
+      - 9
+      - 3
+      - 5
+      - 1
+      - 0
+      - 3
+      - 1
+      - 4
+    - - 3
+      - 1
+      - 1
+      - 0
+      - 3
+      - 9
+      - 6
+      - 6
+      - 1
+      - 9
+    - - 7
+      - 1
+      - 9
+      - 0
+      - 6
+      - 7
+      - 5
+      - 9
+      - 3
+      - 6
+numeric.matrix:
+  provider: numeric
+  method: matrix
+  designation: broad_object
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - - - 0.733035622109715
+        - 0.162274283829669
+        - 0.766899080791181
+        - 0.121265440053027
+        - 0.008512597230629
+        - 0.856125805561336
+        - 0.287907126606757
+        - 0.436996405580919
+        - 0.603978050001883
+        - 0.341231311708582
+      - - 0.707989522081697
+        - 0.936347949819133
+        - 0.711276516977666
+        - 0.538740418848961
+        - 0.162890853108713
+        - 0.962776170435756
+        - 0.495504462787563
+        - 0.547367524785855
+        - 0.927380853370479
+        - 0.6549882327866
+      - - 0.985893539179721
+        - 0.706450906119134
+        - 0.47131144936299
+        - 0.735982573072846
+        - 0.82951865549224
+        - 0.083719210666818
+        - 0.565301818043486
+        - 0.663130174867607
+        - 0.229637547031144
+        - 0.076633852944656
+      - - 0.840856380411296
+        - 0.498999483243314
+        - 0.494377918596823
+        - 0.375982794501307
+        - 0.326049390653473
+        - 0.107769104129964
+        - 0.572530282117434
+        - 0.03642286571817
+        - 0.674960490390243
+        - 0.314319935036276
+      - - 0.291544909529038
+        - 0.66281081090573
+        - 0.113544874414062
+        - 0.157661248880209
+        - 0.827181587457904
+        - 0.27657283995484
+        - 0.963415096298665
+        - 0.266710646642736
+        - 0.059316079591103
+        - 0.160008458089622
+      - - 0.087694992403969
+        - 0.988116135407688
+        - 0.497835742521366
+        - 0.759480048223173
+        - 0.524680554572712
+        - 0.090752814667228
+        - 0.02119295901991
+        - 0.611084948379776
+        - 0.027348574179669
+        - 0.890787187194237
+      - - 0.7723608444702
+        - 0.056681228646467
+        - 0.28974077720547
+        - 0.650763804875052
+        - 0.418068523379313
+        - 0.062399291337533
+        - 0.386987889151056
+        - 0.549383363930752
+        - 0.741410389043681
+        - 0.668246319288106
+      - - 0.346816537795105
+        - 0.471857594319739
+        - 0.068636161173735
+        - 0.628101359389267
+        - 0.761241032866985
+        - 0.784423432412827
+        - 0.534087633819523
+        - 0.296755220441275
+        - 0.689693778873938
+        - 0.551256962887935
+      - - 0.271427234142006
+        - 0.980370010121748
+        - 0.037532161966375
+        - 0.879080972046326
+        - 0.135623678490738
+        - 0.666467265918197
+        - 0.974417421567541
+        - 0.713184770508137
+        - 0.984402755195875
+        - 0.503605480215014
+      - - 0.769277566431515
+        - 0.781449056169844
+        - 0.377562491629522
+        - 0.203817558992606
+        - 0.362949160492745
+        - 0.197634854621125
+        - 0.344622078793862
+        - 0.838789507267702
+        - 0.876995715066983
+        - 0.542645646474047
+    - - - 0.3176090514342
+        - 0.496678830112648
+        - 0.929502827691883
+        - 0.282395319680673
+        - 0.85358979414093
+        - 0.886469410662396
+        - 0.896211999285596
+        - 0.814977511209806
+        - 0.592811432872397
+        - 0.476422574383022
+      - - 0.048249428460785
+        - 0.253704870037748
+        - 0.946563751713374
+        - 0.948249237831487
+        - 0.262425798600922
+        - 0.516240968873326
+        - 0.497603051691222
+        - 0.630052331799322
+        - 0.622736490983708
+        - 0.843765961063026
+      - - 0.504736905132353
+        - 0.607449521727162
+        - 0.819237542598064
+        - 0.880725103499513
+        - 0.024646400706093
+        - 0.32675324682577
+        - 0.487312885254678
+        - 0.814744430787261
+        - 0.161237743284775
+        - 0.584474355120973
+      - - 0.55348313760525
+        - 0.718964821629834
+        - 0.758708325954536
+        - 0.905755498946254
+        - 0.944263463162139
+        - 0.797028435453458
+        - 0.652772008135187
+        - 0.248375281126346
+        - 0.948023652397342
+        - 0.304134676300893
+      - - 0.558973163678532
+        - 0.796499988556258
+        - 0.757963444480043
+        - 0.660570648508561
+        - 0.63336382777685
+        - 0.290042022260855
+        - 0.38058331478797
+        - 0.780506167838086
+        - 0.50117111738956
+        - 0.209484044760806
+      - - 0.742530050899726
+        - 0.781739152049365
+        - 0.78391530655729
+        - 0.865636186078485
+        - 0.620513268322778
+        - 0.388748297477591
+        - 0.624120567301856
+        - 0.481848265520984
+        - 0.938386655928256
+        - 0.168203526586088
+      - - 0.147502254712877
+        - 0.979180494226687
+        - 0.383032510067809
+        - 0.760813474317472
+        - 0.630189309480463
+        - 0.867461456434172
+        - 0.182872124055437
+        - 0.204813802013485
+        - 0.200283274878983
+        - 0.552570198725334
+      - - 0.249728992410798
+        - 0.147704339438438
+        - 0.697642461710995
+        - 0.382164915807662
+        - 0.374770919287814
+        - 0.924530886592948
+        - 0.674342723873392
+        - 0.727627294907735
+        - 0.964385588716846
+        - 0.70480786550269
+      - - 0.570249677354207
+        - 0.636738005584986
+        - 0.308010854963705
+        - 0.785992286078906
+        - 0.164446919163875
+        - 0.008509191446749
+        - 0.860297995387184
+        - 0.419922553537429
+        - 0.822150834439134
+        - 0.245622556440267
+      - - 0.633434806948233
+        - 0.645348415665558
+        - 0.920920966673178
+        - 0.230419214349413
+        - 0.674197529282721
+        - 0.743723240450759
+        - 0.246142827447639
+        - 0.457555032577437
+        - 0.951667472082397
+        - 0.156724202731145
+    - - - 0.3176090514342
+        - 0.496678830112648
+        - 0.929502827691883
+        - 0.282395319680673
+        - 0.85358979414093
+        - 0.886469410662396
+        - 0.896211999285596
+        - 0.814977511209806
+        - 0.592811432872397
+        - 0.476422574383022
+      - - 0.048249428460785
+        - 0.253704870037748
+        - 0.946563751713374
+        - 0.948249237831487
+        - 0.262425798600922
+        - 0.516240968873326
+        - 0.497603051691222
+        - 0.630052331799322
+        - 0.622736490983708
+        - 0.843765961063026
+      - - 0.504736905132353
+        - 0.607449521727162
+        - 0.819237542598064
+        - 0.880725103499513
+        - 0.024646400706093
+        - 0.32675324682577
+        - 0.487312885254678
+        - 0.814744430787261
+        - 0.161237743284775
+        - 0.584474355120973
+      - - 0.55348313760525
+        - 0.718964821629834
+        - 0.758708325954536
+        - 0.905755498946254
+        - 0.944263463162139
+        - 0.797028435453458
+        - 0.652772008135187
+        - 0.248375281126346
+        - 0.948023652397342
+        - 0.304134676300893
+      - - 0.558973163678532
+        - 0.796499988556258
+        - 0.757963444480043
+        - 0.660570648508561
+        - 0.63336382777685
+        - 0.290042022260855
+        - 0.38058331478797
+        - 0.780506167838086
+        - 0.50117111738956
+        - 0.209484044760806
+      - - 0.742530050899726
+        - 0.781739152049365
+        - 0.78391530655729
+        - 0.865636186078485
+        - 0.620513268322778
+        - 0.388748297477591
+        - 0.624120567301856
+        - 0.481848265520984
+        - 0.938386655928256
+        - 0.168203526586088
+      - - 0.147502254712877
+        - 0.979180494226687
+        - 0.383032510067809
+        - 0.760813474317472
+        - 0.630189309480463
+        - 0.867461456434172
+        - 0.182872124055437
+        - 0.204813802013485
+        - 0.200283274878983
+        - 0.552570198725334
+      - - 0.249728992410798
+        - 0.147704339438438
+        - 0.697642461710995
+        - 0.382164915807662
+        - 0.374770919287814
+        - 0.924530886592948
+        - 0.674342723873392
+        - 0.727627294907735
+        - 0.964385588716846
+        - 0.70480786550269
+      - - 0.570249677354207
+        - 0.636738005584986
+        - 0.308010854963705
+        - 0.785992286078906
+        - 0.164446919163875
+        - 0.008509191446749
+        - 0.860297995387184
+        - 0.419922553537429
+        - 0.822150834439134
+        - 0.245622556440267
+      - - 0.633434806948233
+        - 0.645348415665558
+        - 0.920920966673178
+        - 0.230419214349413
+        - 0.674197529282721
+        - 0.743723240450759
+        - 0.246142827447639
+        - 0.457555032577437
+        - 0.951667472082397
+        - 0.156724202731145
+    - - - 0.141409771352348
+        - 0.516131811988632
+        - 0.135255589917987
+        - 0.738800346102526
+        - 0.582099795174149
+        - 0.104221185226467
+        - 0.269918937177638
+        - 0.66809777669347
+        - 0.975473175688335
+        - 0.375763557804063
+      - - 0.525247875088732
+        - 0.202780055346121
+        - 0.139578060160004
+        - 0.870393259845173
+        - 0.83592553914112
+        - 0.466608939306048
+        - 0.148708536694726
+        - 0.720921868238404
+        - 0.236542183900239
+        - 0.910327491794507
+      - - 0.874709898200283
+        - 0.288617673821392
+        - 0.761315728125293
+        - 0.95786988187412
+        - 0.324235039594612
+        - 0.72793967779599
+        - 0.792623178798495
+        - 0.53488181876456
+        - 0.69361715801546
+        - 0.690877195355594
+      - - 0.873942028876417
+        - 0.092706980836874
+        - 0.45799035092772
+        - 0.985642365286868
+        - 0.835098794784526
+        - 0.981166937922641
+        - 0.229986471756979
+        - 0.678338875513744
+        - 0.040754520275073
+        - 0.10630864180285
+      - - 0.70398737737658
+        - 0.891876642152044
+        - 0.404570607991628
+        - 0.491624519184753
+        - 0.291433112832623
+        - 0.14767230127019
+        - 0.54026252178227
+        - 0.911473913276601
+        - 0.971287665647477
+        - 0.170050546582445
+      - - 0.650074408645027
+        - 0.843232931752646
+        - 0.481240557773548
+        - 0.717871264943985
+        - 0.082965084115793
+        - 0.356494223659708
+        - 0.204255756081468
+        - 0.351571293193125
+        - 0.866655677090836
+        - 0.087543897694
+      - - 0.45973965729476
+        - 0.955968625946714
+        - 0.451100932736048
+        - 0.271307567013543
+        - 0.75332024176579
+        - 0.100065561005427
+        - 0.982471671642625
+        - 0.321925910376618
+        - 0.650593913952431
+        - 0.485076044842539
+      - - 0.174590931032653
+        - 0.55851320339721
+        - 0.522363729018369
+        - 0.69658794613319
+        - 0.189847973086128
+        - 0.353095356500131
+        - 0.910272335468373
+        - 0.694760469426388
+        - 0.149032398829816
+        - 0.705108986913013
+      - - 0.265708473866084
+        - 0.566019433275912
+        - 0.3078139475112
+        - 0.61317642628512
+        - 0.916693569681419
+        - 0.324177351935245
+        - 0.422707844640467
+        - 0.119877536283718
+        - 0.616571624417437
+        - 0.114886663053662
+      - - 0.082368460443605
+        - 0.138824419377724
+        - 0.970058119571911
+        - 0.153210377032362
+        - 0.53702122658126
+        - 0.664470512748172
+        - 0.28955958016226
+        - 0.164737657465367
+        - 0.148502598854216
+        - 0.281620008308709
+path.dev_dir:
+  provider: path
+  method: dev_dir
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - \home\Defining\Development\PL-I
+    - \home\Daniel\Dev\C#
+    - \home\Usage\Development\Lua
+    - \home\Daniel\Dev\C#
+path.home:
+  provider: path
+  method: home
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - \home
+    - \home
+    - \home
+    - \home
+path.project_dir:
+  provider: path
+  method: project_dir
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - \home\Headlines\Dev\C#\dromaeosaurus
+    - \home\Barbara\Development\Erlang\argentinosaurus
+    - \home\Recording\Development\J#\faux pas
+    - \home\Empire\Development\J#\ingenia
+path.root:
+  provider: path
+  method: root
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - \
+    - \
+    - \
+    - \
+path.user:
+  provider: path
+  method: user
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - \home\Condo
+    - \home\Peaceful
+    - \home\Any
+    - \home\Prepare
+path.users_folder:
+  provider: path
+  method: users_folder
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - \home\Removal\Documents
+    - \home\Strike\Pictures
+    - \home\Hits\Pictures
+    - \home\Empire\Pictures
+payment.bitcoin_address:
+  provider: payment
+  method: bitcoin_address
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 5
+  notes: May need to be split (https://bitcoin.design/guide/glossary/address)
+  samples:
+    - 1brnTP3fAbnFbmOHnKYaXRvj7uff0LYTH8
+    - 1brnTP3fAbnFbmOHnKYaXRvj7uff0LYTH8
+    - 3WwFkCkL6nSR3Mk3bYpFPmLGVrriCKoSyP
+    - 3iITfcjfAu5D6Vc2PIp97sFkCi1Td4NNlq
+payment.cid:
+  provider: payment
+  method: cid
+  designation: broad_numbers
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - "2145"
+    - "0261"
+    - "0261"
+    - "9911"
+payment.credit_card_expiration_date:
+  provider: payment
+  method: credit_card_expiration_date
+  designation: duplicate
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  notes: Duplicate of structured datetimes
+  samples:
+    - 02/24
+    - 10/21
+    - 06/18
+    - 02/24
+payment.credit_card_network:
+  provider: payment
+  method: credit_card_network
+  designation: broad_numbers
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - MasterCard
+    - Visa
+    - Chase
+    - MasterCard
+payment.credit_card_number:
+  provider: payment
+  method: credit_card_number
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 5
+  samples:
+    - 3775 000458 40893
+    - 4583 7435 7529 2554
+    - 4583 7435 7529 2554
+    - 3768 084690 01582
+payment.credit_card_owner:
+  provider: payment
+  method: credit_card_owner
+  designation: broad_object
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - credit_card: 3786 739718 19055
+      expiration_date: 11/25
+      owner: KENDAL VINCENT
+    - credit_card: 3786 739718 19055
+      expiration_date: 11/25
+      owner: KENDAL VINCENT
+    - credit_card: 4286 8773 6518 8497
+      expiration_date: 02/25
+      owner: NOBUKO BOOKER
+    - credit_card: 4144 9406 3572 4764
+      expiration_date: 04/25
+      owner: SIMA ROCHA
+payment.cvv:
+  provider: payment
+  method: cvv
+  designation: broad_numbers
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - "732"
+    - "076"
+    - "076"
+    - "664"
+payment.ethereum_address:
+  provider: payment
+  method: ethereum_address
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 5
+  samples:
+    - 0x146223163abdf1201e2215a9f85f549cfd5a4c3e
+    - 0x24bea9627efa8dc1dc58d723b3a519a49ce86886
+    - 0x146223163abdf1201e2215a9f85f549cfd5a4c3e
+    - 0x274a68bbb964cb590b5b2dd5c74a56fbe95d4f3f
+payment.paypal:
+  provider: payment
+  method: paypal
+  designation: duplicate
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  notes: Duplicate of email
+  samples:
+    - nbc2098@live.com
+    - modern1949@outlook.com
+    - regards1960@protonmail.com
+    - fill1822@protonmail.com
+person.academic_degree:
+  provider: person
+  method: academic_degree
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Bachelor
+    - ماستر
+    - ماستر
+    - ليسانس
+person.blood_type:
+  provider: person
+  method: blood_type
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - O+
+    - O−
+    - O+
+    - B−
+person.email:
+  provider: person
+  method: email
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 4
+  samples:
+    - traveler1833@example.org
+    - attend2047@duck.com
+    - attend2047@duck.com
+    - conjunction1840@outlook.com
+person.first_name:
+  provider: person
+  method: first_name
+  universal: false
+  designation: locale_specific
+  locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+  release_priority: 4
+  samples:
+    - Lennox
+    - Akkar
+    - نجوى
+    - Ľuboslava
+person.full_name:
+  provider: person
+  method: full_name
+  universal: false
+  designation: locale_specific
+  locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+  release_priority: 4
+  samples:
+    - Ilaria Gilgen
+    - Квітослава Баранець
+    - Carla Arnold
+    - Kastriot Tremp
+person.gender:
+  provider: person
+  method: gender
+  universal: false
+  designation: locale_specific
+  locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+  release_priority: 3
+  samples:
+    - Female
+    - Жін.
+    - Female
+    - Female
+person.gender_code:
+  provider: person
+  method: gender_code
+  designation: broad_numbers
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - 0
+    - 2
+    - 0
+    - 1
+person.gender_symbol:
+  provider: person
+  method: gender_symbol
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - ♀
+    - ♀
+    - ♂
+    - ♂
+person.get_current_locale:
+  provider: person
+  method: get_current_locale
+  designation: system_internal
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - ar-sy
+    - ar-ye
+    - nl
+    - nl
+person.height:
+  provider: person
+  method: height
+  designation: broad_numbers
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - "1.89"
+    - "1.59"
+    - "1.88"
+    - "1.88"
+person.identifier:
+  provider: person
+  method: identifier
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - 67-93/67
+    - 55-94/52
+    - 80-11/76
+    - 61-82/14
+person.language:
+  provider: person
+  method: language
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Spanish
+    - السندية
+    - Belarusian
+    - Afrikaans
+person.last_name:
+  provider: person
+  method: last_name
+  universal: false
+  designation: locale_specific
+  locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+  release_priority: 4
+  samples:
+    - Neves
+    - 牛
+    - Christian
+    - Acevedo
+person.name:
+  provider: person
+  method: name
+  designation: duplicate
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  notes: Duplicate of first_name
+  samples:
+    - عبد الرحمن
+    - إياد
+    - Kermo
+    - Milvert
+person.nationality:
+  provider: person
+  method: nationality
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - أنغولي
+    - Француз
+    - Test
+    - Test
+person.occupation:
+  provider: person
+  method: occupation
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Slaughterman
+    - بناء
+    - Road Safety Officer
+    - Claims Assessor
+person.password:
+  provider: person
+  method: password
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - h"aHJz_N
+    - "hSTa@#1:"
+    - lZE?.f2C
+    - "@-hq~}F."
+person.phone_number:
+  provider: person
+  method: phone_number
+  universal: false
+  designation: locale_specific
+  locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+  release_priority: 4
+  samples:
+    - +86 221-01004067
+    - +380-(50)-613-17-85
+    - +86 509-16106170
+    - +1-619-749-0879
+person.political_views:
+  provider: person
+  method: political_views
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - رأسمالي
+    - Communist
+    - Socialist
+    - Libertarian
+person.sex:
+  provider: person
+  method: sex
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - ذكر
+    - Чол.
+    - ذكر
+    - Nijaki
+person.surname:
+  provider: person
+  method: surname
+  designation: duplicate
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  notes: Duplicate of last_name
+  samples:
+    - عبد القابض خوجة
+    - العمري
+    - أبو  عبد الشهيد
+    - Балога
+person.telephone:
+  provider: person
+  method: telephone
+  designation: duplicate
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  notes: Duplicate of phone_number
+  samples:
+    - 016977 5256
+    - "+17521653920"
+    - +31 6 22258697
+    - +31 6 30842763
+person.title:
+  provider: person
+  method: title
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - M.Eng.
+    - Dr.
+    - السيدة
+    - الدكتور
+person.university:
+  provider: person
+  method: university
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - The Royal Central School of Speech and Drama
+    - California State University, Channel Islands (CSUCI or CI)
+    - المدرسة الوطنية العليا للصحافة وعلوم الإعلام
+    - جامعة أبو بكر بلقايد تلمسان
+person.username:
+  provider: person
+  method: username
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - amend_2051
+    - transmission_2006
+    - injection_1904
+    - chemicals_2012
+person.views_on:
+  provider: person
+  method: views_on
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - سلبي
+    - Негативне
+    - حيادي
+    - سلبي
+person.weight:
+  provider: person
+  method: weight
+  designation: broad_numbers
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - 66
+    - 49
+    - 85
+    - 54
+person.worldview:
+  provider: person
+  method: worldview
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - مسيحي
+    - Catholicism
+    - Determinism
+    - Liberalism
+science.dna_sequence:
+  provider: science
+  method: dna_sequence
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 5
+  samples:
+    - GTCTGGATCT
+    - TGTAAACCGG
+    - TGTAAACCGG
+    - TTCACGCTGC
+science.measure_unit:
+  provider: science
+  method: measure_unit
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - kelvin
+    - farad
+    - kelvin
+    - weber
+science.metric_prefix:
+  provider: science
+  method: metric_prefix
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - giga
+    - zepto
+    - centi
+    - atto
+science.rna_sequence:
+  provider: science
+  method: rna_sequence
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 5
+  samples:
+    - UUCACUGCAU
+    - UGGCACCUAA
+    - UCGAAUACAC
+    - CUACACUUCC
+text.alphabet:
+  provider: text
+  method: alphabet
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - - أ
+      - ب
+      - ت
+      - ث
+      - ج
+      - ح
+      - خ
+      - د
+      - ذ
+      - ر
+      - ز
+      - س
+      - ش
+      - ص
+      - ض
+      - ط
+      - ظ
+      - ع
+      - غ
+      - ف
+      - ق
+      - ك
+      - ل
+      - م
+      - ن
+      - هـ
+      - و
+      - ي
+    - - A
+      - B
+      - C
+      - D
+      - E
+      - F
+      - G
+      - H
+      - I
+      - J
+      - K
+      - L
+      - M
+      - N
+      - O
+      - P
+      - Q
+      - R
+      - S
+      - T
+      - U
+      - V
+      - W
+      - X
+      - Y
+      - Z
+    - - A
+      - B
+      - C
+      - D
+      - E
+      - F
+      - G
+      - H
+      - I
+      - J
+      - K
+      - L
+      - M
+      - N
+      - O
+      - P
+      - Q
+      - R
+      - S
+      - T
+      - U
+      - V
+      - W
+      - X
+      - Y
+      - Z
+    - - A
+      - B
+      - C
+      - D
+      - E
+      - F
+      - G
+      - H
+      - I
+      - J
+      - K
+      - L
+      - M
+      - N
+      - O
+      - P
+      - Q
+      - R
+      - S
+      - T
+      - U
+      - V
+      - W
+      - X
+      - Y
+      - Z
+text.answer:
+  provider: text
+  method: answer
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Non
+    - No
+    - Oui
+    - Non
+text.color:
+  provider: text
+  method: color
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Μωβ
+    - Pruun
+    - Μπεζ
+    - Πορτοκαλί
+text.emoji:
+  provider: text
+  method: emoji
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - "\U0001F624"
+    - "\U0001F60B"
+    - "\U0001F629"
+    - "\U0001F632"
+text.get_current_locale:
+  provider: text
+  method: get_current_locale
+  designation: system_internal
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - de-ch
+    - uk
+    - de-ch
+    - de-ch
+text.hex_color:
+  provider: text
+  method: hex_color
+  universal: true
+  designation: universal
+  locales:
+    - EN
+  release_priority: 5
+  samples:
+    - "#d17a0e"
+    - "#ce8fa4"
+    - "#d4cd83"
+    - "#e34089"
+text.level:
+  provider: text
+  method: level
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - faible
+    - عالي
+    - critique
+    - haut
+text.quote:
+  provider: text
+  method: quote
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Selbst ist der Mann. Selbst ist die Frau.
+    - Як не мудруй, а правди ніде діти
+    - أعز مكان في الدنيا سرج سابح وخير جليس في الزمان كتاب
+    - النية الطيبة تفتح أبواب الخير
+text.rgb_color:
+  provider: text
+  method: rgb_color
+  designation: broad_characters
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - - 250
+      - 178
+      - 35
+    - - 232
+      - 208
+      - 183
+    - - 228
+      - 161
+      - 220
+    - - 247
+      - 251
+      - 152
+text.sentence:
+  provider: text
+  method: sentence
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Відмінна риса мови - серйозне ставлення до типізації.
+    - Je broer vraagt om hulp.
+    - 구슬이 서 말이라도 꿰어야 보배다.
+    - 내이를 어여삐 녀겨 새로 스물여덟자를 맹가노니 사람마다해여 수비니겨 날로쓰매 편아케 하고저 할따라미니라.
+text.text:
+  provider: text
+  method: text
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - موَّلت وكالة مشاريع أبحاث الدفاع المتقدمة، التي كانت تُعرَف بالاسم المُختصر أربا هذه الجهود فازت البرازيل بتسع بطولات كوبا أمريكا قدّمت الفيفا جائزة أفضل لاعب في العالم لكرة القدم للاعب الأبرز في العام غسلت مريم وجهها في معمارية هارفارد تكون الذاكرة التي تُخزِّن البيانات مفصولة تماماً عن الذاكرة التي تخزن التعليمات
+    - Ports are used to communicate with the external world. Haskell features a type system with type inference and lazy evaluation. They are written as strings of consecutive alphanumeric characters, the first character being lowercase. Do you have any idea why this is not working? Atoms can contain any character if they are enclosed within single quotes and an escape convention exists which allows any character to be used within an atom.
+    - Ports are used to communicate with the external world. The sequential subset of Erlang supports eager evaluation, single assignment, and dynamic typing. The sequential subset of Erlang supports eager evaluation, single assignment, and dynamic typing. In 1989 the building was heavily damaged by fire, but it has since been restored. Erlang is a general-purpose, concurrent, functional programming language.
+    - The syntax {D1,D2,...,Dn} denotes a tuple whose arguments are D1, D2, ... Dn. Haskell features a type system with type inference and lazy evaluation. Tuples are containers for a fixed number of Erlang data types. Tuples are containers for a fixed number of Erlang data types. Any element of a tuple can be accessed in constant time.
+text.title:
+  provider: text
+  method: title
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - المنتخب البرازيلي لم يفز بكأس العالم على أرضه رغم ألقابه الخمسة
+    - Повнотипове програмування може підтримуватися на рівні системи типів мови або вводитися програмістом ідеоматично.
+    - Milletin kaynağı, toplumsal hayatın temeli olan kadın ancak faziletli olursa görevini yerine getirebilir.
+    - Kadınlarımız eğer milletin gerçek anası olmak istiyorlarsa, erkeklerimizden çok daha aydın ve faziletli olmaya çalışmalıdırlar.
+text.word:
+  provider: text
+  method: word
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - bekannt
+    - ефіопка
+    - kaugsõidubussiga
+    - mesilane
+text.words:
+  provider: text
+  method: words
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - - saaristo
+      - hiihto
+      - sillä
+      - ylöjärvi
+      - neste
+    - - instant
+      - douglas
+      - side
+      - convenience
+      - petition
+    - - ich
+      - etwa
+      - terrain
+      - dürfen
+      - nur
+    - - erneut
+      - unserer
+      - alten
+      - her
+      - gewinnen
+transport.airplane:
+  provider: transport
+  method: airplane
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Boeing 767-200
+    - Boeing 767-200
+    - Boeing 777-200
+    - Embraer Phenom 300
+transport.car:
+  provider: transport
+  method: car
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - BMW Rad 3 Touring
+    - Volkswagen Passat
+    - Peugeot 308 SW
+    - Chevrolet Aveo
+transport.manufacturer:
+  provider: transport
+  method: manufacturer
+  designation: broad_words
+  release_priority: 0
+  universal: true
+  locales:
+    - EN
+  samples:
+    - Ferrari
+    - Lada
+    - Lada
+    - Lancia
+transport.vehicle_registration_code:
+  provider: transport
+  method: vehicle_registration_code
+  universal: false
+  designation: locale_specific
+  locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+  release_priority: 3
+  samples:
+    - VN
+    - P
+    - AND
+    - SN

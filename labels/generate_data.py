@@ -1,25 +1,61 @@
 import argparse
-
-import mimesis
-from mimesis import Fieldset
-from mimesis.locales import Locale
-import inspect
 import datetime
 import json
+from dataclasses import dataclass
+from typing import List, Optional
 
-import argparse
-
+import mimesis
+import yaml
+from mimesis import Fieldset, random
+from mimesis.locales import Locale
 from tqdm import tqdm
-from mimesis import random
+from yamlcore import CoreLoader
 
-parser = argparse.ArgumentParser(description="Generate fake data using mimesis with given depth and output file.")
-parser.add_argument('--values', type=int, default=1000, help='Number of times to run each method (default: 1000)')
-parser.add_argument('--output', type=str, default='data/type_domain.ndjson', help='Output file to write the generated data (default: data/type_domain.ndjson)')
-parser.add_argument('--seed', type=int, default=42, help='Seed for the random generator (default: 42)')
+
+@dataclass
+class Release:
+    """
+    A dataclass to represent a release of data generation.
+    """
+
+    provider: str
+    method: str
+    designation: str
+    universal: bool
+    release_priority: int
+    locales: List[str]
+    samples: List[str]
+    notes: Optional[str] = None
+
+
+parser = argparse.ArgumentParser(
+    description="Generate fake data using mimesis with given depth and output file."
+)
+parser.add_argument(
+    "--values",
+    type=int,
+    default=1000,
+    help="Number of times to run each method (default: 1000)",
+)
+parser.add_argument(
+    "--priority",
+    type=int,
+    default=5,
+    help="Minimum priority of the release to include (default: 5)",
+)
+parser.add_argument(
+    "--output",
+    type=str,
+    default="learning_data/type_domain.ndjson",
+    help="Output file to write the generated data (default: learning_data/type_domain.ndjson)",
+)
+parser.add_argument(
+    "--seed", type=int, default=42, help="Seed for the random generator (default: 42)"
+)
 args = parser.parse_args()
 
-
 VALUES = args.values
+PRIORITY = args.priority
 OUTFILE = args.output
 SEED = args.seed
 
@@ -71,67 +107,47 @@ def get_value_type(value):
     else:
         return "Any"
 
-# Get the list of locales
-locales_list = [locale for locale in Locale]
 
-# Calculate total iterations for progress bar
+with open("finetype_releases.yaml", "r", encoding="utf-8") as f:
+    release_data = yaml.load(f, Loader=CoreLoader)
+    releases = [Release(**release_data[r]) for r in release_data]
+
 total_iterations = 0
-for locale in locales_list:
-    providers = dir(mimesis.Generic(locale))
-    for provider_name in providers:
-        provider = getattr(mimesis.Generic(locale), provider_name)
-        methods = [func for func in dir(provider) if callable(getattr(provider, func)) and not func.startswith('_')]
-        total_iterations += len(methods)
+for release in releases:
+    if release.release_priority >= PRIORITY:
+        total_iterations += len(release.locales)
 
 # Start tqdm progress bar
-with tqdm(total=total_iterations, desc="Generating data") as pbar, open(OUTFILE, 'w', encoding='utf-8') as ndjson_file:
+with tqdm(total=total_iterations, desc="Generating data") as pbar, open(
+    OUTFILE, "w", encoding="utf-8"
+) as ndjson_file:
 
-    # For each locale
-    for locale in locales_list:
+    for release in releases:
+        if release.release_priority >= PRIORITY:
+            # For each locale_selection
+            for locale_name in release.locales:
+                # Instantiate a Fieldset object
+                locale = getattr(Locale, locale_name)
+                fs = Fieldset(locale=locale, i=VALUES)  # Generate VALUES values at once
+                provider = getattr(mimesis.Generic(locale), release.provider)
+                method = getattr(provider, release.method)
 
-        # Instantiate a Fieldset object
-        fs = Fieldset(locale=locale, i=VALUES)  # Generate VALUES values at once
-        # Get the data providers
-        providers = dir(mimesis.Generic(locale))
-        # For each provider
-        for provider_name in providers:
-            provider = getattr(mimesis.Generic(locale), provider_name)
-            # Get all methods of the provider
-            methods = [func for func in dir(provider)
-                       if callable(getattr(provider, func)) and not func.startswith('_')]
-            # For each method
-            for method_name in methods:
-                method = getattr(provider, method_name)
-                # Check if method accepts no required arguments
-                sig = inspect.signature(method)
-                params = sig.parameters
-                if all(p.default != inspect.Parameter.empty or
-                       p.kind == inspect.Parameter.VAR_POSITIONAL or
-                       p.kind == inspect.Parameter.VAR_KEYWORD
-                       for p in params.values()):
-                    # Generate 1000 values at once
-                    try:
-                        # Generate values using Fieldset
-                        values = fs(f"{provider_name}.{method_name}")
-                        # Determine data type from the first value
-                        if values:
-                            data_type = get_value_type(values[0])
-                            # Write data to ndjson file
-                            for value in values:
-                                data = {
-                                    'locale': locale.value,
-                                    'provider_name': provider_name,
-                                    'method': method_name,
-                                    'data_type': data_type,
-                                    'value': value
-                                }
-                                ndjson_file.write(json.dumps(data, ensure_ascii=False) + "\n")
-                    except Exception:
-                        # If there's an error, skip
-                        pass
-                else:
-                    # Method requires arguments, skip
-                    pass
-                pbar.update(1)
+                # Generate values using Fieldset
+                values = fs(f"{release.provider}.{release.method}")
+                # Determine data type from the first value
+                if values:
+                    data_type = get_value_type(values[0])
+                    # Write data to ndjson file
+                    for value in values:
+                        data = {
+                            "locale": "UNIVERSAL" if release.universal else locale_name,
+                            "provider": release.provider,
+                            "method": release.method,
+                            "data_type": data_type,
+                            "value": value,
+                        }
+                        ndjson_file.write(json.dumps(data, ensure_ascii=False) + "\n")
+
+            pbar.update(1)
 
 print(f"Data generation complete. Saved to {OUTFILE}.")
