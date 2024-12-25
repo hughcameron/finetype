@@ -137,13 +137,15 @@ with tqdm(total=total_iterations, desc="Generating data") as pbar, open(
                 # Determine data type from the first value
                 if values:
                     data_type = get_value_type(values[0])
+                    locale_label = "UNIVERSAL" if release.universal else locale_name
                     # Write data to ndjson file
                     for value in values:
                         data = {
-                            "locale": "UNIVERSAL" if release.universal else locale_name,
+                            "label": f"{release.provider}.{release.method}.{locale_label}",
                             "provider": release.provider,
                             "method": release.method,
-                            "data_type": data_type,
+                            "locale": locale_label,
+                            # "data_type": data_type, TODO: Add data type to evaluation
                             "value": value,
                         }
                         ndjson_file.write(json.dumps(data, ensure_ascii=False) + "\n")
