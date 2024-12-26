@@ -16,6 +16,7 @@ wgpu = ["burn/wgpu"]
 cuda-jit = ["burn/cuda-jit"]
 
 [dependencies]
+rusqlite = "^0.31.0"
 burn = { version = "0.14.0", features = ["train", "wgpu"] }
 
 # Tokenizer

@@ -6,6 +6,7 @@
 // with a machine learning framework for tasks such as training a text classification model.
 use burn::data::dataset::{source::huggingface::HuggingfaceDatasetLoader, Dataset, SqliteDataset};
 use derive_new::new;
+use std::collections::HashMap;
 
 // Define a struct for text classification items
 #[derive(new, Clone, Debug)]
@@ -16,33 +17,31 @@ pub struct TextClassificationItem {
 
 // Trait for text classification datasets
 pub trait TextClassificationDataset: Dataset<TextClassificationItem> {
-    fn num_classes() -> usize; // Returns the number of unique classes in the dataset
-    fn class_name(label: usize) -> String; // Returns the name of the class given its label
+    fn num_classes(&self) -> usize;
+    fn class_name(&self, label: usize) -> String;
 }
 
 /// Struct for items in the FineType dataset
 #[derive(Clone, Debug, serde::Serialize, serde::Deserialize)]
 pub struct FineTypeItem {
-    pub title: String,   // The title of the item
-    pub content: String, // The content of the item
-    pub label: usize,    // The label of the item (classification category)
+    pub class: String,
+    pub text: String,
+    pub label: usize,
 }
 
 /// Struct for the FineType dataset
 pub struct FineTypeDataset {
-    dataset: SqliteDataset<FineTypeItem>, // Underlying SQLite dataset
+    dataset: SqliteDataset<FineTypeItem>,
+    labels: HashMap<usize, String>,
 }
 
 /// Implements the Dataset trait for the FineType dataset
 impl Dataset<TextClassificationItem> for FineTypeDataset {
     /// Returns a specific item from the dataset
     fn get(&self, index: usize) -> Option<TextClassificationItem> {
-        self.dataset.get(index).map(|item| {
-            TextClassificationItem::new(
-                format!("Title: {} - Content: {}", item.title, item.content),
-                item.label,
-            )
-        })
+        self.dataset
+            .get(index)
+            .map(|item| TextClassificationItem::new(item.text, item.label))
     }
 
     /// Returns the length of the dataset
@@ -69,36 +68,42 @@ impl FineTypeDataset {
             HuggingfaceDatasetLoader::new("hughcameron/finetype_01")
                 .dataset(split)
                 .unwrap();
-        Self { dataset }
+        let labels = Self::load_labels(&dataset.db_file()).unwrap_or_default();
+        Self { dataset, labels }
+    }
+
+    fn load_labels(
+        db_path: &std::path::PathBuf,
+    ) -> Result<HashMap<usize, String>, rusqlite::Error> {
+        let conn = rusqlite::Connection::open(db_path)?;
+        let mut stmt = conn.prepare("SELECT label, class FROM labels")?;
+
+        let label_iter = stmt.query_map([], |row| {
+            let label: usize = row.get(0)?;
+            let class: String = row.get(1)?;
+            Ok((label, class))
+        })?;
+
+        let mut labels = HashMap::new();
+        for label in label_iter {
+            let (key, value) = label?;
+            labels.insert(key, value);
+        }
+
+        Ok(labels)
     }
 }
 
 /// Implement the TextClassificationDataset trait for the FineType dataset
 impl TextClassificationDataset for FineTypeDataset {
-    /// Returns the number of unique classes in the dataset
-    fn num_classes() -> usize {
-        14
+    fn num_classes(&self) -> usize {
+        self.labels.len()
     }
 
-    /// Returns the name of a class given its label
-    fn class_name(label: usize) -> String {
-        match label {
-            0 => "Company",
-            1 => "EducationalInstitution",
-            2 => "Artist",
-            3 => "Athlete",
-            4 => "OfficeHolder",
-            5 => "MeanOfTransportation",
-            6 => "Building",
-            7 => "NaturalPlace",
-            8 => "Village",
-            9 => "Animal",
-            10 => "Plant",
-            11 => "Album",
-            12 => "Film",
-            13 => "WrittenWork",
-            _ => panic!("invalid class"),
-        }
-        .to_string()
+    fn class_name(&self, label: usize) -> String {
+        self.labels
+            .get(&label)
+            .cloned()
+            .unwrap_or_else(|| "Unknown class".to_string())
     }
 }

@@ -21,6 +21,7 @@ pub fn infer<B: Backend, D: TextClassificationDataset + 'static>(
     device: B::Device, // Device on which to perform computation (e.g., CPU or CUDA device)
     artifact_dir: &str, // Directory containing model and config files
     samples: Vec<String>, // Text samples for inference
+    dataset: D,        // Dataset instance to get number of classes and class names
 ) {
     // Load experiment configuration
     let config = ExperimentConfig::load(format!("{artifact_dir}/config.json").as_str())
@@ -30,7 +31,7 @@ pub fn infer<B: Backend, D: TextClassificationDataset + 'static>(
     let tokenizer = Arc::new(BertCasedTokenizer::default());
 
     // Get number of classes from dataset
-    let n_classes = D::num_classes();
+    let n_classes = dataset.num_classes();
 
     // Initialize batcher for batching samples
     let batcher = Arc::new(TextClassificationBatcher::<B>::new(
@@ -67,7 +68,7 @@ pub fn infer<B: Backend, D: TextClassificationDataset + 'static>(
         let prediction = predictions.clone().slice([i..i + 1]); // Get prediction for current sample
         let logits = prediction.to_data(); // Convert prediction tensor to data
         let class_index = prediction.argmax(1).squeeze::<1>(1).into_scalar(); // Get class index with the highest value
-        let class = D::class_name(class_index.elem::<i32>() as usize); // Get class name
+        let class = dataset.class_name(class_index.elem::<i32>() as usize); // Get class name
 
         // Print sample text, predicted logits and predicted class
         println!(
