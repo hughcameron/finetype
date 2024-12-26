@@ -65,9 +65,10 @@ impl FineTypeDataset {
 
     /// Constructs the dataset from a split (either "train" or "test")
     pub fn new(split: &str) -> Self {
-        let dataset: SqliteDataset<FineTypeItem> = HuggingfaceDatasetLoader::new("FineType_01")
-            .dataset(split)
-            .unwrap();
+        let dataset: SqliteDataset<FineTypeItem> =
+            HuggingfaceDatasetLoader::new("hughcameron/finetype_01")
+                .dataset(split)
+                .unwrap();
         Self { dataset }
     }
 }
