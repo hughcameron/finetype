@@ -63,7 +63,7 @@ pub fn train<B: AutodiffBackend, D: TextClassificationDataset + 'static>(
     // Initialize model
     let model = TextClassificationModelConfig::new(
         config.transformer.clone(),
-        dataset_train.num_classes(),
+        D::num_classes(),
         tokenizer.vocab_size(),
         config.max_seq_length,
     )

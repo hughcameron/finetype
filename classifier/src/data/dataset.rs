@@ -6,7 +6,9 @@
 // with a machine learning framework for tasks such as training a text classification model.
 use burn::data::dataset::{source::huggingface::HuggingfaceDatasetLoader, Dataset, SqliteDataset};
 use derive_new::new;
+use rusqlite::Connection;
 use std::collections::HashMap;
+use std::sync::{Arc, RwLock};
 
 // Define a struct for text classification items
 #[derive(new, Clone, Debug)]
@@ -17,22 +19,22 @@ pub struct TextClassificationItem {
 
 // Trait for text classification datasets
 pub trait TextClassificationDataset: Dataset<TextClassificationItem> {
-    fn num_classes(&self) -> usize;
-    fn class_name(&self, label: usize) -> String;
+    fn num_classes() -> usize; // Returns the number of unique classes in the dataset
+    fn class_name(label: usize) -> String; // Returns the name of the class given its label
 }
 
 /// Struct for items in the FineType dataset
 #[derive(Clone, Debug, serde::Serialize, serde::Deserialize)]
 pub struct FineTypeItem {
-    pub class: String,
-    pub text: String,
-    pub label: usize,
+    pub class: String, // The class of the item
+    pub text: String,  // The text of the item
+    pub label: usize,  // The label of the item (classification category)
 }
 
 /// Struct for the FineType dataset
 pub struct FineTypeDataset {
-    dataset: SqliteDataset<FineTypeItem>,
-    labels: HashMap<usize, String>,
+    dataset: SqliteDataset<FineTypeItem>, // Underlying SQLite dataset
+    labels: Arc<RwLock<HashMap<usize, String>>>, // Cache for labels
 }
 
 /// Implements the Dataset trait for the FineType dataset
@@ -68,42 +70,53 @@ impl FineTypeDataset {
             HuggingfaceDatasetLoader::new("hughcameron/finetype_01")
                 .dataset(split)
                 .unwrap();
-        let labels = Self::load_labels(&dataset.db_file()).unwrap_or_default();
-        Self { dataset, labels }
+        let labels = Self::fetch_labels(&dataset);
+        Self {
+            dataset,
+            labels: Arc::new(RwLock::new(labels)),
+        }
     }
 
-    fn load_labels(
-        db_path: &std::path::PathBuf,
-    ) -> Result<HashMap<usize, String>, rusqlite::Error> {
-        let conn = rusqlite::Connection::open(db_path)?;
-        let mut stmt = conn.prepare("SELECT label, class FROM labels")?;
-
-        let label_iter = stmt.query_map([], |row| {
-            let label: usize = row.get(0)?;
-            let class: String = row.get(1)?;
-            Ok((label, class))
-        })?;
+    /// Fetches the labels from the SQLite table and returns a HashMap
+    fn fetch_labels(dataset: &SqliteDataset<FineTypeItem>) -> HashMap<usize, String> {
+        let conn = Connection::open(dataset.db_file()).unwrap();
+        let mut stmt = conn.prepare("SELECT label, class FROM labels").unwrap();
+        let mut rows = stmt.query([]).unwrap();
 
         let mut labels = HashMap::new();
-        for label in label_iter {
-            let (key, value) = label?;
-            labels.insert(key, value);
+        while let Some(row) = rows.next().unwrap() {
+            let label: usize = row.get(0).unwrap();
+            let class: String = row.get(1).unwrap();
+            labels.insert(label, class);
         }
+        labels
+    }
 
-        Ok(labels)
+    /// Returns the number of unique classes in the dataset
+    pub fn num_classes(&self) -> usize {
+        self.labels.read().unwrap().len()
+    }
+
+    /// Returns the name of a class given its label
+    pub fn class_name(&self, label: usize) -> String {
+        self.labels
+            .read()
+            .unwrap()
+            .get(&label)
+            .cloned()
+            .unwrap_or_else(|| "invalid class".to_string())
     }
 }
 
 /// Implement the TextClassificationDataset trait for the FineType dataset
 impl TextClassificationDataset for FineTypeDataset {
-    fn num_classes(&self) -> usize {
-        self.labels.len()
+    /// Returns the number of unique classes in the dataset
+    fn num_classes() -> usize {
+        FineTypeDataset::train().num_classes()
     }
 
-    fn class_name(&self, label: usize) -> String {
-        self.labels
-            .get(&label)
-            .cloned()
-            .unwrap_or_else(|| "Unknown class".to_string())
+    /// Returns the name of a class given its label
+    fn class_name(label: usize) -> String {
+        FineTypeDataset::train().class_name(label)
     }
 }
