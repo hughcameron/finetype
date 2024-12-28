@@ -17,6 +17,7 @@ pub fn launch<B: AutodiffBackend<FloatElem = f32>>(
     file: Option<String>,
     return_value: bool,
     return_logit: bool,
+    return_class_only: bool,
 ) {
     let inputs: Vec<String> = if let Some(input) = input {
         vec![input]
@@ -62,18 +63,22 @@ pub fn launch<B: AutodiffBackend<FloatElem = f32>>(
                 prediction.trim().to_string(),
             );
 
-            let mut result = Map::new();
-            result.insert("class".to_string(), json!(class_name));
+            if return_class_only {
+                println!("{}", class_name);
+            } else {
+                let mut result = Map::new();
+                result.insert("class".to_string(), json!(class_name));
 
-            if return_value {
-                result.insert("input".to_string(), json!(prediction.trim()));
+                if return_value {
+                    result.insert("input".to_string(), json!(prediction.trim()));
+                }
+
+                if return_logit {
+                    result.insert("logit".to_string(), json!(logit));
+                }
+
+                println!("{}", Value::Object(result));
             }
-
-            if return_logit {
-                result.insert("logit".to_string(), json!(logit));
-            }
-
-            println!("{}", Value::Object(result));
         }
     }
 }
@@ -97,6 +102,7 @@ mod ndarray {
         file: Option<String>,
         return_value: bool,
         return_logit: bool,
+        return_class_only: bool,
     ) {
         launch::<Autodiff<NdArray<f32>>>(
             NdArrayDevice::Cpu,
@@ -104,6 +110,7 @@ mod ndarray {
             file,
             return_value,
             return_logit,
+            return_class_only,
         );
     }
 }
@@ -122,13 +129,21 @@ mod tch_gpu {
         file: Option<String>,
         return_value: bool,
         return_logit: bool,
+        return_class_only: bool,
     ) {
         #[cfg(not(target_os = "macos"))]
         let device = LibTorchDevice::Cuda(0);
         #[cfg(target_os = "macos")]
         let device = LibTorchDevice::Mps;
 
-        launch::<Autodiff<LibTorch<f32>>>(device, input, file, return_value, return_logit);
+        launch::<Autodiff<LibTorch<f32>>>(
+            device,
+            input,
+            file,
+            return_value,
+            return_logit,
+            return_class_only,
+        );
     }
 }
 
@@ -146,6 +161,7 @@ mod tch_cpu {
         file: Option<String>,
         return_value: bool,
         return_logit: bool,
+        return_class_only: bool,
     ) {
         launch::<Autodiff<LibTorch<f32>>>(
             LibTorchDevice::Cpu,
@@ -153,6 +169,7 @@ mod tch_cpu {
             file,
             return_value,
             return_logit,
+            return_class_only,
         );
     }
 }
@@ -171,6 +188,7 @@ mod wgpu {
         file: Option<String>,
         return_value: bool,
         return_logit: bool,
+        return_class_only: bool,
     ) {
         launch::<Autodiff<Wgpu<f32, i32>>>(
             WgpuDevice::default(),
@@ -178,6 +196,7 @@ mod wgpu {
             file,
             return_value,
             return_logit,
+            return_class_only,
         );
     }
 }
@@ -217,12 +236,20 @@ fn main() {
                 .action(ArgAction::SetTrue)
                 .help("Return the logit value of the prediction in the output"),
         )
+        .arg(
+            Arg::new("class")
+                .short('c')
+                .long("class")
+                .action(ArgAction::SetTrue)
+                .help("Return the class name only in the output"),
+        )
         .get_matches();
 
     let input = matches.get_one::<String>("input").cloned();
     let file = matches.get_one::<String>("file").cloned();
     let return_value = matches.get_one::<bool>("value").unwrap_or(&false);
     let return_logit = matches.get_one::<bool>("logit").unwrap_or(&false);
+    let return_class_only = matches.get_one::<bool>("class").unwrap_or(&false);
 
     #[cfg(any(
         feature = "ndarray",
@@ -230,11 +257,35 @@ fn main() {
         feature = "ndarray-blas-openblas",
         feature = "ndarray-blas-accelerate",
     ))]
-    ndarray::run(input, file, *return_value, *return_logit);
+    ndarray::run(
+        input,
+        file,
+        *return_value,
+        *return_logit,
+        *return_class_only,
+    );
     #[cfg(feature = "tch-gpu")]
-    tch_gpu::run(input, file, *return_value, *return_logit);
+    tch_gpu::run(
+        input,
+        file,
+        *return_value,
+        *return_logit,
+        *return_class_only,
+    );
     #[cfg(feature = "tch-cpu")]
-    tch_cpu::run(input, file, *return_value, *return_logit);
+    tch_cpu::run(
+        input,
+        file,
+        *return_value,
+        *return_logit,
+        *return_class_only,
+    );
     #[cfg(feature = "wgpu")]
-    wgpu::run(input, file, *return_value, *return_logit);
+    wgpu::run(
+        input,
+        file,
+        *return_value,
+        *return_logit,
+        *return_class_only,
+    );
 }
