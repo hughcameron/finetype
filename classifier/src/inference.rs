@@ -16,11 +16,11 @@ use burn::{
 };
 use std::sync::Arc;
 
-pub fn infer_single<B: Backend, D: TextClassificationDataset + 'static>(
+pub fn infer_single<B: Backend<FloatElem = f32>, D: TextClassificationDataset + 'static>(
     device: B::Device,
     artifact_dir: &str,
     sample: String,
-) -> String {
+) -> (String, f32) {
     // Load experiment configuration
     let config = ExperimentConfig::load(format!("{artifact_dir}/config.json").as_str())
         .expect("Config file present");
@@ -58,6 +58,9 @@ pub fn infer_single<B: Backend, D: TextClassificationDataset + 'static>(
     let predictions = model.infer(item);
 
     let prediction = predictions.slice([0..1]); // Get prediction for the sample
-    let class_index = prediction.argmax(1).squeeze::<1>(1).into_scalar(); // Get class index
-    D::class_name(class_index.elem::<i32>() as usize) // Return the class name
+    let class_index = prediction.clone().argmax(1).squeeze::<1>(1).into_scalar(); // Get class index
+    let class_name = D::class_name(class_index.elem::<i32>() as usize); // Get the class name
+    let logit = prediction.max().into_scalar(); // Get the logit value
+
+    (class_name, logit)
 }
