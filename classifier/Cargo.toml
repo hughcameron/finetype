@@ -18,6 +18,8 @@ cuda-jit = ["burn/cuda-jit"]
 [dependencies]
 rusqlite = "^0.31.0"
 burn = { version = "0.14.0", features = ["train", "wgpu"] }
+clap = "4.0"
+serde_json = "1.0"
 
 # Tokenizer
 tokenizers = { version = "0.20.0", default-features = false, features = [
