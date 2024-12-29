@@ -10,6 +10,7 @@ target
 .vs
 .fleet
 .ipynb_checkpoints/
+__pycache__/
 
 # Generated IR and Burn Graph from ONNX
 out
