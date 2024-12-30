@@ -1,10 +1,10 @@
 import re
 from pathlib import Path
 
-import mimesis
 import yaml
 from mimesis.locales import Locale
-from models.core import Defintion
+from models.core import Definition
+from providers.collection import generic_set
 
 DEFINITIONS = Path("definitions.yaml")
 DEFINITIONS_UPDATE = Path("definitions_update.yaml")
@@ -12,21 +12,22 @@ TITLE_REGEX = re.compile(r":return: (.+?)(\n|$)")
 
 with DEFINITIONS.open("r", encoding="utf-8") as f:
     release_data = yaml.load(f, Loader=yaml.FullLoader)
-    releases = [Defintion(**release_data[r]) for r in release_data]
+    releases = [Definition(**release_data[r]) for r in release_data]
 
 
 update = {}
 
 for key in release_data:
-    release = Defintion(**release_data[key])
-    provider = getattr(mimesis.Generic(Locale.DEFAULT), release.provider)
+    release = Definition(**release_data[key])
+    generic = generic_set(Locale.DEFAULT)
+    provider = getattr(generic, release.provider)
     method = getattr(provider, release.method)
     doc = method.__doc__
     match = TITLE_REGEX.search(doc)
     title = match.group(1) if match else False
     if title:
         release.title = title
-    update[key] = release.model_dump()
+    update[key] = release.model_dump(mode="json")
 
 
 with DEFINITIONS_UPDATE.open("w", encoding="utf-8") as f:

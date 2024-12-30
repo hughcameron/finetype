@@ -1,11 +1,11 @@
 import argparse
 from pathlib import Path
 
-import mimesis
 import yaml
 from mimesis import Fieldset, random
 from mimesis.locales import Locale
-from models.core import Defintion, Record
+from models.core import Definition, Record
+from providers.collection import generic_set
 from tqdm import tqdm
 
 parser = argparse.ArgumentParser(
@@ -49,7 +49,7 @@ random.global_seed = SEED
 
 with DEFINITIONS.open("r", encoding="utf-8") as f:
     release_data = yaml.load(f, Loader=yaml.FullLoader)
-    releases = [Defintion(**release_data[r]) for r in release_data]
+    releases = [Definition(**release_data[r]) for r in release_data]
 
 total_iterations = 0
 for release in releases:
@@ -68,18 +68,22 @@ with (
                 # Instantiate a Fieldset object
                 locale = getattr(Locale, locale_name)
                 fs = Fieldset(locale=locale, i=TEXTS)  # Generate VALUES texts at once
-                provider = getattr(mimesis.Generic(locale), release.provider)
+                generic = generic_set(locale_name)
+                provider = getattr(generic, release.provider)
                 method = getattr(provider, release.method)
 
                 # Generate texts using Fieldset
                 texts = fs(f"{release.provider}.{release.method}")
                 # Determine data type from the first text
                 if texts:
-                    locale_name = "UNIVERSAL" if release.universal else locale_name
+                    if release.designation == "universal":
+                        locale_tag = "UNIVERSAL"
+                    else:
+                        locale_tag = locale_name
                     # Write data to ndjson file
                     for text in texts:
                         record = Record(
-                            tag=f"{release.provider}.{release.method}.{locale_name}",
+                            tag=f"{release.provider}.{release.method}.{locale_tag}",
                             text=str(text),
                         )
                         ndjson_file.write(record.model_dump_json() + "\n")

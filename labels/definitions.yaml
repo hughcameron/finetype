@@ -1,4 +1,6 @@
 address.address:
+  aliases: null
+  description: null
   designation: locale_specific
   locales:
     - AR_AE
@@ -47,15 +49,17 @@ address.address:
   notes: null
   primitive: str
   provider: address
+  references: null
   release_priority: 3
   samples:
-    - 180 Onondaga Green
-    - 1133 Illinois Annex
-    - 251 Laurel Arcade
-    - 880 Sproule Landing
+    - 527 Moscow Manor
+    - 800 Barry Crossing
+    - 1023 Case Highway
+    - 554 Russell Place
   title: Full address.
-  universal: false
 address.calling_code:
+  aliases: null
+  description: null
   designation: locale_specific
   locales:
     - AR_AE
@@ -104,15 +108,17 @@ address.calling_code:
   notes: null
   primitive: str
   provider: address
+  references: null
   release_priority: 3
   samples:
-    - "+377"
-    - "+262"
-    - "+211"
-    - "+298"
+    - "+1242"
+    - "+231"
+    - "+420"
+    - "+1268"
   title: Calling code.
-  universal: false
 address.city:
+  aliases: null
+  description: null
   designation: locale_specific
   locales:
     - AR_AE
@@ -161,15 +167,17 @@ address.city:
   notes: null
   primitive: str
   provider: address
+  references: null
   release_priority: 3
   samples:
-    - Cartersville
-    - Central Point
-    - Revere
-    - Blue Springs
+    - Seal Beach
+    - Goodlettsville
+    - Carbondale
+    - Lynbrook
   title: City name.
-  universal: false
 address.continent:
+  aliases: null
+  description: null
   designation: locale_specific
   locales:
     - AR_AE
@@ -218,15 +226,17 @@ address.continent:
   notes: null
   primitive: str
   provider: address
+  references: null
   release_priority: 3
   samples:
-    - South America
-    - Europe
-    - Asia
     - Australia
+    - Africa
+    - North America
+    - Europe
   title: Continent name.
-  universal: false
 address.coordinates:
+  aliases: null
+  description: null
   designation: broad_object
   locales:
     - EN
@@ -234,19 +244,21 @@ address.coordinates:
   notes: Find a universal format
   primitive: Dict[str, float]
   provider: address
+  references: null
   release_priority: 0
   samples:
-    - latitude: 87.827532
-      longitude: 151.576224
-    - latitude: 18.658435
-      longitude: 10.416059
-    - latitude: 79.443441
-      longitude: -169.331581
-    - latitude: 76.858517
-      longitude: 117.332815
+    - latitude: -54.234369
+      longitude: -111.03169
+    - latitude: -44.812191
+      longitude: -11.982234
+    - latitude: 48.14691
+      longitude: -153.894708
+    - latitude: -85.797798
+      longitude: -139.563998
   title: Dict with coordinates.
-  universal: true
 address.country:
+  aliases: null
+  description: null
   designation: locale_specific
   locales:
     - AR_AE
@@ -295,15 +307,17 @@ address.country:
   notes: null
   primitive: str
   provider: address
+  references: null
   release_priority: 3
   samples:
-    - Uruguay
-    - Mayotte
-    - Montserrat
-    - United Kingdom
+    - Eritrea
+    - Philippines
+    - Nepal
+    - Martinique
   title: The Country.
-  universal: false
 address.country_code:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -311,15 +325,17 @@ address.country_code:
   notes: "Split out country codes: ISO 3166"
   primitive: str
   provider: address
+  references: null
   release_priority: 0
   samples:
-    - CI
-    - VU
-    - LA
-    - DZ
+    - DM
+    - ET
+    - CZ
+    - RS
   title: Country code in selected format.
-  universal: true
 address.country_emoji_flag:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -327,15 +343,17 @@ address.country_emoji_flag:
   notes: null
   primitive: str
   provider: address
+  references: null
   release_priority: 0
   samples:
+    - 🇸🇬
     - 🇧🇹
-    - 🇸🇧
-    - 🇨🇰
-    - 🇪🇪
+    - 🇩🇪
+    - 🇲🇪
   title: Flag emoji.
-  universal: true
 address.default_country:
+  aliases: null
+  description: null
   designation: duplicate
   locales:
     - EN
@@ -343,6 +361,7 @@ address.default_country:
   notes: Duplicate of country
   primitive: str
   provider: address
+  references: null
   release_priority: 0
   samples:
     - United States
@@ -350,8 +369,9 @@ address.default_country:
     - United States
     - United States
   title: The country associated with current locale.
-  universal: true
 address.federal_subject:
+  aliases: null
+  description: null
   designation: locale_specific
   locales:
     - AR_AE
@@ -400,15 +420,17 @@ address.federal_subject:
   notes: null
   primitive: str
   provider: address
+  references: null
   release_priority: 3
   samples:
-    - Florida
-    - Virginia
-    - Iowa
+    - Minnesota
+    - Ohio
     - Massachusetts
+    - Illinois
   title: null
-  universal: false
 address.get_current_locale:
+  aliases: null
+  description: null
   designation: system_internal
   locales:
     - EN
@@ -416,6 +438,7 @@ address.get_current_locale:
   notes: null
   primitive: str
   provider: address
+  references: null
   release_priority: 0
   samples:
     - en
@@ -423,8 +446,9 @@ address.get_current_locale:
     - en
     - en
   title: Current locale.
-  universal: true
 address.iata_code:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -432,15 +456,17 @@ address.iata_code:
   notes: null
   primitive: str
   provider: address
+  references: null
   release_priority: 4
   samples:
-    - MYQ
-    - YZH
-    - KCM
-    - NBB
+    - KUD
+    - HFT
+    - LBW
+    - GYU
   title: IATA code.
-  universal: true
 address.icao_code:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -448,15 +474,17 @@ address.icao_code:
   notes: null
   primitive: str
   provider: address
+  references: null
   release_priority: 4
   samples:
-    - LSZR
-    - EGUN
-    - PAQC
-    - ZWHM
+    - MMML
+    - LYBE
+    - OABN
+    - SBGO
   title: ICAO code.
-  universal: true
 address.isd_code:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -464,15 +492,17 @@ address.isd_code:
   notes: null
   primitive: str
   provider: address
+  references: null
   release_priority: 4
   samples:
-    - "+225"
-    - "+243"
-    - "+262"
-    - "+60"
+    - "+689"
+    - "+870"
+    - "+359"
+    - "+261"
   title: null
-  universal: true
 address.latitude:
+  aliases: null
+  description: null
   designation: broad_numbers
   locales:
     - EN
@@ -480,15 +510,17 @@ address.latitude:
   notes: null
   primitive: float
   provider: address
+  references: null
   release_priority: 0
   samples:
-    - -72.163729
-    - -23.025095
-    - 30.503516
-    - 56.887196
+    - -52.915858
+    - -81.161415
+    - 52.37599
+    - -18.432103
   title: Value of longitude.
-  universal: true
 address.longitude:
+  aliases: null
+  description: null
   designation: broad_numbers
   locales:
     - EN
@@ -496,15 +528,17 @@ address.longitude:
   notes: null
   primitive: float
   provider: address
+  references: null
   release_priority: 0
   samples:
-    - -73.781735
-    - 97.844512
-    - -172.63202
-    - -125.499678
+    - -172.626853
+    - 73.806412
+    - 117.888794
+    - 108.353136
   title: Value of longitude.
-  universal: true
 address.postal_code:
+  aliases: null
+  description: null
   designation: locale_specific
   locales:
     - AR_AE
@@ -553,15 +587,17 @@ address.postal_code:
   notes: null
   primitive: str
   provider: address
+  references: null
   release_priority: 3
   samples:
-    - "66062"
-    - "62268"
-    - "74823"
-    - 09485
+    - "54986"
+    - "78726"
+    - "98816"
+    - "64441"
   title: Postal code.
-  universal: false
 address.prefecture:
+  aliases: null
+  description: null
   designation: locale_specific
   locales:
     - AR_AE
@@ -610,15 +646,17 @@ address.prefecture:
   notes: null
   primitive: str
   provider: address
+  references: null
   release_priority: 3
   samples:
-    - Texas
-    - California
-    - Wyoming
-    - Ohio
+    - Illinois
+    - Alaska
+    - Idaho
+    - New Mexico
   title: null
-  universal: false
 address.province:
+  aliases: null
+  description: null
   designation: locale_specific
   locales:
     - AR_AE
@@ -667,15 +705,17 @@ address.province:
   notes: null
   primitive: str
   provider: address
+  references: null
   release_priority: 3
   samples:
-    - South Dakota
-    - Alabama
-    - Arkansas
-    - Michigan
+    - Pennsylvania
+    - Pennsylvania
+    - Minnesota
+    - Arizona
   title: null
-  universal: false
 address.region:
+  aliases: null
+  description: null
   designation: locale_specific
   locales:
     - AR_AE
@@ -724,15 +764,17 @@ address.region:
   notes: null
   primitive: str
   provider: address
+  references: null
   release_priority: 3
   samples:
-    - Delaware
-    - Maine
-    - Wyoming
-    - New York
+    - Kentucky
+    - North Dakota
+    - Texas
+    - Michigan
   title: null
-  universal: false
 address.state:
+  aliases: null
+  description: null
   designation: locale_specific
   locales:
     - AR_AE
@@ -781,15 +823,17 @@ address.state:
   notes: null
   primitive: str
   provider: address
+  references: null
   release_priority: 3
   samples:
-    - Georgia
-    - South Carolina
-    - Connecticut
+    - Arkansas
     - Idaho
+    - Missouri
+    - New Jersey
   title: Administrative district.
-  universal: false
 address.street_name:
+  aliases: null
+  description: null
   designation: locale_specific
   locales:
     - AR_AE
@@ -838,15 +882,17 @@ address.street_name:
   notes: null
   primitive: str
   provider: address
+  references: null
   release_priority: 3
   samples:
-    - Rhine
-    - Digby
-    - Westside
-    - Key
+    - Marine
+    - Colleen
+    - Pond
+    - Curtis
   title: Street name.
-  universal: false
 address.street_number:
+  aliases: null
+  description: null
   designation: broad_numbers
   locales:
     - EN
@@ -854,15 +900,17 @@ address.street_number:
   notes: null
   primitive: str
   provider: address
+  references: null
   release_priority: 0
   samples:
-    - "641"
-    - "144"
-    - "1085"
-    - "1325"
+    - "785"
+    - "476"
+    - "1147"
+    - "840"
   title: Street number.
-  universal: true
 address.street_suffix:
+  aliases: null
+  description: null
   designation: locale_specific
   locales:
     - AR_AE
@@ -911,15 +959,17 @@ address.street_suffix:
   notes: null
   primitive: str
   provider: address
+  references: null
   release_priority: 3
   samples:
-    - Creek
-    - Road
-    - Ranch
-    - Point
+    - Path
+    - Circle
+    - Square
+    - Walk
   title: Street suffix.
-  universal: false
 address.zip_code:
+  aliases: null
+  description: null
   designation: locale_specific
   locales:
     - AR_AE
@@ -968,15 +1018,17 @@ address.zip_code:
   notes: null
   primitive: str
   provider: address
+  references: null
   release_priority: 4
   samples:
-    - "80793"
-    - "44917"
-    - "87516"
-    - "68946"
+    - "32509"
+    - "54712"
+    - "12386"
+    - "14278"
   title: Zip code.
-  universal: false
 code.ean:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -984,15 +1036,17 @@ code.ean:
   notes: null
   primitive: str
   provider: code
+  references: null
   release_priority: 4
   samples:
-    - "4322457796640"
-    - "90980921"
-    - "7631551176664"
-    - "7970890672273"
+    - "59780991"
+    - "29356566"
+    - "4604378737414"
+    - "46960589"
   title: EAN.
-  universal: true
 code.imei:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -1000,15 +1054,17 @@ code.imei:
   notes: null
   primitive: str
   provider: code
+  references: null
   release_priority: 4
   samples:
-    - "358815053798129"
-    - 011245006266967
-    - "351549009707606"
-    - "351710057342783"
+    - "353285041840216"
+    - "358387063265457"
+    - 013327005558251
+    - "355114056661887"
   title: IMEI.
-  universal: true
 code.isbn:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -1016,15 +1072,17 @@ code.isbn:
   notes: null
   primitive: str
   provider: code
+  references: null
   release_priority: 4
   samples:
-    - 997-1-95408-900-7
-    - 1-11944-360-2
-    - 017-1-93594-984-2
-    - 1-57766-992-1
+    - 1-71114-923-1
+    - 706-1-37160-265-6
+    - 1-23819-952-2
+    - 1-83505-074-8
   title: ISBN.
-  universal: true
 code.issn:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -1032,15 +1090,17 @@ code.issn:
   notes: null
   primitive: str
   provider: code
+  references: null
   release_priority: 4
   samples:
-    - 5172-7713
-    - 6848-9401
-    - 5421-9394
-    - 3463-7906
+    - 3487-5759
+    - 7276-2632
+    - 9619-7227
+    - 4766-7620
   title: ISSN.
-  universal: true
 code.locale_code:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -1048,15 +1108,17 @@ code.locale_code:
   notes: null
   primitive: str
   provider: code
+  references: null
   release_priority: 3
   samples:
+    - zh-cn
+    - ar-ae
     - es-pr
-    - rm
-    - mk
-    - ar-tn
+    - ar-ye
   title: Locale code.
-  universal: true
 code.pin:
+  aliases: null
+  description: null
   designation: broad_numbers
   locales:
     - EN
@@ -1064,15 +1126,17 @@ code.pin:
   notes: null
   primitive: str
   provider: code
+  references: null
   release_priority: 0
   samples:
-    - "5459"
-    - "0336"
-    - "1956"
-    - 0987
+    - "9847"
+    - "6537"
+    - "9917"
+    - 0758
   title: PIN code.
-  universal: true
 cryptographic.hash:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -1080,15 +1144,17 @@ cryptographic.hash:
   notes: Split out hash types - eg MD5, SHA256
   primitive: str
   provider: cryptographic
+  references: null
   release_priority: 0
   samples:
-    - 194ba642fcc5d74d6ed990f3fd27479e691ed1572e0fd2dcc6a4201d259a8149
-    - e30b343c434992c7f39518e2b0216436e721101e3f8448ca36bcba8a52fc0650e88cbda73488b6f92a6622885863ab32e7c4719bf943a3f6d1d04422adf452cd
-    - f155d84f273845f0575868a5abf42830c1ea3aa564d89fdc13ef1585d01afee4
-    - 113cbb8d63882077c1a950e82dc2c1d4d1353f6ec51f8a3a43c78b492299997e
+    - 5bc73a2be63ddb169623140020754b5e8b2aecd70405e2bc44f20fa6
+    - b398d6edb70a4502272f1a7c681e66dcfa67b1d5
+    - 4a95adb9ef2a5f32fb55e96f6f1d0e1f8d3fef28f77626438d4a51772fd1ff7d5397792096ae91fcb3f1bb5e345504e784fbee26eda5004c846064ee1344bf97
+    - 7cee75d302cb8bfe32d3e8dc053f7f8a2493af73
   title: Hash.
-  universal: true
 cryptographic.mnemonic_phrase:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1096,18 +1162,18 @@ cryptographic.mnemonic_phrase:
   notes: null
   primitive: str
   provider: cryptographic
+  references: null
   release_priority: 0
   samples:
-    - symbol knee behind describe rifle envelope harsh danger rich outside fortune prevent
-      nominee attend detail rice robust gadget win world primary sail owner pool
-    - chronic lizard sudden poem win chef decade peasant help sunset box gadget
-    - organ cat invest defy rocket fun fortune text winter midnight false grit code
-      spike cover vast able salmon gentle tide prepare scale captain bridge
-    - duty reunion elite blossom toss mercy drink guide history biology quick embody
-      piano timber chuckle give army meadow blanket amused dinosaur crime bid one
+    - choice shock city grab hamster session assault ensure fine fall emerge slow
+    - beyond hero bullet jazz wonder total robust claw check history middle tumble
+    - business latin bread fluid slam razor dumb edit morning twelve dust frost
+    - razor wreck chicken grant body smart evolve focus time goat gown destroy acoustic
+      talent student above agree reduce section between sponsor oyster diary dizzy
   title: Mnemonic phrase.
-  universal: true
 cryptographic.token_hex:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -1115,15 +1181,17 @@ cryptographic.token_hex:
   notes: null
   primitive: str
   provider: cryptographic
+  references: null
   release_priority: 0
   samples:
-    - 82b175e41657c58c9cbb56a9d783edc6f998ad52d55bfc02ec69e035ae078a65
-    - bcb96e8c5c01072eb41a56f2ca1efc0051f2cd2c2131a04dbfbbe5e41d04bf13
-    - 29f21eb0fe7dee9ee30b264f188db551fbd6df5f45cd5cf6d1c6f215a9dcd345
-    - d2aed111946921f25a81fbcf751408cf4ecbd56beea5634936eadc6aac5a7e84
+    - fe63dc32d938ae9679c07291211c47890e14b0d0821fc4cdf7cb89f78878734d
+    - 1db80d22779cb5a3a3f4e7e8a507c45f2f328104fd0077d891c5414c2e8f8da1
+    - a6caf8c5dae6cbeb9f7e3921620ee19542f31c3efc4e456ae737b4c321db8137
+    - 59e10337002a05b5db1a73d84f51619cbf9cc1d499cd63296fba66b6546a93fd
   title: Token.
-  universal: true
 cryptographic.token_urlsafe:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -1131,15 +1199,17 @@ cryptographic.token_urlsafe:
   notes: null
   primitive: str
   provider: cryptographic
+  references: null
   release_priority: 0
   samples:
-    - 4alf0Tq4f-c0FE42oNFqRQEqwchJNADOnqMB5RT78DM
-    - 8qhgUTiczlCSzthOx9mTfJz-frYFxKI_FZWvdSSUqCw
-    - g-7iQaBWD-4YSiQE3d1uG6knan222cyPA5KH3ej9rtA
-    - iDPWO4If3mXqs4AAD4mFsbcQn7chbc90h4gj1mazrgg
+    - R1EYqKMTYqtDDEFQmsdp6R9ER3ZaT6gYPTrXlLdvWZo
+    - rK10V0gZY5MGiQ0bHTUDH8zxW9GeAhs1K0J5hZqhX2o
+    - y7colhMtPln3vi6MvfbinTAA0qmTdh_W5PPpXs6IbRg
+    - OPTgGKL4ZTHeLWH0Og837GyXGowlRmhMnqc1GaKpibw
   title: URL-safe token.
-  universal: true
 cryptographic.uuid:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -1147,15 +1217,56 @@ cryptographic.uuid:
   notes: null
   primitive: str
   provider: cryptographic
+  references: null
   release_priority: 5
   samples:
-    - 40bc4de6-e3de-47d7-9e77-c6f6cda930cc
-    - be2926b9-501b-47ff-a164-8e5ee9ab6f45
-    - 7dbf128b-64e8-4855-9496-a52d955ad443
-    - f0d91520-ede7-435f-b78f-ab2fd7beb8fb
+    - 43932492-7876-4547-9ad1-7879584f60a9
+    - 1cefd374-fa30-4aec-a829-3d9d9dfe5f7b
+    - 40fb5807-594b-435f-b1b9-094bdd9536c0
+    - 8feb8cc9-e4ed-447a-98be-917f452da2c0
   title: UUID4 as string.
-  universal: true
+datetime.abbreviated_month:
+  aliases: []
+  description: Date format with abbreviated month names
+  designation: universal
+  locales:
+    - EN
+  method: abbreviated_month
+  notes: null
+  primitive: str
+  provider: datetime
+  references: null
+  release_priority: 5
+  samples:
+    - Dec 8, 2024
+    - Mar 13, 2024
+    - Oct 22, 2024
+    - Dec 11, 2024
+  title: Abbreviated Month Date
+datetime.american:
+  aliases:
+    - Middle-Endian
+  description: Common U.S. date and time format
+  designation: universal
+  locales:
+    - EN
+  method: american
+  notes: null
+  primitive: str
+  provider: datetime
+  references:
+    - link: https://en.wikipedia.org/wiki/Date_by_country#United_States
+      title: Common Style Guides
+  release_priority: 5
+  samples:
+    - 07/07/2024 06:32 PM
+    - 08/08/2024 12:53 AM
+    - 10/21/2024 01:48 PM
+    - 01/21/2024 07:00 PM
+  title: American
 datetime.century:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -1163,15 +1274,17 @@ datetime.century:
   notes: Rename to Roman Numberals
   primitive: str
   provider: datetime
+  references: null
   release_priority: 3
   samples:
-    - II
-    - V
-    - XX
-    - V
+    - VI
+    - XIV
+    - VII
+    - VIII
   title: Century.
-  universal: true
 datetime.day_of_month:
+  aliases: null
+  description: null
   designation: broad_numbers
   locales:
     - EN
@@ -1179,15 +1292,17 @@ datetime.day_of_month:
   notes: null
   primitive: int
   provider: datetime
+  references: null
   release_priority: 0
   samples:
-    - 5
-    - 1
-    - 28
-    - 19
+    - 26
+    - 16
+    - 2
+    - 27
   title: Random value from 1 to 31.
-  universal: true
 datetime.day_of_week:
+  aliases: null
+  description: null
   designation: duplicate
   locales:
     - EN
@@ -1195,15 +1310,38 @@ datetime.day_of_week:
   notes: Duplicate of structured datetimes
   primitive: str
   provider: datetime
+  references: null
   release_priority: 0
   samples:
-    - Saturday
-    - Friday
+    - Sunday
     - Thursday
     - Saturday
+    - Friday
   title: Day of the week.
-  universal: true
+datetime.european:
+  aliases:
+    - Little-Endian
+  description: Common European date and time format
+  designation: universal
+  locales:
+    - EN
+  method: european
+  notes: null
+  primitive: str
+  provider: datetime
+  references:
+    - link: https://en.wikipedia.org/wiki/Date_by_country#Europe
+      title: Common Style Guides
+  release_priority: 5
+  samples:
+    - 19/07/2024 02:46
+    - 11/06/2024 21:13
+    - 12/11/2024 03:39
+    - 08/03/2024 21:12
+  title: European
 datetime.formatted_date:
+  aliases: null
+  description: null
   designation: duplicate
   locales:
     - EN
@@ -1211,15 +1349,17 @@ datetime.formatted_date:
   notes: Duplicate of structured datetimes
   primitive: str
   provider: datetime
+  references: null
   release_priority: 0
   samples:
-    - 03/04/2011
-    - 08/11/2012
-    - 10/21/2003
-    - 04/24/2017
+    - 12/12/2007
+    - 10/10/2009
+    - 02/09/2019
+    - 02/17/2000
   title: Formatted date.
-  universal: true
 datetime.formatted_datetime:
+  aliases: null
+  description: null
   designation: duplicate
   locales:
     - EN
@@ -1227,15 +1367,17 @@ datetime.formatted_datetime:
   notes: Duplicate of structured datetimes
   primitive: str
   provider: datetime
+  references: null
   release_priority: 0
   samples:
-    - 07/24/2024 10:48:05
-    - 11/09/2024 12:39:18
-    - 11/21/2024 17:24:41
-    - 07/21/2024 12:44:19
+    - 10/05/2024 21:58:15
+    - 06/16/2024 01:07:42
+    - 08/08/2024 07:57:23
+    - 01/07/2024 10:27:17
   title: Formatted datetime string.
-  universal: true
 datetime.formatted_time:
+  aliases: null
+  description: null
   designation: duplicate
   locales:
     - EN
@@ -1243,15 +1385,35 @@ datetime.formatted_time:
   notes: Duplicate of structured datetimes
   primitive: str
   provider: datetime
+  references: null
   release_priority: 0
   samples:
-    - 03:52:27
-    - "10:34:40"
-    - "20:54:04"
-    - 08:24:11
+    - "19:23:23"
+    - 00:05:36
+    - 08:15:29
+    - 06:41:03
   title: String formatted time.
-  universal: true
+datetime.full_weekday_abbreviated_month:
+  aliases: []
+  description: Date format with full weekday name and abbreviated month
+  designation: universal
+  locales:
+    - EN
+  method: full_weekday_abbreviated_month
+  notes: null
+  primitive: str
+  provider: datetime
+  references: null
+  release_priority: 5
+  samples:
+    - Saturday, 17 Aug 2024
+    - Saturday, 7 Sep 2024
+    - Sunday, 22 Dec 2024
+    - Tuesday, 16 Jul 2024
+  title: Full Weekday and Abbreviated Month Date
 datetime.get_current_locale:
+  aliases: null
+  description: null
   designation: system_internal
   locales:
     - EN
@@ -1259,6 +1421,7 @@ datetime.get_current_locale:
   notes: null
   primitive: str
   provider: datetime
+  references: null
   release_priority: 0
   samples:
     - en
@@ -1266,8 +1429,9 @@ datetime.get_current_locale:
     - en
     - en
   title: Current locale.
-  universal: true
 datetime.gmt_offset:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -1275,15 +1439,136 @@ datetime.gmt_offset:
   notes: null
   primitive: str
   provider: datetime
+  references: null
   release_priority: 4
   samples:
-    - UTC +13:45
     - UTC -04:00
-    - UTC +09:00
-    - UTC +03:00
+    - UTC +08:45
+    - UTC +04:30
+    - UTC +04:00
   title: GMT Offset.
-  universal: true
+datetime.iso_8601:
+  aliases:
+    - Big-Endian
+  description: Standard international format
+  designation: universal
+  locales:
+    - EN
+  method: iso_8601
+  notes: null
+  primitive: str
+  provider: datetime
+  references:
+    - link: https://www.iso.org/standard/70907.html
+      title: ISO 8601-1:2019
+    - link: https://www.w3.org/TR/NOTE-datetime
+      title: Date and Time Formats
+  release_priority: 5
+  samples:
+    - "2024-09-18T09:30:07Z"
+    - "2024-11-29T13:06:58Z"
+    - "2024-05-29T08:25:13Z"
+    - "2024-04-24T19:49:42Z"
+  title: ISO 8601
+datetime.iso_8601_compact:
+  aliases: []
+  description: Compact ISO 8601 without separators
+  designation: universal
+  locales:
+    - EN
+  method: iso_8601_compact
+  notes: null
+  primitive: str
+  provider: datetime
+  references:
+    - link: https://www.iso.org/standard/70907.html
+      title: ISO 8601-1:2019
+  release_priority: 5
+  samples:
+    - 20240209T233745
+    - 20241216T005629
+    - 20240903T063852
+    - 20240418T083330
+  title: ISO 8601 Compact
+datetime.iso_8601_with_time_zone_name:
+  aliases: []
+  description: ISO 8601 with Z for UTC or time zone offset - 2023-12-29T10:45:30-05:00
+  designation: universal
+  locales:
+    - EN
+  method: iso_8601_with_time_zone_name
+  notes: null
+  primitive: str
+  provider: datetime
+  references:
+    - link: https://www.iso.org/standard/70907.html
+      title: ISO 8601-1:2019
+  release_priority: 5
+  samples:
+    - 2024-02-06T10:00:05[Z|`+0000`]
+    - 2024-11-22T21:26:07[Z|`+0000`]
+    - 2024-10-06T19:29:36[Z|`+0000`]
+    - 2024-02-09T05:34:42[Z|`+0000`]
+  title: ISO 8601 with Time Zone Name
+datetime.julian:
+  aliases: []
+  description: Days since a fixed astronomical epoch
+  designation: universal
+  locales:
+    - EN
+  method: julian
+  notes: null
+  primitive: str
+  provider: datetime
+  references:
+    - link: https://en.wikipedia.org/wiki/Julian_day
+      title: Astronomical Julian Day Number
+  release_priority: 5
+  samples:
+    - 24-070
+    - 24-347
+    - 24-107
+    - 24-225
+  title: Julian Date
+datetime.long_full_month_name:
+  aliases: []
+  description: Date format with full month names and day
+  designation: universal
+  locales:
+    - EN
+  method: long_full_month_name
+  notes: null
+  primitive: str
+  provider: datetime
+  references: null
+  release_priority: 5
+  samples:
+    - March 19, 2024
+    - October 22, 2024
+    - June 18, 2024
+    - August 27, 2024
+  title: Long Date with Full Month Name
+datetime.long_weekday_month_name:
+  aliases: []
+  description: Date format with weekday, day, and full month name
+  designation: universal
+  locales:
+    - EN
+  method: long_weekday_month_name
+  notes: null
+  primitive: str
+  provider: datetime
+  references: null
+  release_priority: 5
+  samples:
+    - Tuesday, 15 October 2024
+    - Friday, 3 May 2024
+    - Wednesday, 16 October 2024
+    - Friday, 19 April 2024
+  title: Long Date with Weekday and Month Name
 datetime.month:
+  aliases: null
+  description: null
   designation: duplicate
   locales:
     - EN
@@ -1291,15 +1576,57 @@ datetime.month:
   notes: Duplicate of structured datetimes
   primitive: str
   provider: datetime
+  references: null
   release_priority: 0
   samples:
-    - January
-    - August
+    - May
+    - September
     - November
-    - August
+    - May
   title: Month name.
-  universal: true
+datetime.numeric:
+  aliases: []
+  description: Fully numeric date formats without separators - 29122023
+  designation: universal
+  locales:
+    - EN
+  method: numeric
+  notes: null
+  primitive: str
+  provider: datetime
+  references:
+    - link: https://en.wikipedia.org/wiki/Date_by_country
+      title: Common Style Guides
+  release_priority: 5
+  samples:
+    - "[20240315|15032024]"
+    - "[20240428|28042024]"
+    - "[20240119|19012024]"
+    - "[20240616|16062024]"
+  title: Numeric Date
+datetime.ordinal:
+  aliases: []
+  description: Year and day of the year
+  designation: universal
+  locales:
+    - EN
+  method: ordinal
+  notes: null
+  primitive: str
+  provider: datetime
+  references:
+    - link: https://www.iso.org/standard/70907.html
+      title: ISO 8601-1:2019
+  release_priority: 5
+  samples:
+    - 2024-213
+    - 2024-018
+    - 2024-120
+    - 2024-296
+  title: Ordinal Date
 datetime.periodicity:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1307,15 +1634,97 @@ datetime.periodicity:
   notes: null
   primitive: str
   provider: datetime
+  references: null
   release_priority: 0
   samples:
-    - Yearly
-    - Weekly
     - Seldom
+    - Never
     - Seldom
+    - Often
   title: Periodicity.
-  universal: true
+datetime.rfc_2822:
+  aliases: []
+  description: Email header date and time format
+  designation: universal
+  locales:
+    - EN
+  method: rfc_2822
+  notes: null
+  primitive: str
+  provider: datetime
+  references:
+    - link: https://www.rfc-editor.org/rfc/rfc2822
+      title: RFC 2822
+  release_priority: 5
+  samples:
+    - Sun, 14 Jul 2024 02:53:58 GMT+00:00
+    - Sun, 22 Dec 2024 22:33:28 GMT+00:00
+    - Wed, 7 Aug 2024 06:39:16 GMT+00:00
+    - Sun, 12 May 2024 17:19:34 GMT+00:00
+  title: RFC 2822
+datetime.rfc_2822_with_ordinals:
+  aliases: []
+  description: RFC 2822 format with ordinal indicators
+  designation: universal
+  locales:
+    - EN
+  method: rfc_2822_with_ordinals
+  notes: null
+  primitive: str
+  provider: datetime
+  references:
+    - link: https://www.rfc-editor.org/rfc/rfc2822
+      title: RFC 2822
+  release_priority: 5
+  samples:
+    - Tue, 09`t6` Apr 2024 06:26:10 +0000
+    - Sat, 06`t9` Apr 2024 21:03:12 +0000
+    - Sat, 21`t10` Sep 2024 10:03:17 +0000
+    - Sat, 15`t3` Jun 2024 03:29:55 +0000
+  title: RFC 2822 with Ordinals
+datetime.shortened_year:
+  aliases: []
+  description: Abbreviated year format - 12/29/23
+  designation: universal
+  locales:
+    - EN
+  method: shortened_year
+  notes: null
+  primitive: str
+  provider: datetime
+  references:
+    - link: https://en.wikipedia.org/wiki/Date_by_country
+      title: Common Style Guides
+  release_priority: 5
+  samples:
+    - "[24-02-13|02/13/24]"
+    - "[24-09-20|09/20/24]"
+    - "[24-02-12|02/12/24]"
+    - "[24-03-25|03/25/24]"
+  title: Shortened Year
+datetime.sql_standard:
+  aliases: []
+  description: Common SQL format for datetime values
+  designation: universal
+  locales:
+    - EN
+  method: sql_standard
+  notes: null
+  primitive: str
+  provider: datetime
+  references:
+    - link: https://www.iso.org/standard/76583.html
+      title: SQL Standard (ISO/IEC 9075)
+  release_priority: 5
+  samples:
+    - "2024-05-14 20:54:34"
+    - "2024-09-29 20:26:38"
+    - "2024-04-05 23:46:32"
+    - "2024-03-25 00:06:23"
+  title: SQL Standard
 datetime.timestamp:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -1323,15 +1732,17 @@ datetime.timestamp:
   notes: null
   primitive: int
   provider: datetime
+  references: null
   release_priority: 5
   samples:
-    - 1715374705
-    - 1723791625
-    - 1730330393
-    - 1706170514
+    - 1721075258
+    - 1722399698
+    - 1712320375
+    - 1705275787
   title: Timestamp.
-  universal: true
 datetime.timezone:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -1339,15 +1750,57 @@ datetime.timezone:
   notes: null
   primitive: str
   provider: datetime
+  references: null
   release_priority: 5
   samples:
-    - Pacific/Efate
-    - Europe/Andorra
-    - Antarctica/Macquarie
-    - Antarctica/Syowa
+    - Australia/Sydney
+    - Indian/Chagos
+    - America/Fortaleza
+    - Asia/Baku
   title: Timezone.
-  universal: true
+datetime.unix_epoch_in_milliseconds:
+  aliases: []
+  description: Unix timestamp with milliseconds precision
+  designation: universal
+  locales:
+    - EN
+  method: unix_epoch_in_milliseconds
+  notes: null
+  primitive: str
+  provider: datetime
+  references:
+    - link: https://pubs.opengroup.org/onlinepubs/9699919799/
+      title: The Open Group Base Specifications Issue 7, IEEE Std 1003.1-2017
+  release_priority: 5
+  samples:
+    - "[0-9]+"
+    - "[0-9]+"
+    - "[0-9]+"
+    - "[0-9]+"
+  title: Unix Epoch in Milliseconds
+datetime.unix_timestamp:
+  aliases: []
+  description: Seconds since 1970-01-01 00:00:00 UTC
+  designation: universal
+  locales:
+    - EN
+  method: unix_timestamp
+  notes: null
+  primitive: str
+  provider: datetime
+  references:
+    - link: https://pubs.opengroup.org/onlinepubs/9699919799/
+      title: The Open Group Base Specifications Issue 7, IEEE Std 1003.1-2017
+  release_priority: 5
+  samples:
+    - "[0-9]+"
+    - "[0-9]+"
+    - "[0-9]+"
+    - "[0-9]+"
+  title: Unix Timestamp
 datetime.week_date:
+  aliases: null
+  description: null
   designation: duplicate
   locales:
     - EN
@@ -1355,15 +1808,17 @@ datetime.week_date:
   notes: Duplicate of structured datetimes
   primitive: str
   provider: datetime
+  references: null
   release_priority: 0
   samples:
-    - 2023-W50
-    - 2019-W22
-    - 2019-W1
-    - 2017-W21
+    - 2017-W27
+    - 2020-W39
+    - 2019-W29
+    - 2021-W50
   title: Week number.
-  universal: true
 datetime.year:
+  aliases: null
+  description: null
   designation: duplicate
   locales:
     - EN
@@ -1371,15 +1826,17 @@ datetime.year:
   notes: Duplicate of structured datetimes
   primitive: int
   provider: datetime
+  references: null
   release_priority: 0
   samples:
-    - 2001
-    - 2017
-    - 2015
-    - 1999
+    - 2005
+    - 2010
+    - 1998
+    - 2019
   title: Year.
-  universal: true
 development.boolean:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -1387,15 +1844,17 @@ development.boolean:
   notes: null
   primitive: bool
   provider: development
+  references: null
   release_priority: 3
   samples:
     - false
     - false
     - true
-    - true
+    - false
   title: True of False.
-  universal: true
 development.calver:
+  aliases: null
+  description: null
   designation: duplicate
   locales:
     - EN
@@ -1403,15 +1862,17 @@ development.calver:
   notes: Duplicate of structured datetimes
   primitive: str
   provider: development
+  references: null
   release_priority: 0
   samples:
-    - 2016.1.6
-    - 2018.8.12
-    - 2021.11.26
-    - 2017.4.10
+    - 2020.3.22
+    - 2018.8.17
+    - 2021.9.5
+    - 2021.8.17
   title: Calendar versioning string.
-  universal: true
 development.ility:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1419,15 +1880,17 @@ development.ility:
   notes: null
   primitive: str
   provider: development
+  references: null
   release_priority: 0
   samples:
-    - responsiveness
-    - efficiency
-    - observability
-    - seamlessness
+    - deployability
+    - reproducibility
+    - effectiveness
+    - distributability
   title: null
-  universal: true
 development.os:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1435,15 +1898,17 @@ development.os:
   notes: null
   primitive: str
   provider: development
+  references: null
   release_priority: 0
   samples:
-    - Slackware
-    - Windows 8.1
+    - Lubuntu
+    - Debian
     - Windows 11
-    - Windows 8
+    - CentOS
   title: The name of OS.
-  universal: true
 development.programming_language:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1451,15 +1916,17 @@ development.programming_language:
   notes: null
   primitive: str
   provider: development
+  references: null
   release_priority: 0
   samples:
-    - Z shell
-    - Smalltalk
-    - Transact-SQL
-    - Emacs Lisp
+    - Dylan
+    - Common Lisp
+    - Perl
+    - CoffeeScript
   title: Programming language.
-  universal: true
 development.software_license:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1467,15 +1934,17 @@ development.software_license:
   notes: null
   primitive: str
   provider: development
+  references: null
   release_priority: 0
   samples:
+    - General Public License (LGPL)
+    - GNU General Public License (GPL)
     - MIT License (MIT)
-    - The BSD 3-Clause License
-    - MIT License (MIT)
-    - Apache License, 2.0 (Apache-2.0)
+    - Mozilla Public License 2.0 (MPL-2.0)
   title: License name.
-  universal: true
 development.stage:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1483,15 +1952,17 @@ development.stage:
   notes: null
   primitive: str
   provider: development
+  references: null
   release_priority: 0
   samples:
-    - Beta
-    - RC
-    - RC
     - Alpha
+    - RC
+    - Stable
+    - Beta
   title: Release stage.
-  universal: true
 development.system_quality_attribute:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1499,15 +1970,17 @@ development.system_quality_attribute:
   notes: null
   primitive: str
   provider: development
+  references: null
   release_priority: 0
   samples:
-    - provability
-    - mobility
-    - modifiability
+    - producibility
     - administrability
+    - observability
+    - self-sustainability
   title: System quality attribute.
-  universal: true
 development.version:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -1515,15 +1988,17 @@ development.version:
   notes: null
   primitive: str
   provider: development
+  references: null
   release_priority: 3
   samples:
-    - 0.47.16
-    - 5.72.73
-    - 57.79.73
-    - 86.89.76
+    - 27.72.13
+    - 92.93.49
+    - 24.19.52
+    - 61.94.91
   title: Semantic versioning string.
-  universal: true
 file.extension:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -1531,15 +2006,17 @@ file.extension:
   notes: null
   primitive: str
   provider: file
+  references: null
   release_priority: 3
   samples:
-    - .7z
-    - .rtf
+    - .apk
+    - .war
+    - .csv
     - .com
-    - .ged
   title: Extension of the file.
-  universal: true
 file.file_name:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -1547,15 +2024,17 @@ file.file_name:
   notes: null
   primitive: str
   provider: file
+  references: null
   release_priority: 3
   samples:
-    - early.txt
-    - connect.cpp
-    - trade.3gp
-    - gold.wma
+    - when.app
+    - suffix.pdf
+    - smile.7z
+    - began.py
   title: File name.
-  universal: true
 file.mime_type:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -1563,15 +2042,17 @@ file.mime_type:
   notes: null
   primitive: str
   provider: file
+  references: null
   release_priority: 4
   samples:
-    - video/vnd.mpegurl
-    - application/vnd.hhe.lesson-player
-    - image/vnd.fujixerox.edmics-mmr
-    - text/ecmascript
+    - audio/LPC
+    - video/H263
+    - audio/ip-mr_v2.5
+    - application/vnd.dvb.iptv.alfec-enhancement
   title: Mime type.
-  universal: true
 file.size:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -1579,15 +2060,17 @@ file.size:
   notes: null
   primitive: str
   provider: file
+  references: null
   release_priority: 0
   samples:
-    - 9 MB
-    - 82 kB
-    - 77 kB
-    - 60 bytes
+    - 80 TB
+    - 32 MB
+    - 84 kB
+    - 11 kB
   title: Size of file.
-  universal: true
 finance.bank:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1595,15 +2078,17 @@ finance.bank:
   notes: null
   primitive: str
   provider: finance
+  references: null
   release_priority: 0
   samples:
-    - Town and Country Bank
-    - OceanFirst Financial Corp.
-    - Synovus Financial
-    - National Cooperative Bank
+    - CCB Community Bank
+    - Investors Bank
+    - State Street Corporation
+    - CrossFirst Bank
   title: Bank name.
-  universal: true
 finance.company:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1611,15 +2096,17 @@ finance.company:
   notes: null
   primitive: str
   provider: finance
+  references: null
   release_priority: 0
   samples:
-    - Practi-Plan
-    - Overcast Media
-    - Seattle's Best Coffee
-    - Shure Incorporated
+    - CNA
+    - Quiznos
+    - Vermeer Industries
+    - Six Flags
   title: Company name.
-  universal: true
 finance.company_type:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1627,15 +2114,17 @@ finance.company_type:
   notes: null
   primitive: str
   provider: finance
+  references: null
   release_priority: 0
   samples:
-    - Limited Liability Partnership
-    - Professional Limited Liability Company
+    - Incorporated
     - Limited Liability Limited Partnership
-    - Limited Liability Company
+    - Professional Limited Liability Company
+    - Limited Liability Partnership
   title: Types of business entity.
-  universal: true
 finance.cryptocurrency_iso_code:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -1643,15 +2132,17 @@ finance.cryptocurrency_iso_code:
   notes: null
   primitive: str
   provider: finance
+  references: null
   release_priority: 3
   samples:
-    - USDT
-    - DOT
-    - WBTC
+    - XBC
+    - BNB
     - LTC
+    - ZEC
   title: Symbol of cryptocurrency.
-  universal: true
 finance.cryptocurrency_symbol:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -1659,15 +2150,17 @@ finance.cryptocurrency_symbol:
   notes: null
   primitive: str
   provider: finance
+  references: null
   release_priority: 0
   samples:
-    - Ł
-    - Ł
-    - Ł
-    - Ξ
+    - ₿
+    - ₿
+    - ₿
+    - ₿
   title: Symbol of cryptocurrency.
-  universal: true
 finance.currency_iso_code:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -1675,6 +2168,7 @@ finance.currency_iso_code:
   notes: null
   primitive: str
   provider: finance
+  references: null
   release_priority: 3
   samples:
     - USD
@@ -1682,8 +2176,9 @@ finance.currency_iso_code:
     - USD
     - USD
   title: Currency code.
-  universal: true
 finance.currency_symbol:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -1691,6 +2186,7 @@ finance.currency_symbol:
   notes: null
   primitive: str
   provider: finance
+  references: null
   release_priority: 0
   samples:
     - $
@@ -1698,8 +2194,9 @@ finance.currency_symbol:
     - $
     - $
   title: Currency symbol.
-  universal: true
 finance.get_current_locale:
+  aliases: null
+  description: null
   designation: system_internal
   locales:
     - EN
@@ -1707,6 +2204,7 @@ finance.get_current_locale:
   notes: null
   primitive: str
   provider: finance
+  references: null
   release_priority: 0
   samples:
     - en
@@ -1714,8 +2212,9 @@ finance.get_current_locale:
     - en
     - en
   title: Current locale.
-  universal: true
 finance.price:
+  aliases: null
+  description: null
   designation: broad_numbers
   locales:
     - EN
@@ -1723,15 +2222,17 @@ finance.price:
   notes: null
   primitive: float
   provider: finance
+  references: null
   release_priority: 0
   samples:
-    - 730.0
-    - 638.52
-    - 1166.65
-    - 588.39
+    - 1290.03
+    - 1176.38
+    - 1198.44
+    - 1330.31
   title: Price.
-  universal: true
 finance.price_in_btc:
+  aliases: null
+  description: null
   designation: broad_numbers
   locales:
     - EN
@@ -1739,15 +2240,17 @@ finance.price_in_btc:
   notes: null
   primitive: float
   provider: finance
+  references: null
   release_priority: 0
   samples:
-    - 1.6634042
-    - 0.0235941
-    - 1.6337663
-    - 0.7666113
+    - 1.3413531
+    - 0.1197198
+    - 1.3414865
+    - 0.3946408
   title: Price in BTC.
-  universal: true
 finance.stock_exchange:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1755,15 +2258,17 @@ finance.stock_exchange:
   notes: null
   primitive: str
   provider: finance
+  references: null
   release_priority: 0
   samples:
-    - Euronext
-    - AMEX
-    - NASDAQ
     - SSE
+    - SSE
+    - HKEX
+    - AMEX
   title: Returns exchange name.
-  universal: true
 finance.stock_name:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1771,15 +2276,17 @@ finance.stock_name:
   notes: null
   primitive: str
   provider: finance
+  references: null
   release_priority: 0
   samples:
-    - Navistar International Corporation
-    - Investors Bancorp
-    - Shutterfly
-    - Semgroup Corporation
+    - Altus Midstream Company
+    - Regis Corporation
+    - Pioneer Natural Resources Company
+    - Advance Auto Parts Inc
   title: Stock name.
-  universal: true
 finance.stock_ticker:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -1787,15 +2294,17 @@ finance.stock_ticker:
   notes: null
   primitive: str
   provider: finance
+  references: null
   release_priority: 3
   samples:
-    - PHM
-    - BAC^K
-    - SORL
-    - GECCN
+    - PRT
+    - CHAC.U
+    - CZR
+    - DEAC
   title: Ticker.
-  universal: true
 food.dish:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1803,15 +2312,17 @@ food.dish:
   notes: null
   primitive: str
   provider: food
+  references: null
   release_priority: 0
   samples:
-    - Chicken nuggets
+    - Lasagna
     - Stroganoff
-    - Bangers and mash
-    - Shucked Oysters
+    - Chinese food
+    - Prawn Pizza
   title: Dish name.
-  universal: true
 food.drink:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1819,15 +2330,17 @@ food.drink:
   notes: null
   primitive: str
   provider: food
+  references: null
   release_priority: 0
   samples:
-    - Ale
-    - Blue Lagoon
-    - Shochu
-    - Jungle Juice
+    - Mild ale
+    - Damson gin
+    - Four Score
+    - French Connection
   title: Drink name.
-  universal: true
 food.fruit:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1835,15 +2348,17 @@ food.fruit:
   notes: null
   primitive: str
   provider: food
+  references: null
   release_priority: 0
   samples:
-    - Raspberry
-    - Cocona
-    - White currant
-    - Betel nut
+    - Honeydew
+    - Cranberry
+    - Beach plum
+    - Kakadu plum
   title: Fruit name.
-  universal: true
 food.get_current_locale:
+  aliases: null
+  description: null
   designation: system_internal
   locales:
     - EN
@@ -1851,6 +2366,7 @@ food.get_current_locale:
   notes: null
   primitive: str
   provider: food
+  references: null
   release_priority: 0
   samples:
     - en
@@ -1858,8 +2374,9 @@ food.get_current_locale:
     - en
     - en
   title: Current locale.
-  universal: true
 food.spices:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1867,15 +2384,17 @@ food.spices:
   notes: null
   primitive: str
   provider: food
+  references: null
   release_priority: 0
   samples:
-    - Culantro
-    - Leptotes bicolor
-    - Chives
-    - Borage
+    - Sassafras
+    - Cilantro
+    - Pandan leaf
+    - Coriander seed
   title: The name of the spices or herbs.
-  universal: true
 food.vegetable:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1883,15 +2402,17 @@ food.vegetable:
   notes: null
   primitive: str
   provider: food
+  references: null
   release_priority: 0
   samples:
-    - Bok Choi
-    - Hearts of Palm
-    - Cabbage
-    - Leaf
+    - English Cucumber
+    - Pak Choy
+    - Carrot
+    - Potato
   title: Vegetable name.
-  universal: true
 hardware.cpu:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1899,15 +2420,17 @@ hardware.cpu:
   notes: null
   primitive: str
   provider: hardware
+  references: null
   release_priority: 0
   samples:
-    - Intel® Core i5
-    - Apple M1 Max
-    - Apple M1 Max
+    - AMD Ryzen 7 1700
+    - Intel® Core i3
+    - Intel® Core i9
     - AMD Ryzen™ Threadripper™
   title: CPU name.
-  universal: true
 hardware.cpu_codename:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1915,15 +2438,17 @@ hardware.cpu_codename:
   notes: null
   primitive: str
   provider: hardware
+  references: null
   release_priority: 0
   samples:
-    - Broadwell
+    - Bear Ridge
+    - Haswell
+    - Bear Ridge
     - Valley Island
-    - Haswell
-    - Haswell
   title: CPU code name.
-  universal: true
 hardware.cpu_frequency:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1931,15 +2456,17 @@ hardware.cpu_frequency:
   notes: null
   primitive: str
   provider: hardware
+  references: null
   release_priority: 0
   samples:
-    - 2.6GHz
-    - 2.1GHz
+    - 2.9GHz
+    - 1.8GHz
+    - 2.2GHz
     - 1.6GHz
-    - 2.1GHz
   title: Frequency of CPU.
-  universal: true
 hardware.generation:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1947,15 +2474,17 @@ hardware.generation:
   notes: null
   primitive: str
   provider: hardware
+  references: null
   release_priority: 0
   samples:
-    - 2nd Generation
-    - 3rd Generation
-    - 3rd Generation
+    - 8th Generation
+    - 5th Generation
+    - 4th Generation
     - 8th Generation
   title: Generation of something.
-  universal: true
 hardware.graphics:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1963,15 +2492,17 @@ hardware.graphics:
   notes: null
   primitive: str
   provider: hardware
+  references: null
   release_priority: 0
   samples:
+    - Nvidia GTX 1660 SUPER
+    - AMD Radeon VII
     - Nvidia GTX 1050 Ti
-    - AMD Radeon RX 6950 XT
-    - Nvidia RTX 3050 Ti
-    - Nvidia RTX 2080 SUPER
+    - AMD Radeon RX 6750 XT
   title: Graphics.
-  universal: true
 hardware.manufacturer:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1979,15 +2510,17 @@ hardware.manufacturer:
   notes: null
   primitive: str
   provider: hardware
+  references: null
   release_priority: 0
   samples:
-    - HP
-    - Dell
-    - Sony
-    - Fujitsu
+    - Toshiba
+    - ASUS
+    - Apple
+    - Xiomi
   title: Manufacturer.
-  universal: true
 hardware.phone_model:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -1995,15 +2528,17 @@ hardware.phone_model:
   notes: null
   primitive: str
   provider: hardware
+  references: null
   release_priority: 0
   samples:
-    - iPhone 11
+    - iPhone 15 Pro
+    - Google Pixel 7
+    - iPhone 15 Pro Max
     - Samsung Galaxy S22 Ultra
-    - Xiaomi 12 Pro
-    - iPhone 12 Pro
   title: Phone model.
-  universal: true
 hardware.ram_size:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -2011,15 +2546,17 @@ hardware.ram_size:
   notes: null
   primitive: str
   provider: hardware
+  references: null
   release_priority: 0
   samples:
+    - 64GB
     - 4GB
-    - 16GB
-    - 12GB
-    - 12GB
+    - 64GB
+    - 8GB
   title: RAM size.
-  universal: true
 hardware.ram_type:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -2027,15 +2564,17 @@ hardware.ram_type:
   notes: null
   primitive: str
   provider: hardware
+  references: null
   release_priority: 0
   samples:
-    - DDR5
-    - DDR3
-    - DDR4
+    - DDR
+    - DDR
     - DDR2
+    - DDR
   title: Type of RAM.
-  universal: true
 hardware.resolution:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -2043,15 +2582,17 @@ hardware.resolution:
   notes: null
   primitive: str
   provider: hardware
+  references: null
   release_priority: 0
   samples:
-    - 3200x2400
-    - 3840x2400
-    - 1600x900
-    - 2560x1600
+    - 1440x900
+    - 1280x854
+    - 1024x768
+    - 2048x1536
   title: Resolution of screen.
-  universal: true
 hardware.screen_size:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -2059,15 +2600,17 @@ hardware.screen_size:
   notes: null
   primitive: str
   provider: hardware
+  references: null
   release_priority: 0
   samples:
-    - 14.1″
-    - 15″
+    - 14.4″
     - 27″
-    - 12.1″
+    - 34″
+    - 34″
   title: Screen size.
-  universal: true
 hardware.ssd_or_hdd:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -2075,15 +2618,17 @@ hardware.ssd_or_hdd:
   notes: null
   primitive: str
   provider: hardware
+  references: null
   release_priority: 0
   samples:
-    - Western Digital 2TB HDD
-    - Samsung 2TB SSD
-    - Kingston 2TB SSD
-    - SanDisk 4TB SSD
+    - Kingston 4TB SSD
+    - Seagate 4TB SSD
+    - Seagate 512GB HDD
+    - Seagate 256GB SDD
   title: HDD or SSD.
-  universal: true
 internet.asn:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -2091,15 +2636,17 @@ internet.asn:
   notes: null
   primitive: str
   provider: internet
+  references: null
   release_priority: 5
   samples:
-    - AS3799853091
-    - AS514957516
-    - AS53038409
-    - AS745451223
+    - AS2537432107
+    - AS1089282528
+    - AS552507332
+    - AS3141207806
   title: ASN number as a string.
-  universal: true
 internet.content_type:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -2107,15 +2654,17 @@ internet.content_type:
   notes: null
   primitive: str
   provider: internet
+  references: null
   release_priority: 0
   samples:
-    - image/vnd.valve.source.texture
-    - image/fits
-    - message/feedback-report
-    - audio/vnd.dts.hd
+    - text/grammar-ref-list
+    - application/mp21
+    - image/vnd.tencent.tap
+    - audio/EVRCB1
   title: Content type.
-  universal: true
 internet.dsn:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -2123,15 +2672,17 @@ internet.dsn:
   notes: null
   primitive: str
   provider: internet
+  references: null
   release_priority: 0
   samples:
-    - redis://shopping.gd:6379
-    - redis://conduct.berlin:6379
-    - postgres://organization.bar:5432
-    - rabbitmq://glucose.kitchen:5672
+    - mongodb://postcards.jp:27017
+    - redis://manufacturer.kw:6379
+    - postgres://warcraft.xxx:5432
+    - mysql://fotos.berlin:3306
   title: null
-  universal: true
 internet.hostname:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -2139,15 +2690,17 @@ internet.hostname:
   notes: null
   primitive: str
   provider: internet
+  references: null
   release_priority: 0
   samples:
-    - evanescence.ci
-    - haiti.case
-    - sympathy.gh
-    - jobs.aero
+    - feels.mil
+    - particular.play
+    - wed.durban
+    - console.sc
   title: Hostname.
-  universal: true
 internet.http_method:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -2155,15 +2708,17 @@ internet.http_method:
   notes: null
   primitive: str
   provider: internet
+  references: null
   release_priority: 0
   samples:
-    - OPTIONS
-    - PATCH
     - GET
-    - CONNECT
+    - OPTIONS
+    - POST
+    - PATCH
   title: HTTP method.
-  universal: true
 internet.http_request_headers:
+  aliases: null
+  description: null
   designation: broad_object
   locales:
     - EN
@@ -2171,61 +2726,68 @@ internet.http_request_headers:
   notes: null
   primitive: Dict[Union[str], Union[int, str]]
   provider: internet
+  references: null
   release_priority: 0
   samples:
     - Accept: "*/*"
-      Accept-Language: tn
-      Authorization: Bearer 756855585243365034737a557a724e4e2f534f76666a6e756a4a584c457532674e58557869354c6a67306f4a6f425958366432735172534f754d2f6750614832526f492f59476765737a6e537739397258326e5278413d3d
-      Cache-Control: no-store
+      Accept-Language: "*"
+      Authorization: Bearer 69566b5662574c42344c62664f624148356870465666347a4f686a4d78326a444246737972393355396f7942734c5a69314452686a3467412b3864667a6b475967756672304f6d494d3251526a796d3577746c5654413d3d
+      Cache-Control: public
       Connection: close
-      Content-Length: 5133
-      Content-Type: text/example
-      Cookie: csrftoken=hw24s8w84n/OH2KZGB7LPuChnM/9jYgZGh8CIdBLNTY=; bedding=often
-      Host: wrap.name
-      Referer: https://clips.gov/2021/02/05/voices-noble-adjusted-pot-certification
+      Content-Length: 8445
+      Content-Type: image/vnd.xiff
+      Cookie: csrftoken=bUHmwf+oL01BEiI7BliNVkpyvRCZsPLJo66d0aDo4ug=; corporate=beginning
+      Host: temple.nz
+      Referer: https://decent.net/2020/02/07/adverse-bag-actual-charles-mark-christian-go-accommodations
       User-Agent: Mozilla/5.0 (Windows NT 6.0; rv:40.0) Gecko/20100101 Firefox/40.0
-      X-CSRF-Token: 5058634a566f493365513266414a4d324a4e6463364733347577654e50654a7a556a366e335332317a59343d
+      X-CSRF-Token: 30666334584c6a4b39524230454e7044434f7271637975535756435636643332367a796c6f497a6e5876413d
     - Accept: "*/*"
       Accept-Language: "*"
-      Authorization: Bearer 53642b4978774f45786d5971566b546d50565a4e6f586351694c696251707563664349485359716f54336b336f717172707a3137553354477a614a2b4f35726e685343314c45664549717a71706369305953755836773d3d
+      Authorization: Bearer 314b7356375159583173796878756858434e446639627338616148684e5337392b2b6f6a62364d6d45312b43546944317a5a44493236347749686a414d506e455a34516243726f436233662b64336278784f4d324b673d3d
+      Cache-Control: max-age=19298
+      Connection: close
+      Content-Length: 4414
+      Content-Type: application/vnd.igloader
+      Cookie: csrftoken=mFUcfT/2Ay1fFNijt8f9MpzXSDlPhNkzUwer1PocyQ4=; waves=flows
+      Host: produces.tel
+      Referer: https://dozen.net/2019/05/30/springs-existing-pharmaceutical-commitment-feet-careful-memories-on-unable-current
+      User-Agent:
+        Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; yie10; rv:11.0) like
+        Gecko
+      X-CSRF-Token: 422f424a4a727a4b783848757773325371335735723568574178454e5a3661382f655738676f51505047593d
+    - Accept: text/vnd.debian.copyright
+      Accept-Language: "*"
+      Authorization: Bearer 4b475634467a6b465032474f426c306b5578546e7536454d366e7a6152777a5872513763412f4c4e356a57664b657467634333756471387634366b693868696434497264646779565a466f42486641525532544a79513d3d
       Cache-Control: private
       Connection: keep-alive
-      Content-Length: 7623
-      Content-Type: message/CPIM
-      Cookie: csrftoken=Ivl8sDnRYCX4jm5S7NFNKRHIkD0pzg0I243usRVVBrI=; editorial=lucky
-      Host: eve.info
-      Referer: https://fitted.asia/2016/10/07/hosts-proposed-judgment-glossary-task-cited-whose
-      User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/7.0)
-      X-CSRF-Token: 73376d36797947394d4f56704b30706179612f613756455a4c747a7251306a4a664e567159456c4163506b3d
-    - Accept: "*/*"
-      Accept-Language: "*"
-      Authorization: Bearer 6753503746336e66305678736547442b586f4a647167306166555453596b47377342482b747a5273766d2f612b53454f346f337849423868366334415353413632475550696348505a5957365051514d4a39347863513d3d
-      Cache-Control: public
-      Connection: keep-alive
-      Content-Length: 8311
-      Content-Type: image/vnd.globalgraphics.pgb
-      Cookie: csrftoken=jEbyQ/fudLr/7pYiNwP8tko8RBfdsqKFYWUl9U8KLi8=; formula=bring
-      Host: framework.coop
-      Referer: https://baghdad.cf/2019/10/28/after-multiple-days-inside
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20120101 Firefox/29.0
-      X-CSRF-Token: 424d6d556649646f6131673834576f377a385555614562422b47516b61444b735158436f514641516477343d
-    - Accept: message/news
-      Accept-Language: "*"
-      Authorization: Bearer 31662b4b4938756a315234347454317043794b47775843617433597551346a2b3245535868537a5852624d6a47416335344f59454564683065344a4c58444d5277514658394f6b4d71554c63614265305938306c42773d3d
-      Cache-Control: must-revalidate
-      Connection: keep-alive
-      Content-Length: 4268
-      Content-Type: application/set-payment-initiation
-      Cookie: csrftoken=2mMzAf+FBhm2vxWH7Z+La/I7uat7hJc4J6772IQyY5A=; occasion=encourage
-      Host: wikipedia.biz
-      Referer: https://favors.bar/2018/04/11/competitive-king
+      Content-Length: 7814
+      Content-Type: audio/example
+      Cookie: csrftoken=5pach1R/9ZHDq9A0xSfAINc/fyehpjhEZTHUcDh3unU=; look=care
+      Host: remedy.gov
+      Referer: https://occasional.lt/2015/07/01/pure-ace-training-bachelor-ross-siemens-pierre-adjustment-attributes-york-dirty-navigation
       User-Agent:
-        Mozilla/5.0 (Linux; U; Android 4.0.3; en-ca; KFOT Build/IML74K) AppleWebKit/537.36
-        (KHTML, like Gecko) Silk/3.68 like Chrome/39.0.2171.93 Safari/537.36
-      X-CSRF-Token: 6765775644627869377361576b34334f6f30322f764d5139546d585a6c6b5137712f522b562b4b6a71344d3d
+        Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/42.0.0.9895 Safari/537.36
+      X-CSRF-Token: 564c3263554f766d5756783648684d584b69466e543967325543412b596235636464524a4372434a4f6f4d3d
+    - Accept: "*/*"
+      Accept-Language: tn
+      Authorization: Bearer 667553416b70336f544e447245656e4967396762314954775a7a4d5950556250756a35367a586544686e4f71526261356b69495766676279707a7330314f51543762577639596e664445695356344f483070434c43773d3d
+      Cache-Control: max-age=19628
+      Connection: close
+      Content-Length: 7775
+      Content-Type: audio/ATRAC-ADVANCED-LOSSLESS
+      Cookie: csrftoken=Vu1BOUTccIQ79P84NDBOWzQsT1uBfkr/EgcYLRNwjNI=; kits=des
+      Host: imperial.wine
+      Referer: https://adjacent.biz/2020/11/30/read-ultimately-river-growing
+      User-Agent:
+        Mozilla/5.0 (Linux; Android 10; SM-G980F Build/QP1A.190711.020; wv)
+        AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.96 Mobile
+        Safari/537.36
+      X-CSRF-Token: 2b62426341503739674e3471632b4c597572366d384c7875686a57697630777961316c35583065494a76513d
   title: Request headers as dict.
-  universal: true
 internet.http_response_headers:
+  aliases: null
+  description: null
   designation: broad_object
   locales:
     - EN
@@ -2233,85 +2795,89 @@ internet.http_response_headers:
   notes: null
   primitive: Dict[Union[str], Union[int, str]]
   provider: internet
+  references: null
   release_priority: 0
   samples:
-    - Age: 4387
+    - Age: 51302
       Allow: "*"
-      Connection: close
-      Content-Encoding: identity
-      Content-Language: bg
-      Content-Location: tea/diff/climbing/additions
-      Content-Type: image/vnd.dwg
-      Cross-Origin-Opener-Policy: same-origin-allow-popups
+      Connection: keep-alive
+      Content-Encoding: br
+      Content-Language: ko
+      Content-Location: she/alberta/problems/dvds
+      Content-Type: application/vnd.iptc.g2.newsitem+xml
+      Cross-Origin-Opener-Policy: same-origin
       Cross-Origin-Resource-Policy: same-site
       Server: cloudflare
       Set-Cookie:
-        csrftoken=aRPXE/Dccqi8MEAqhFHOLKBH5A+VokCYk+US/ktlgzQ=; nuclear=charged;
-        Domain=mlb.tc
-      Strict-Transport-Security: max-age=4387
+        csrftoken=z2bWIJWLxaRKMqQVV6I/32OjbUu/RZJ8xc7RFlK1Z20=; currency=height;
+        SameSite=Strict
+      Strict-Transport-Security: max-age=51302
       Upgrade-Insecure-Requests: 1
       X-Content-Type-Options: nosniff
       X-Frame-Options: SAMEORIGIN
-      X-Request-ID: e622070831e47474694ceaf400c68263
+      X-Request-ID: 6f93890a13d3ba91e5a036f47b3024cf
       X-XSS-Protection: 1
-    - Age: 18749
+    - Age: 44873
       Allow: "*"
       Connection: close
-      Content-Encoding: compress
-      Content-Language: en-bz
-      Content-Location: suites/directors/proceed/believed
-      Content-Type: audio/L20
-      Cross-Origin-Opener-Policy: same-origin-allow-popups
+      Content-Encoding: br
+      Content-Language: pt
+      Content-Location: pci/kind/era/realized
+      Content-Type: image/prs.btif
+      Cross-Origin-Opener-Policy: unsafe-none
       Cross-Origin-Resource-Policy: same-origin
-      Server: cloudflare
+      Server: Apache/2.4.1 (Unix)
       Set-Cookie:
-        csrftoken=CziC81UXTrqR+iyT8QcR6Do1mXnp0K+/eBmHwh+k7eM=; attached=dropped;
+        csrftoken=Ofkdh2qM6LxaQSZeUFEy3LSfzJmeOLrm+gSV5ms0uCk=; gi=advantages;
         HttpOnly
-      Strict-Transport-Security: max-age=18749
+      Strict-Transport-Security: max-age=44873
       Upgrade-Insecure-Requests: 1
       X-Content-Type-Options: nosniff
       X-Frame-Options: DENY
-      X-Request-ID: 47204648fd89bddedf44e8032baf08ed
+      X-Request-ID: 3d3a09f58a8e3f72be6e5fe3d527c832
       X-XSS-Protection: 1
-    - Age: 37734
+    - Age: 11279
       Allow: "*"
-      Connection: close
-      Content-Encoding: "*"
-      Content-Language: sk
-      Content-Location: control/applicant/ralph/rent
-      Content-Type: image/vnd.fastbidsheet
-      Cross-Origin-Opener-Policy: same-origin-allow-popups
-      Cross-Origin-Resource-Policy: same-site
-      Server: Apache/2.4.1 (Unix)
-      Set-Cookie: csrftoken=KzWsP7cVGaHEq4prKqnYWjeMOQBK9daU+WClSllQPOE=; vs=ceo; Max-Age=37734
-      Strict-Transport-Security: max-age=37734
-      Upgrade-Insecure-Requests: 1
-      X-Content-Type-Options: nosniff
-      X-Frame-Options: SAMEORIGIN
-      X-Request-ID: 949054e4cde60756a32e7d746a96f760
-      X-XSS-Protection: 1
-    - Age: 5602
-      Allow: "*"
-      Connection: close
-      Content-Encoding: identity
-      Content-Language: fr-be
-      Content-Location: art/coordinator/summit/publishers
-      Content-Type: image/jp2
-      Cross-Origin-Opener-Policy: same-origin-allow-popups
+      Connection: keep-alive
+      Content-Encoding: br
+      Content-Language: et
+      Content-Location: outside/showtimes/carl/church
+      Content-Type: message/example
+      Cross-Origin-Opener-Policy: same-origin
       Cross-Origin-Resource-Policy: cross-origin
-      Server: cloudflare
+      Server: nginx/1.14.0 (Ubuntu)
       Set-Cookie:
-        csrftoken=9QdLvXWJYW77LB6laqEh1eDkGG6qT67G47FAsTugY1c=; specs=branch;
-        SameSite=Lax
-      Strict-Transport-Security: max-age=5602
+        csrftoken=LWD0pSXvgd+YyhQqzzXlgE+zsaPtiIbsk0LVNKBlk9I=; executive=widely;
+        Max-Age=11279
+      Strict-Transport-Security: max-age=11279
+      Upgrade-Insecure-Requests: 1
+      X-Content-Type-Options: nosniff
+      X-Frame-Options: DENY
+      X-Request-ID: 249ac156d7d761b55113b494f117812f
+      X-XSS-Protection: 1
+    - Age: 35673
+      Allow: "*"
+      Connection: keep-alive
+      Content-Encoding: identity
+      Content-Language: ar-ae
+      Content-Location: wild/az/store/haven
+      Content-Type: message/global
+      Cross-Origin-Opener-Policy: unsafe-none
+      Cross-Origin-Resource-Policy: same-origin
+      Server: Apache/2.4.1 (Unix)
+      Set-Cookie:
+        csrftoken=GfVyCD2Z901zI3UbbEpgZwyN8LPxcNc4ntsX+kphN/M=; fitness=zealand;
+        Domain=grey.name
+      Strict-Transport-Security: max-age=35673
       Upgrade-Insecure-Requests: 1
       X-Content-Type-Options: nosniff
       X-Frame-Options: SAMEORIGIN
-      X-Request-ID: eef8017d220f7b1e0aa80f3a0b64bd04
+      X-Request-ID: 593dce9c155b64a19289f087e8c44e53
       X-XSS-Protection: 1
   title: Response headers as dict.
-  universal: true
 internet.http_status_code:
+  aliases: null
+  description: null
   designation: broad_numbers
   locales:
     - EN
@@ -2319,15 +2885,17 @@ internet.http_status_code:
   notes: null
   primitive: int
   provider: internet
+  references: null
   release_priority: 0
   samples:
-    - 507
-    - 300
-    - 411
-    - 403
+    - 100
+    - 200
+    - 429
+    - 405
   title: HTTP status.
-  universal: true
 internet.http_status_message:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -2335,15 +2903,17 @@ internet.http_status_message:
   notes: null
   primitive: str
   provider: internet
+  references: null
   release_priority: 0
   samples:
-    - 406 Not Acceptable
-    - 308 Permanent Redirect
-    - 403 Forbidden
-    - 103 Early Hints
+    - 404 Not Found
+    - 415 Unsupported Media Type
+    - 402 Payment Required
+    - 405 Method Not Allowed
   title: HTTP status message.
-  universal: true
 internet.ip_v4:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -2351,15 +2921,17 @@ internet.ip_v4:
   notes: null
   primitive: str
   provider: internet
+  references: null
   release_priority: 5
   samples:
-    - 28.57.96.192
-    - 1.171.138.146
-    - 158.224.79.147
-    - 220.188.111.67
+    - 180.176.62.14
+    - 160.172.227.236
+    - 57.248.209.141
+    - 23.87.108.172
   title: null
-  universal: true
 internet.ip_v4_with_port:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -2367,15 +2939,17 @@ internet.ip_v4_with_port:
   notes: null
   primitive: str
   provider: internet
+  references: null
   release_priority: 5
   samples:
-    - 138.50.207.208:56859
-    - 176.246.153.136:52671
-    - 255.186.71.182:33261
-    - 75.201.189.112:29368
+    - 14.193.186.226:25673
+    - 232.39.168.123:17584
+    - 247.231.168.104:53316
+    - 249.179.120.4:51849
   title: IPv4 address as string.
-  universal: true
 internet.ip_v6:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -2383,15 +2957,17 @@ internet.ip_v6:
   notes: null
   primitive: str
   provider: internet
+  references: null
   release_priority: 5
   samples:
-    - 1bcd:7b97:d433:14aa:14a0:93fa:8dbb:3a6d
-    - 4ba6:1ba7:5c1b:9085:9e5b:60d5:a4aa:2236
-    - 5aa8:4469:fb7d:3126:acef:22f4:d570:c254
-    - 3c0f:afc3:be1c:3e86:8ba6:5051:602e:13b2
+    - 91:be32:c4e7:d9a1:45b4:9903:9dc3:da6d
+    - 687a:32b0:e41:9b97:dd63:7e86:a52f:b3ee
+    - 64f0:a856:1f17:3c49:31bd:2b25:2f69:3a34
+    - e0cf:2530:9f1c:5d2e:5a35:8e:270f:7258
   title: IPv6 address string.
-  universal: true
 internet.mac_address:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -2399,15 +2975,17 @@ internet.mac_address:
   notes: null
   primitive: str
   provider: internet
+  references: null
   release_priority: 5
   samples:
-    - 00:16:3e:68:ac:85
-    - 00:16:3e:0b:86:e5
-    - 00:16:3e:73:b3:33
-    - 00:16:3e:79:ac:c5
+    - 00:16:3e:4a:63:e1
+    - 00:16:3e:61:a2:07
+    - 00:16:3e:09:2f:58
+    - 00:16:3e:29:95:e7
   title: Random MAC address.
-  universal: true
 internet.path:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -2415,15 +2993,17 @@ internet.path:
   notes: null
   primitive: str
   provider: internet
+  references: null
   release_priority: 0
   samples:
-    - card/latin/industrial/ftp/entertainment/seat/adobe/touch
-    - noise/theatre/international/bachelor/flexible/sharon/friend/asia/ethnic/pound/pdt
-    - perspective/naked/random/limousines
-    - romance/protocol/lay/accessibility/capture/mountain/diagnosis/moral/presented
+    - telling/going/forces/regions/exists/dimension/motors
+    - determination/connection/kings/composition/full/xhtml/coding/singer/chamber
+    - filed/merely/columbia/remains/acts
+    - shut/scenes/portfolio/herein/expenses/nobody/elite/publishers/build
   title: Path.
-  universal: true
 internet.port:
+  aliases: null
+  description: null
   designation: broad_numbers
   locales:
     - EN
@@ -2431,15 +3011,17 @@ internet.port:
   notes: null
   primitive: int
   provider: internet
+  references: null
   release_priority: 0
   samples:
-    - 47478
-    - 23265
-    - 12985
-    - 24069
+    - 63349
+    - 51262
+    - 19894
+    - 31043
   title: Port number.
-  universal: true
 internet.public_dns:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -2447,15 +3029,17 @@ internet.public_dns:
   notes: null
   primitive: str
   provider: internet
+  references: null
   release_priority: 5
   samples:
     - 149.112.112.112
+    - 185.228.168.9
     - 149.112.112.112
-    - 149.112.112.112
-    - 94.140.14.14
+    - 208.67.220.220
   title: null
-  universal: true
 internet.query_parameters:
+  aliases: null
+  description: null
   designation: broad_object
   locales:
     - EN
@@ -2463,34 +3047,40 @@ internet.query_parameters:
   notes: null
   primitive: Dict[str, str]
   provider: internet
+  references: null
   release_priority: 0
   samples:
-    - dimension: sep
-      ec: platform
-      meet: nd
-      minor: team
-      ones: birth
-      since: perhaps
-      split: top
-    - browse: ending
-      builders: php
-      concepts: gone
-      engine: bear
-      guarantee: suit
-      katrina: nike
-      limitations: any
-      movies: idaho
-      quebec: included
-      schedule: own
-    - solar: clothes
-    - appointment: classes
-      branch: regularly
-      iso: bought
-      presentations: camel
-      sporting: reached
+    - ethics: thus
+      fisher: subject
+      interface: vacations
+      periods: cause
+      popular: will
+      stores: receiving
+      there: deleted
+      took: convenience
+      wonder: declared
+    - atlanta: islam
+      behalf: permission
+      concert: nhl
+      gt: rico
+      houses: hp
+      packet: structures
+      row: notice
+    - assumes: treatment
+      becomes: slowly
+      convention: decisions
+      specification: dealing
+      whatever: roy
+    - diameter: broadband
+      guardian: supposed
+      ir: reservations
+      sr: wholesale
+      stamps: volume
+      well: crime
   title: Dict of query parameters.
-  universal: true
 internet.query_string:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -2498,15 +3088,17 @@ internet.query_string:
   notes: null
   primitive: str
   provider: internet
+  references: null
   release_priority: 3
   samples:
-    - offset=legislature&last=animated&deals=each&room=dos
-    - europe=disclaimer&calendar=calling
-    - hs=he&weapons=surveys&pee=out&carrier=pretty&covered=adds&semester=topics&scientific=pants&guns=rocks
-    - contacts=bowl&convenient=initiatives&federation=accuracy&file=des&wood=specify&lewis=verify
+    - francis=proxy&ca=explore&riding=draft&statements=albums&famous=ny&chicken=township&how=scene
+    - wonderful=lol&weekly=status&directed=description&bringing=az&connecticut=handling&dirty=russian&classics=shown&set=legislation
+    - cycle=requested&char=cr&bibliography=consequences&massachusetts=pic&checkout=tickets&efficient=symbols&wolf=journals&customers=barbara
+    - statements=charger&tourism=shopper&alberta=lists&but=approved&index=for&arc=andrew&library=benefits&house=rom&programming=documentary
   title: Query string.
-  universal: true
 internet.slug:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -2514,15 +3106,17 @@ internet.slug:
   notes: null
   primitive: str
   provider: internet
+  references: null
   release_priority: 3
   samples:
-    - addresses-vary-orchestra-admissions-controller-suggests-mix-locations
-    - versus-atlantic-sql-worst-af-arrive-paying-wisdom-clinic
-    - carolina-coaching-est-selected-turkish-con-slideshow-affiliates-occupation-seasons-snow
-    - subscription-latina-crack-denied-idea-watching-wars-enhance-liability
+    - require-attributes-miami-messages
+    - opera-adding-mill
+    - thailand-drugs-involving-thus-recognized-winter-earrings-teens-area-route
+    - launched-hear-century-boxes-agree-adds-air-bell-convenient
   title: Slug.
-  universal: true
 internet.special_ip_v4:
+  aliases: null
+  description: null
   designation: duplicate
   locales:
     - EN
@@ -2530,15 +3124,17 @@ internet.special_ip_v4:
   notes: Duplicate of ip_v4
   primitive: str
   provider: internet
+  references: null
   release_priority: 0
   samples:
-    - 198.51.100.221
-    - 192.52.193.249
-    - 247.180.186.102
-    - 0.103.204.121
+    - 172.19.104.198
+    - 192.0.0.1
+    - 192.0.2.9
+    - 192.0.2.204
   title: IPv4 address as string.
-  universal: true
 internet.stock_image_url:
+  aliases: null
+  description: null
   designation: duplicate
   locales:
     - EN
@@ -2546,6 +3142,7 @@ internet.stock_image_url:
   notes: Duplicate of url
   primitive: str
   provider: internet
+  references: null
   release_priority: 0
   samples:
     - https://source.unsplash.com/1920x1080?
@@ -2553,8 +3150,9 @@ internet.stock_image_url:
     - https://source.unsplash.com/1920x1080?
     - https://source.unsplash.com/1920x1080?
   title: URL of the image.
-  universal: true
 internet.tld:
+  aliases: null
+  description: null
   designation: duplicate
   locales:
     - EN
@@ -2562,15 +3160,17 @@ internet.tld:
   notes: Duplicate of top level domain
   primitive: str
   provider: internet
+  references: null
   release_priority: 0
   samples:
-    - .hk
-    - .mq
-    - .uk
-    - .gu
+    - .je
+    - .sx
+    - .hm
+    - .tt
   title: null
-  universal: true
 internet.top_level_domain:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -2578,15 +3178,17 @@ internet.top_level_domain:
   notes: null
   primitive: str
   provider: internet
+  references: null
   release_priority: 4
   samples:
-    - .pf
-    - .py
-    - .il
-    - .gw
+    - .mk
+    - .cr
+    - .lv
+    - .dd
   title: Top level domain.
-  universal: true
 internet.uri:
+  aliases: null
+  description: null
   designation: duplicate
   locales:
     - EN
@@ -2594,15 +3196,17 @@ internet.uri:
   notes: Duplicate of url
   primitive: str
   provider: internet
+  references: null
   release_priority: 0
   samples:
-    - https://petite.scot/2012/12/30/ag-parents-ss-refund
-    - https://photoshop.sr/2017/01/07/taught-skype-put-ky-close-announced-slightly
-    - https://telephony.ads/2020/04/08/measurements-pre-bush-mixed-ip-process-pressure
-    - https://theaters.dealer/2024/09/24/assigned-album
+    - https://hunger.bzh/2018/04/03/kenya-walking-eve-book-ng
+    - https://spray.tirol/2017/09/30/vehicles-vietnam-struggle-organisations
+    - https://eddie.asia/2022/05/12/chinese-planet-abuse-va-first-wikipedia-attend-bread
+    - https://cyprus.baby/2014/12/13/familiar-cnet-historic-bills-games-written-effectiveness
   title: URI.
-  universal: true
 internet.url:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -2610,15 +3214,17 @@ internet.url:
   notes: null
   primitive: str
   provider: internet
+  references: null
   release_priority: 4
   samples:
-    - https://immune.tel/
-    - https://til.mil/
-    - https://simpson.nagoya/
-    - https://speaking.jewelry/
+    - https://existence.info/
+    - https://dinner.finance/
+    - https://representation.attorney/
+    - https://casey.tirol/
   title: URL.
-  universal: true
 internet.user_agent:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -2626,19 +3232,21 @@ internet.user_agent:
   notes: null
   primitive: str
   provider: internet
+  references: null
   release_priority: 5
   samples:
-    - Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143
-      Safari/537.36
-    - Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; MASMJS; rv:11.0) like
-      Gecko
-    - Mozilla/5.0 (Linux; Android 4.4.2; SM-T210R Build/KOT49H) AppleWebKit/537.36 (KHTML,
-      like Gecko) Chrome/45.0.2454.84 Safari/537.36
-    - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like
-      Gecko) Chrome/38.0.2125.122 Safari/537.36
+    - Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.0.0
+      Safari/538.1
+    - Mozilla/5.0 (iPad; CPU OS 8_4_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like
+      Gecko) Mobile/12H321
+    - Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
+      Chrome/46.0.2490.13 Safari/537.36
+    - Mozilla/5.0 (Linux; Android 12; SM-S906N Build/QP1A.190711.020; wv) AppleWebKit/537.36
+      (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.119 Mobile Safari/537.36
   title: User agent.
-  universal: true
 numeric.float_number:
+  aliases: null
+  description: null
   designation: broad_numbers
   locales:
     - EN
@@ -2646,15 +3254,17 @@ numeric.float_number:
   notes: null
   primitive: float
   provider: numeric
+  references: null
   release_priority: 0
   samples:
-    - 688.733377822761
-    - -590.3776479734886
-    - 776.0293951077983
-    - -807.9792506219294
+    - 752.2105413766415
+    - -126.50850525284454
+    - 821.5660423084489
+    - -456.4583600186627
   title: Float.
-  universal: true
 numeric.floats:
+  aliases: null
+  description: null
   designation: broad_numbers
   locales:
     - EN
@@ -2662,51 +3272,53 @@ numeric.floats:
   notes: null
   primitive: List[float]
   provider: numeric
+  references: null
   release_priority: 0
   samples:
-    - - 0.264438950415945
-      - 0.10849958728954
-      - 0.386332995143816
-      - 0.953491287559918
-      - 0.997139832338518
-      - 0.266181462414046
-      - 0.867882395729601
-      - 0.049890722659366
-      - 0.549427513493852
-      - 0.606225695673721
-    - - 0.064181133528837
-      - 0.812147126513582
-      - 0.497366045526064
-      - 0.921878252251251
-      - 0.019938782016582
-      - 0.777577196791911
-      - 0.759695347125278
-      - 0.909280960860785
-      - 0.013744400742465
-      - 0.598535203011192
-    - - 0.673001451613142
-      - 0.506543703494719
-      - 0.314724630698226
-      - 0.137228270650975
-      - 0.039205146374781
-      - 4.9854277671e-05
-      - 0.05720010684829
-      - 0.773238973056758
-      - 0.33911210641113
-      - 0.421221378897537
-    - - 0.577787388900442
-      - 0.443931513165136
-      - 0.411279815176903
-      - 0.83505359859609
-      - 0.991371876498283
-      - 0.110635955988569
-      - 0.245041936056223
-      - 0.707082459292471
-      - 0.392933211432501
-      - 0.469813643497479
+    - - 0.895989623359572
+      - 0.720952218355884
+      - 0.781625770511145
+      - 0.529792567056491
+      - 0.547508659107693
+      - 0.934294609293475
+      - 0.49504670901623
+      - 0.069532291771657
+      - 0.977430325237353
+      - 0.783859455824774
+    - - 0.807774193066071
+      - 0.475394378401504
+      - 0.626583106929979
+      - 0.179473958673563
+      - 0.119866945311708
+      - 0.335624687065421
+      - 0.737566693143515
+      - 0.627096069521155
+      - 0.627338085586703
+      - 0.253415961832225
+    - - 0.864529501715971
+      - 0.75207390639197
+      - 0.989280710948293
+      - 0.31136724070826
+      - 0.903967135636719
+      - 0.090195009504378
+      - 0.341367963704482
+      - 0.455821797904531
+      - 0.070881299850707
+      - 0.541834652720386
+    - - 0.908715425435916
+      - 0.998062373235251
+      - 0.879737005887189
+      - 0.291355316364537
+      - 0.151301911698393
+      - 0.5293093942775
+      - 0.820287628116964
+      - 0.750565825527778
+      - 0.645239332458925
+      - 0.261330165951629
   title: The list of floating-point numbers.
-  universal: true
 numeric.increment:
+  aliases: null
+  description: null
   designation: broad_numbers
   locales:
     - EN
@@ -2714,6 +3326,7 @@ numeric.increment:
   notes: null
   primitive: int
   provider: numeric
+  references: null
   release_priority: 0
   samples:
     - 1
@@ -2721,8 +3334,9 @@ numeric.increment:
     - 3
     - 4
   title: Integer.
-  universal: true
 numeric.integer_number:
+  aliases: null
+  description: null
   designation: broad_numbers
   locales:
     - EN
@@ -2730,15 +3344,17 @@ numeric.integer_number:
   notes: null
   primitive: int
   provider: numeric
+  references: null
   release_priority: 0
   samples:
-    - -733
-    - -406
-    - 838
-    - 648
+    - -982
+    - 902
+    - -804
+    - -401
   title: Integer.
-  universal: true
 numeric.integers:
+  aliases: null
+  description: null
   designation: broad_object
   locales:
     - EN
@@ -2746,51 +3362,53 @@ numeric.integers:
   notes: null
   primitive: List[int]
   provider: numeric
+  references: null
   release_priority: 0
   samples:
-    - - 0
-      - 3
-      - 7
-      - 4
-      - 5
-      - 8
-      - 1
-      - 6
-      - 1
-      - 2
-    - - 0
+    - - 9
       - 9
       - 9
-      - 2
+      - 9
       - 0
       - 1
       - 1
-      - 8
-      - 6
-      - 3
-    - - 2
-      - 8
-      - 3
-      - 1
-      - 1
-      - 7
-      - 3
-      - 5
-      - 2
-      - 1
-    - - 6
-      - 3
-      - 3
       - 4
       - 3
-      - 5
       - 7
-      - 5
-      - 9
+    - - 4
+      - 7
+      - 7
       - 1
+      - 6
+      - 3
+      - 2
+      - 3
+      - 7
+      - 6
+    - - 3
+      - 1
+      - 3
+      - 8
+      - 7
+      - 9
+      - 0
+      - 8
+      - 4
+      - 6
+    - - 4
+      - 1
+      - 5
+      - 8
+      - 0
+      - 5
+      - 2
+      - 4
+      - 0
+      - 7
   title: List of integers.
-  universal: true
 numeric.matrix:
+  aliases: null
+  description: null
   designation: broad_object
   locales:
     - EN
@@ -2798,411 +3416,413 @@ numeric.matrix:
   notes: null
   primitive: List[List[float]]
   provider: numeric
+  references: null
   release_priority: 0
   samples:
-    - - - 0.56227724976262
-        - 0.158203294355549
-        - 0.397097008577343
-        - 0.656574723441898
-        - 0.148054186174582
-        - 0.021196563093446
-        - 0.975160112094029
-        - 0.472626867842964
-        - 0.006929156736241
-        - 0.472789817835448
-      - - 0.13009876846668
-        - 0.826029322924344
-        - 0.211044030073818
-        - 0.928182372683438
-        - 0.512804669924245
-        - 0.704281291733641
-        - 0.345574158629876
-        - 0.854497718659582
-        - 0.462266360797892
-        - 0.402706850148428
-      - - 0.875409040357224
-        - 0.768927915534436
-        - 0.921596247566259
-        - 0.145643606292748
-        - 0.722236673839973
-        - 0.795984629999311
-        - 0.287380502228644
-        - 0.978615380208404
-        - 0.770388940268194
-        - 0.614900331407992
-      - - 0.089024106455777
-        - 0.259967959013604
-        - 0.346207376532957
-        - 0.464408322267217
-        - 0.154323681269881
-        - 0.097499543224916
-        - 0.391569499979071
-        - 0.055528845207646
-        - 0.873116327124134
-        - 0.010458559644335
-      - - 0.575508019224842
-        - 0.974772050518451
-        - 0.17121514599734
-        - 0.545337304705357
-        - 0.351228279701964
-        - 0.506860132962048
-        - 0.119551077915248
-        - 0.635602044166532
-        - 0.663975696593472
-        - 0.452618435194008
-      - - 0.661373193843249
-        - 0.203668741725445
-        - 0.883261940965245
-        - 0.694382502641122
-        - 0.058313174119104
-        - 0.98184269134292
-        - 0.59370834933379
-        - 0.956620293202457
-        - 0.869653614725744
-        - 0.481613294755346
-      - - 0.967279654846932
-        - 0.235474538459465
-        - 0.494305801737761
-        - 0.106057853447697
-        - 0.382774765309517
-        - 0.001003522156106
-        - 0.005333866967973
-        - 0.69684644082416
-        - 0.74635640135784
-        - 0.162186055041562
-      - - 0.099732988561515
-        - 0.960230797340979
-        - 0.760334734468412
-        - 0.715829057730588
-        - 0.651421379526481
-        - 0.341519223880702
-        - 0.113607654187366
-        - 0.472590249394894
-        - 0.428438938307448
-        - 0.245870019430156
-      - - 0.189632533402431
-        - 0.004604085647233
-        - 0.831358754640144
-        - 0.413288930644304
-        - 0.984074200800029
-        - 0.876902130975199
-        - 0.186926633885221
-        - 0.160248617590111
-        - 0.828828865200478
-        - 0.559307959903993
-      - - 0.193499867503582
-        - 0.714548136628315
-        - 0.876455742009184
-        - 0.105656369223591
-        - 0.492900371986971
-        - 0.851105176269529
-        - 0.700310660123181
-        - 0.677326028116484
-        - 0.529105037694543
-        - 0.78473218973393
-    - - - 0.30090178376223
-        - 0.578977191875559
-        - 0.371893248902813
-        - 0.901466331711703
-        - 0.032471316974173
-        - 0.922919389527224
-        - 0.863726091825528
-        - 0.380345377143221
-        - 0.189811767758393
-        - 0.120851529556376
-      - - 0.189807800518738
-        - 0.141563127440856
-        - 0.197536794288126
-        - 0.758900466703803
-        - 0.169748294803002
-        - 0.966165484776529
-        - 0.424630276220809
-        - 0.739114168235615
-        - 0.074237196305884
-        - 0.019398525953859
-      - - 0.211822645451824
-        - 0.373128961675098
-        - 0.932643502826412
-        - 0.812761683979631
-        - 0.319522643086571
-        - 0.285078716968957
-        - 0.380808578578834
-        - 0.914805277098923
-        - 0.180980003265637
-        - 0.382335336994426
-      - - 0.447819686689685
-        - 0.249401055633919
-        - 0.001290577236585
-        - 0.262201344962542
-        - 0.401601093152566
-        - 0.053584911345212
-        - 0.563235770952521
-        - 0.818674000714045
-        - 0.432766967348152
-        - 0.766281533874364
-      - - 0.667167229348669
-        - 0.294472182544718
-        - 0.752919209484309
-        - 0.824777357283438
-        - 0.613118447834199
-        - 0.793026331617365
-        - 0.628819784762003
-        - 0.864873045889373
-        - 0.762234950256189
-        - 0.614414859779
-      - - 0.841082380736047
-        - 0.187536890262426
-        - 0.010553657041114
-        - 0.229637760999505
-        - 0.637150581769712
-        - 0.027091732676457
-        - 0.441035528927768
-        - 0.252949414698256
-        - 0.992846312301303
-        - 0.697489382775979
-      - - 0.372769603120528
-        - 0.558867014642665
-        - 0.940647534003222
-        - 0.836808889466276
-        - 0.915333860871279
-        - 0.157407443996012
-        - 0.168500366234898
-        - 0.270161997463025
-        - 0.424513942222168
-        - 0.722766366694929
-      - - 0.295959842706162
-        - 0.196882610123961
-        - 0.388679614504792
-        - 0.802624526435921
-        - 0.206807021121508
-        - 0.240160495955665
-        - 0.244643080810785
-        - 0.116519187283836
-        - 0.345718306306333
-        - 0.222575862183123
-      - - 0.657304029610231
-        - 0.944545054122367
-        - 0.828475972448503
-        - 0.136088670887409
-        - 0.364864894350534
-        - 0.295111838071349
-        - 0.874514037477978
-        - 0.050902122652957
-        - 0.564720403914792
-        - 0.126806828273607
-      - - 0.056512817521804
-        - 0.652549947053168
-        - 0.080232237022548
-        - 0.74649044468441
-        - 0.860501731155483
-        - 0.417238824035151
-        - 0.703019714690933
-        - 0.23435677471511
-        - 0.424459052704005
-        - 0.708800181439399
-    - - - 0.412740489899209
-        - 0.96156154068441
-        - 0.60527309650805
-        - 0.354626047307952
-        - 0.843235776314659
-        - 0.269058299628562
-        - 0.147246665987768
-        - 0.180861706259163
-        - 0.635716397591472
-        - 0.586375893602998
-      - - 0.137537347551503
-        - 0.153511368284437
-        - 0.667695209338476
-        - 0.725043958455563
-        - 0.769187786472657
-        - 0.260591545276565
-        - 0.242934211379937
-        - 0.713350898602887
-        - 0.707375252997026
-        - 0.653575235037798
-      - - 0.616287204795809
-        - 0.899587958750215
-        - 0.939485155361059
-        - 0.114634662822228
-        - 0.304578850493329
-        - 0.767916793373227
-        - 0.572995814503803
-        - 0.996693841946092
-        - 0.647572590365297
-        - 0.095494454646882
-      - - 0.863672379378029
-        - 0.5131829289103
-        - 0.988602457489909
-        - 0.790378881628434
-        - 0.892857248418805
-        - 0.147098982442416
-        - 0.356752733868607
-        - 0.787961420256
-        - 0.385094257132696
-        - 0.561608836211476
-      - - 0.978076259901299
-        - 0.987934096119108
-        - 0.190245355482879
-        - 0.408645660722486
-        - 0.845004125593726
-        - 0.230935944370599
-        - 0.226950779501325
-        - 0.267550058488844
-        - 0.456867829886918
-        - 0.432787329776954
-      - - 0.986729669345505
-        - 0.391043437548357
-        - 0.695137062698937
-        - 0.850131893193275
-        - 0.142490457481135
-        - 0.892945413698072
-        - 0.028204026348344
-        - 0.939236434096872
-        - 0.343587616362556
-        - 0.135298038883195
-      - - 0.391828301170559
-        - 0.305275584585152
-        - 0.729987897693105
-        - 0.810908478483915
-        - 0.528077598842999
-        - 0.084907898461577
-        - 0.132928349132077
-        - 0.440918188986269
-        - 0.959189730338696
-        - 0.811108801713004
-      - - 0.319951827423809
-        - 0.228047437305694
-        - 0.731943832124055
-        - 0.962638573654981
-        - 0.796873207907957
-        - 0.540560951889939
-        - 0.980533830469562
-        - 0.503955170368077
-        - 0.350982021763028
-        - 0.056587268452016
-      - - 0.998949533052845
-        - 0.105848968730149
-        - 0.475236330522334
-        - 0.999188044178508
-        - 0.906627204315893
-        - 0.929005951107548
-        - 0.488282500031508
-        - 0.931437895134839
-        - 0.907876577245061
-        - 0.580571581630471
-      - - 0.400946782638816
-        - 0.866806892849782
-        - 0.902476831223257
-        - 0.985053310555108
-        - 0.415818660052696
-        - 0.590880585798066
-        - 0.303486863041263
-        - 0.385657289860594
-        - 0.201920703739586
-        - 0.720876805745475
-    - - - 0.280759018100179
-        - 0.571735222449529
-        - 0.290991613879858
-        - 0.941890364458437
-        - 0.2237765995484
-        - 0.686396430339487
-        - 0.107627879027912
-        - 0.662232815551662
-        - 0.551249446722102
-        - 0.561155177068928
-      - - 0.318394655357252
-        - 0.440554881885603
-        - 0.636922085709341
-        - 0.191703784815463
-        - 0.080795288269209
-        - 0.751946499257172
-        - 0.497496841603986
-        - 0.445723732466928
-        - 0.380031513372192
-        - 0.938398027566028
-      - - 0.704368211904664
-        - 0.337850798026356
-        - 0.384426049747267
-        - 0.069141959558115
-        - 0.859186115808308
-        - 0.804158175692494
-        - 0.028361930695445
-        - 0.762980236081981
-        - 0.181213570220759
-        - 0.372819514671979
-      - - 0.176540386504461
-        - 0.229752805391397
-        - 0.917329172286435
-        - 0.768777560739107
-        - 0.097161310370369
-        - 0.8634095407023
-        - 0.237527080154076
-        - 0.910927049266339
-        - 0.976324055822739
-        - 0.768412201303834
-      - - 0.090690783732989
-        - 0.648099176345549
-        - 0.512016133758377
-        - 0.496880298893569
-        - 0.413004481510126
-        - 0.103455051450836
-        - 0.011691316865548
-        - 0.112156422311148
-        - 0.889909934590386
-        - 0.482290052823524
-      - - 0.444921185893018
-        - 0.528376582814944
-        - 0.299637896129581
-        - 0.836335274357591
-        - 0.488038624454471
-        - 0.528189406342444
-        - 0.885369887391275
-        - 0.399277307356084
-        - 0.361897271312502
-        - 0.817587912839398
-      - - 0.582751283664627
-        - 0.818924647029064
-        - 0.097012742740315
-        - 0.072523264052979
-        - 0.985610964188654
-        - 0.668773658402975
-        - 0.388031879501552
-        - 0.900329947599769
-        - 0.718894231662296
-        - 0.26349462547888
-      - - 0.827514957278321
-        - 0.959300763112939
-        - 0.370632774483056
-        - 0.82204333959232
-        - 0.236559447390101
-        - 0.871511128158287
-        - 0.881503060506855
-        - 0.940185049191849
-        - 0.490068561682703
-        - 0.235325892786901
-      - - 0.979897989905169
-        - 0.492987781376193
-        - 0.49970973376742
-        - 0.835957970283829
-        - 0.728054262214367
-        - 0.460750526664321
-        - 0.276101619839628
-        - 0.443442466076573
-        - 0.31813149908761
-        - 0.202599804687694
-      - - 0.629879455009707
-        - 0.214216435839328
-        - 0.728725604901095
-        - 0.607556472507097
-        - 0.55252938659589
-        - 0.91543157577591
-        - 0.392609669587809
-        - 0.680156140427811
-        - 0.203594794554647
-        - 0.734544585770354
+    - - - 0.268043182400399
+        - 0.154972393797401
+        - 0.224055349243555
+        - 0.531585805221298
+        - 0.802544213961764
+        - 0.131491887010953
+        - 0.115805154715272
+        - 0.571989150577039
+        - 0.912349482371389
+        - 0.131928445697703
+      - - 0.37693237452371
+        - 0.398611693005266
+        - 0.783664031371091
+        - 0.774701452152895
+        - 0.466808172071229
+        - 0.917297124708969
+        - 0.459178586226726
+        - 0.352930549426992
+        - 0.665889759531334
+        - 0.276638967253389
+      - - 0.903419225637476
+        - 0.239147277651301
+        - 0.250264828953088
+        - 0.523889135977527
+        - 0.620815688958504
+        - 0.146628532007505
+        - 0.057340593329532
+        - 0.236572998471131
+        - 0.478768232891238
+        - 0.699704281456158
+      - - 0.752033392915362
+        - 0.341490628712566
+        - 0.760700593783568
+        - 0.672587943300841
+        - 0.441121589740363
+        - 0.708146170205381
+        - 0.302865260880084
+        - 0.244037410017741
+        - 0.743243434594006
+        - 0.81958401744683
+      - - 0.572865926746065
+        - 0.154791598111407
+        - 0.882422488186977
+        - 0.656674792318958
+        - 0.182516393872961
+        - 0.816842667788626
+        - 0.924050461762598
+        - 0.935673131858508
+        - 0.903983561327648
+        - 0.50604816325877
+      - - 0.585936756560288
+        - 0.979299546891216
+        - 0.738565686339315
+        - 0.473703328405908
+        - 0.736112433467414
+        - 0.464115210010675
+        - 0.820130783234236
+        - 0.634579428548463
+        - 0.480656197663089
+        - 0.270812637957915
+      - - 0.352121463543951
+        - 0.793843250991287
+        - 0.746880915073198
+        - 0.458384146857551
+        - 0.862930976317784
+        - 0.449063527529647
+        - 0.069860164735538
+        - 0.471277339349369
+        - 0.047919182529287
+        - 0.60299752907517
+      - - 0.854330782444833
+        - 0.869899363731325
+        - 0.092854802107515
+        - 0.325672604106551
+        - 0.345732036195998
+        - 0.099619715262917
+        - 0.27022599251053
+        - 0.923731740242194
+        - 0.472045208113343
+        - 0.635280851429653
+      - - 0.233596295490354
+        - 0.696484066410559
+        - 0.995644518205528
+        - 0.501392305483675
+        - 0.679729228259692
+        - 0.738189395985847
+        - 0.782812713147383
+        - 0.133996413000612
+        - 0.607558580920449
+        - 0.383152293183212
+      - - 0.67640966406334
+        - 0.374041285432001
+        - 0.217703119462186
+        - 0.444408620668139
+        - 0.617637186040645
+        - 0.51583285587819
+        - 0.184881924404836
+        - 0.986677444220424
+        - 0.739589950982861
+        - 0.076106615914354
+    - - - 0.247592605946366
+        - 0.286810320282195
+        - 0.757200061722951
+        - 0.873961116892237
+        - 0.837568173646865
+        - 0.960533915126432
+        - 0.398498670646538
+        - 0.944730363888127
+        - 0.625455786804176
+        - 0.790655357489443
+      - - 0.462986525995677
+        - 0.322700882609632
+        - 0.726233669006156
+        - 0.447627113560623
+        - 0.726267850329829
+        - 0.344517741851559
+        - 0.004326086749451
+        - 0.463736974052184
+        - 0.474884271128447
+        - 0.182520724724644
+      - - 0.481361232393269
+        - 0.88050025131888
+        - 0.510806386451583
+        - 0.333227953636582
+        - 0.118538687173419
+        - 0.210910439861118
+        - 0.274980025205307
+        - 0.742648558845438
+        - 0.505112209541593
+        - 0.754670001638012
+      - - 0.142140673064999
+        - 0.188796936208219
+        - 0.568494527775545
+        - 0.233394656675915
+        - 0.468687051492956
+        - 0.351568810104969
+        - 0.52646662917186
+        - 0.834912166536832
+        - 0.402187834591919
+        - 0.096296496529347
+      - - 0.288053320199688
+        - 0.552162308581396
+        - 0.408669929501189
+        - 0.790065025155132
+        - 0.492423298359453
+        - 0.549293232907263
+        - 0.667632951189652
+        - 0.615799958510456
+        - 0.617487344209196
+        - 0.713897295862282
+      - - 0.049593862038479
+        - 0.630477726240972
+        - 0.843944263719588
+        - 0.425538451521941
+        - 0.063473116756226
+        - 0.356665353888201
+        - 0.155043588003773
+        - 0.246935634331869
+        - 0.145366833564415
+        - 0.613124407341058
+      - - 0.738588275287849
+        - 0.361191899672004
+        - 0.767465894117881
+        - 0.556418097669373
+        - 0.963754937481753
+        - 0.406932904033296
+        - 0.342905212655808
+        - 0.258319604265697
+        - 0.026811431863908
+        - 0.928167927764962
+      - - 0.326345856116074
+        - 0.036628646170056
+        - 0.539613880307261
+        - 0.639326519532531
+        - 0.051766241668651
+        - 0.722319700303338
+        - 0.272480421057171
+        - 0.2088971903811
+        - 0.108952164976353
+        - 0.677900226216028
+      - - 0.165240906919659
+        - 0.380543391032209
+        - 0.8094872173572
+        - 0.656319322917338
+        - 0.87720283246434
+        - 0.188019146089926
+        - 0.360810490056894
+        - 0.259819489533999
+        - 0.512193377123488
+        - 0.92015719833728
+      - - 0.216235605210624
+        - 0.397386490231875
+        - 0.214866383035223
+        - 0.411755132368442
+        - 0.796753810906154
+        - 0.075425010349396
+        - 0.909230375670373
+        - 0.511418469309446
+        - 0.899037002316015
+        - 0.652429572315528
+    - - - 0.988772392686374
+        - 0.345384883224702
+        - 0.274059286102261
+        - 0.934939542135371
+        - 0.508869680640489
+        - 0.82212146865446
+        - 0.823840527530294
+        - 0.891893265891842
+        - 0.294868133572878
+        - 0.074959567243385
+      - - 0.532248218087234
+        - 0.368641195567588
+        - 0.71683425698631
+        - 0.379324912429873
+        - 0.22942435617344
+        - 0.456556237492545
+        - 0.268070132362324
+        - 0.646020287300616
+        - 0.166804339374246
+        - 0.590054251215163
+      - - 0.549370506429397
+        - 0.10026917877755
+        - 0.436540548914365
+        - 0.149060059914811
+        - 0.789067465382281
+        - 0.459127294273184
+        - 0.708632142592724
+        - 0.795901706292996
+        - 0.562326247036078
+        - 0.993004460512227
+      - - 0.447107109307592
+        - 0.467028934338208
+        - 0.044079467392952
+        - 0.66202746920397
+        - 0.714798964171818
+        - 0.36170309539801
+        - 0.049441000976041
+        - 0.656029671231781
+        - 0.09415191189042
+        - 0.398543396053027
+      - - 0.951164041361827
+        - 0.231665499920907
+        - 0.665180262516631
+        - 0.207096982670855
+        - 0.092577492093345
+        - 0.266905860512309
+        - 0.613184522409029
+        - 0.361923774140366
+        - 0.519135121224704
+        - 0.146253777873932
+      - - 0.759280311482893
+        - 0.14310332426777
+        - 0.44703609619854
+        - 0.248638355340666
+        - 0.971748123612785
+        - 0.06277057235405
+        - 0.474670095827575
+        - 0.885597444785729
+        - 0.592819782975613
+        - 0.230402422236351
+      - - 0.348766062014612
+        - 0.709402308952069
+        - 0.841303157971935
+        - 0.258890647186383
+        - 0.774277864257994
+        - 0.535488965536175
+        - 0.159571998776868
+        - 0.467311214880755
+        - 0.082566083306104
+        - 0.330056781690425
+      - - 0.245328018076579
+        - 0.277312200728231
+        - 0.831082878000955
+        - 0.839911714625445
+        - 0.244968530487717
+        - 0.819839754629378
+        - 0.643058906102666
+        - 0.654129275589106
+        - 0.011137908965506
+        - 0.910159960483562
+      - - 0.411268141016868
+        - 0.862793740282474
+        - 0.341807626476405
+        - 0.331145458183181
+        - 0.189407264633955
+        - 0.640159452809718
+        - 0.868176452591128
+        - 0.820982171147598
+        - 0.959840335443433
+        - 0.20479089867814
+      - - 0.2549043671299
+        - 0.359870688306018
+        - 0.989069715864684
+        - 0.57397518561227
+        - 0.126985449785856
+        - 0.082614488417803
+        - 0.926512597679146
+        - 0.456162009403159
+        - 0.726160864870369
+        - 0.59100756711842
+    - - - 0.579853679753489
+        - 0.337579209196544
+        - 0.610455881986471
+        - 0.431400864088549
+        - 0.754705484795118
+        - 0.50606840018613
+        - 0.426224284030382
+        - 0.640919017802368
+        - 0.226051732166682
+        - 0.089296496644313
+      - - 0.968621485667069
+        - 0.958033377664932
+        - 0.716397663962594
+        - 0.074676693680299
+        - 0.880278147226393
+        - 0.806704129130872
+        - 0.696979745680902
+        - 0.39989771526216
+        - 0.012137470603655
+        - 0.022944164260265
+      - - 0.810292510802578
+        - 0.056049092877819
+        - 0.331684704913675
+        - 0.337146755486698
+        - 0.597472615245151
+        - 0.778853082618858
+        - 0.607164634350716
+        - 0.353515698868438
+        - 0.182694994401356
+        - 0.199191747269763
+      - - 0.957623224667796
+        - 0.451085978688558
+        - 0.496994655378936
+        - 0.185286266006152
+        - 0.663146054319563
+        - 0.683250453297253
+        - 0.589545364216756
+        - 0.750559537837309
+        - 0.368745444532144
+        - 0.930311613669405
+      - - 0.55792403546883
+        - 0.022904912774936
+        - 0.055515262090239
+        - 0.635881268335563
+        - 0.138693342763367
+        - 0.134121767869882
+        - 0.630901002669375
+        - 0.143587729027024
+        - 0.941740053759695
+        - 0.415772970541897
+      - - 0.666827928575063
+        - 0.432286382026552
+        - 0.322246609769956
+        - 0.139284418101913
+        - 0.284058556464444
+        - 0.567395201334376
+        - 0.354198808805608
+        - 0.912441759879677
+        - 0.795374279354116
+        - 0.523829644449852
+      - - 0.841162317560505
+        - 0.088217136089707
+        - 0.551252058796039
+        - 0.319225846282842
+        - 0.669622118517817
+        - 0.800154969727239
+        - 0.741321895764686
+        - 0.276553887324911
+        - 0.486091525109873
+        - 0.696690316591133
+      - - 0.583343415568851
+        - 0.070555833072035
+        - 0.049817132346055
+        - 0.344577595760475
+        - 0.698912290737658
+        - 0.174881219256818
+        - 0.379158724630901
+        - 0.772503579954866
+        - 0.904715920255656
+        - 0.366141064527017
+      - - 0.394718615571589
+        - 0.353127997473774
+        - 0.296378679794837
+        - 0.531235388212003
+        - 0.840895144184968
+        - 0.600503276814686
+        - 0.032375226072142
+        - 0.746590679122888
+        - 0.972321186608113
+        - 0.583964246274532
+      - - 0.709230998586016
+        - 0.760724438543895
+        - 0.522245464144352
+        - 0.077125628409772
+        - 0.48227355565948
+        - 0.649114996443855
+        - 0.367595689785347
+        - 0.741173670917823
+        - 0.652042641054244
+        - 0.55168825341229
   title: A matrix of random numbers.
-  universal: true
 path.dev_dir:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -3210,15 +3830,17 @@ path.dev_dir:
   notes: null
   primitive: str
   provider: path
+  references: null
   release_priority: 0
   samples:
-    - \home\Ballot\Dev\PHP
-    - \home\California\Development\Groovy
-    - \home\Because\Development\Erlang
-    - \home\Evening\Development\Smalltalk
+    - \home\Generated\Development\Rust
+    - \home\Talent\Development\Lisp
+    - \home\Craig\Development\Ruby
+    - \home\Ground\Development\Ruby
   title: Path.
-  universal: true
 path.home:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -3226,6 +3848,7 @@ path.home:
   notes: null
   primitive: str
   provider: path
+  references: null
   release_priority: 0
   samples:
     - \home
@@ -3233,8 +3856,9 @@ path.home:
     - \home
     - \home
   title: Home path.
-  universal: true
 path.project_dir:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -3242,15 +3866,17 @@ path.project_dir:
   notes: null
   primitive: str
   provider: path
+  references: null
   release_priority: 0
   samples:
-    - \home\Courier\Dev\Caml\deinonychus
-    - \home\Workout\Dev\J#\cetiosaurus
-    - \home\Phentermine\Development\AutoIt\deja-vu
-    - \home\Benz\Development\Groovy\dubreuillosaurus
+    - \home\Label\Development\C++\citipati
+    - \home\Double\Development\Common Lisp\gilmoreosaurus
+    - \home\Possess\Development\Mathematica\chinshakiangosaurus
+    - \home\Normal\Development\Emacs Lisp\austrosaurus
   title: Path to project.
-  universal: true
 path.root:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -3258,6 +3884,7 @@ path.root:
   notes: null
   primitive: str
   provider: path
+  references: null
   release_priority: 0
   samples:
     - \
@@ -3265,8 +3892,9 @@ path.root:
     - \
     - \
   title: Root dir.
-  universal: true
 path.user:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -3274,15 +3902,17 @@ path.user:
   notes: null
   primitive: str
   provider: path
+  references: null
   release_priority: 0
   samples:
-    - \home\Feelings
-    - \home\Number
-    - \home\Attempts
-    - \home\Anthony
+    - \home\Reason
+    - \home\Shopzilla
+    - \home\Pools
+    - \home\Username
   title: Path to user.
-  universal: true
 path.users_folder:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -3290,15 +3920,17 @@ path.users_folder:
   notes: null
   primitive: str
   provider: path
+  references: null
   release_priority: 0
   samples:
-    - \home\Assembled\Music
-    - \home\Paradise\Pictures
-    - \home\Correctly\Desktop
-    - \home\Phone\Development
+    - \home\Hong\Downloads
+    - \home\Receiver\Music
+    - \home\Washington\Development
+    - \home\Thesaurus\Downloads
   title: Path.
-  universal: true
 payment.bitcoin_address:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -3306,15 +3938,17 @@ payment.bitcoin_address:
   notes: May need to be split (https://bitcoin.design/guide/glossary/address)
   primitive: str
   provider: payment
+  references: null
   release_priority: 5
   samples:
-    - 1iDzX5RifcgX6zoTxv1R7T172hmRr3oh0q
-    - 1dKkCeoNK09HnEfO2ROiKdZerxGy06BBS5
-    - 3k7XNelHZHrL7DLRYGXkGBefV4LfPZ5zdl
-    - 1CPCl5FRgyjEbUh6qFsnZBLdB8pW2stSNp
+    - 1my3806j4LfYE5GDvPLdGRXsbKzQnPjPem
+    - 3A24JWEq1Kv4qQGmfgFq1syrD9vcj1f1TT
+    - 1xHxUdYK8UemuAIIYO2SoBisGvcs8kaig6
+    - 34jNEQgiuWD8jUDDL9z9Lq9S324HsUkBVr
   title: Bitcoin address.
-  universal: true
 payment.cid:
+  aliases: null
+  description: null
   designation: broad_numbers
   locales:
     - EN
@@ -3322,15 +3956,17 @@ payment.cid:
   notes: null
   primitive: str
   provider: payment
+  references: null
   release_priority: 0
   samples:
-    - "1267"
-    - "7826"
-    - "5053"
-    - "6104"
+    - "7998"
+    - "2534"
+    - "6515"
+    - "4265"
   title: CID code.
-  universal: true
 payment.credit_card_expiration_date:
+  aliases: null
+  description: null
   designation: duplicate
   locales:
     - EN
@@ -3338,15 +3974,17 @@ payment.credit_card_expiration_date:
   notes: Duplicate of structured datetimes
   primitive: str
   provider: payment
+  references: null
   release_priority: 0
   samples:
+    - 12/23
+    - 09/20
     - 07/20
-    - 07/18
-    - 11/23
-    - 01/21
+    - 09/23
   title: Expiration date of credit card.
-  universal: true
 payment.credit_card_network:
+  aliases: null
+  description: null
   designation: broad_numbers
   locales:
     - EN
@@ -3354,15 +3992,17 @@ payment.credit_card_network:
   notes: null
   primitive: str
   provider: payment
+  references: null
   release_priority: 0
   samples:
+    - Chase
     - Discover
     - Discover
-    - Chase
-    - Chase
+    - Discover
   title: Credit card network
-  universal: true
 payment.credit_card_number:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -3370,15 +4010,17 @@ payment.credit_card_number:
   notes: null
   primitive: str
   provider: payment
+  references: null
   release_priority: 5
   samples:
-    - 3407 947757 37296
-    - 4876 5582 0897 8080
-    - 2302 6717 1782 0095
-    - 4943 9830 2701 7630
+    - 3735 484717 86613
+    - 5284 6048 8171 4286
+    - 3764 219569 46713
+    - 4115 5603 2499 2434
   title: Credit card number.
-  universal: true
 payment.credit_card_owner:
+  aliases: null
+  description: null
   designation: broad_object
   locales:
     - EN
@@ -3386,23 +4028,25 @@ payment.credit_card_owner:
   notes: null
   primitive: Dict[str, str]
   provider: payment
+  references: null
   release_priority: 0
   samples:
-    - credit_card: 4672 6937 5876 9880
-      expiration_date: 12/17
-      owner: GILBERTE PATE
-    - credit_card: 4039 0358 3298 2691
-      expiration_date: 08/19
-      owner: IRWIN CONRAD
-    - credit_card: 3722 303445 92236
-      expiration_date: 08/22
-      owner: ROMAN FERNANDEZ
-    - credit_card: 3488 814994 43533
-      expiration_date: 12/18
-      owner: WHITNEY BOWMAN
+    - credit_card: 2663 6888 8272 9847
+      expiration_date: 03/21
+      owner: CARLTON BULLOCK
+    - credit_card: 4226 0841 2920 2903
+      expiration_date: 08/25
+      owner: EDYTH WOODWARD
+    - credit_card: 3717 733053 81462
+      expiration_date: 06/25
+      owner: MADALYN LUNA
+    - credit_card: 4659 1717 1898 2221
+      expiration_date: 09/23
+      owner: WILMER LAMBERT
   title: null
-  universal: true
 payment.cvv:
+  aliases: null
+  description: null
   designation: broad_numbers
   locales:
     - EN
@@ -3410,15 +4054,17 @@ payment.cvv:
   notes: null
   primitive: str
   provider: payment
+  references: null
   release_priority: 0
   samples:
-    - "525"
-    - "361"
-    - "133"
-    - "585"
+    - 099
+    - "572"
+    - "843"
+    - "945"
   title: CVV code.
-  universal: true
 payment.ethereum_address:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -3426,15 +4072,17 @@ payment.ethereum_address:
   notes: null
   primitive: str
   provider: payment
+  references: null
   release_priority: 5
   samples:
-    - "0x9beb38eb5285876443aa27f24bcfe98981cc68a9"
-    - "0x3c449cf4a8575b2f97f4efae51bc7ffdf8cb45fa"
-    - "0xaa49e81a822df658ea39ae493a31a442dcfc0435"
-    - "0x5d8d279ad0ab8703b5ee8ff72f2c4cd5538f7832"
+    - "0x80d7c0ea09b6e3a7a2f6bfebe75110497b0b342c"
+    - "0xfbb0c7dd781d4ed0fc6cb9cfdb034331179153a9"
+    - "0x9a07ba893fca1b77067405fd2d68fb5044a99e7b"
+    - "0xd1088ac50593e83659b8cac5522139069589978c"
   title: Ethereum address.
-  universal: true
 payment.paypal:
+  aliases: null
+  description: null
   designation: duplicate
   locales:
     - EN
@@ -3442,15 +4090,17 @@ payment.paypal:
   notes: Duplicate of email
   primitive: str
   provider: payment
+  references: null
   release_priority: 0
   samples:
-    - vocabulary1884@example.com
-    - barbados1988@gmail.com
-    - birthday1949@duck.com
-    - nat1953@gmail.com
+    - nutritional2009@example.org
+    - telephony1937@example.org
+    - ryan1801@example.org
+    - premiere2007@example.com
   title: Email of PapPal user.
-  universal: true
 person.academic_degree:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -3458,15 +4108,17 @@ person.academic_degree:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 0
   samples:
-    - Master
-    - Master
     - Bachelor
-    - PhD
+    - Bachelor
+    - Master
+    - Master
   title: Degree.
-  universal: true
 person.blood_type:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -3474,15 +4126,17 @@ person.blood_type:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 0
   samples:
-    - O+
+    - B−
+    - AB−
     - O+
     - B−
-    - B+
   title: Blood type (blood group).
-  universal: true
 person.email:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -3490,15 +4144,17 @@ person.email:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 4
   samples:
-    - question1831@protonmail.com
-    - dam1839@example.org
-    - blue1930@live.com
-    - apple2012@yahoo.com
+    - hard2019@yandex.com
+    - form2048@outlook.com
+    - exposed1964@outlook.com
+    - occasional2043@yandex.com
   title: Email address.
-  universal: true
 person.first_name:
+  aliases: null
+  description: null
   designation: locale_specific
   locales:
     - AR_AE
@@ -3547,15 +4203,17 @@ person.first_name:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 4
   samples:
-    - Erin
-    - Thomas
-    - Austin
-    - Neida
+    - Olympia
+    - Hugh
+    - Rudolph
+    - Gonzalo
   title: First name.
-  universal: false
 person.full_name:
+  aliases: null
+  description: null
   designation: locale_specific
   locales:
     - AR_AE
@@ -3604,15 +4262,17 @@ person.full_name:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 4
   samples:
-    - Arminda Combs
-    - Maurita Hopper
-    - Earle Spears
-    - Brady Contreras
+    - Melani Mayo
+    - Theo Hurst
+    - Tennie Burks
+    - Quiana Paul
   title: Full name.
-  universal: false
 person.gender:
+  aliases: null
+  description: null
   designation: locale_specific
   locales:
     - AR_AE
@@ -3661,15 +4321,17 @@ person.gender:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 3
   samples:
-    - Other
     - Male
-    - Female
-    - Other
+    - Male
+    - Male
+    - Male
   title: null
-  universal: false
 person.gender_code:
+  aliases: null
+  description: null
   designation: broad_numbers
   locales:
     - EN
@@ -3677,15 +4339,17 @@ person.gender_code:
   notes: null
   primitive: int
   provider: person
+  references: null
   release_priority: 0
   samples:
     - 0
-    - 1
+    - 0
     - 9
     - 0
   title: null
-  universal: true
 person.gender_symbol:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -3693,15 +4357,17 @@ person.gender_symbol:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 0
   samples:
     - ♀
+    - ⚲
     - ♂
-    - ⚲
-    - ⚲
+    - ♀
   title: null
-  universal: true
 person.get_current_locale:
+  aliases: null
+  description: null
   designation: system_internal
   locales:
     - EN
@@ -3709,6 +4375,7 @@ person.get_current_locale:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 0
   samples:
     - en
@@ -3716,8 +4383,9 @@ person.get_current_locale:
     - en
     - en
   title: Current locale.
-  universal: true
 person.height:
+  aliases: null
+  description: null
   designation: broad_numbers
   locales:
     - EN
@@ -3725,15 +4393,17 @@ person.height:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 0
   samples:
+    - "1.84"
     - "1.97"
     - "1.86"
-    - "1.52"
-    - "1.60"
+    - "1.78"
   title: Height.
-  universal: true
 person.identifier:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -3741,15 +4411,17 @@ person.identifier:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 0
   samples:
-    - 41-56/11
-    - 46-59/31
-    - 59-04/11
-    - 85-34/43
+    - 84-02/39
+    - 16-60/17
+    - 41-27/70
+    - 29-02/27
   title: An identifier.
-  universal: true
 person.language:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -3757,15 +4429,17 @@ person.language:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 0
   samples:
-    - Finnish
-    - Lithuanian
-    - Armenian
-    - Malay
+    - Fijian
+    - Czech
+    - Khmer
+    - Guaraní
   title: Random language.
-  universal: true
 person.last_name:
+  aliases: null
+  description: null
   designation: locale_specific
   locales:
     - AR_AE
@@ -3814,15 +4488,17 @@ person.last_name:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 4
   samples:
-    - Hull
-    - Rodgers
-    - Beard
-    - Mayer
+    - Cote
+    - Ruiz
+    - Estrada
+    - Reid
   title: Last name.
-  universal: false
 person.name:
+  aliases: null
+  description: null
   designation: duplicate
   locales:
     - EN
@@ -3830,15 +4506,17 @@ person.name:
   notes: Duplicate of first_name
   primitive: str
   provider: person
+  references: null
   release_priority: 0
   samples:
-    - Layne
-    - Demetrice
-    - Darryl
-    - Peter
+    - Pierre
+    - Basilia
+    - Dorathy
+    - Britt
   title: Name.
-  universal: true
 person.nationality:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -3846,15 +4524,17 @@ person.nationality:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 0
   samples:
-    - Afghan
-    - Polish
-    - Venezuelan
-    - Argentinian
+    - Taiwanese
+    - Puerto Rican
+    - Egyptian
+    - Israeli
   title: Nationality.
-  universal: true
 person.occupation:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -3862,15 +4542,17 @@ person.occupation:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 0
   samples:
-    - Pipe Fitter
-    - Stock Manager
-    - Stone Cutter
-    - Hospital Orderly
+    - Wholesale Newspaper
+    - Office Manager
+    - Hot Foil Printer
+    - Pest Controller
   title: The name of job.
-  universal: true
 person.password:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -3878,15 +4560,17 @@ person.password:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 0
   samples:
-    - w#x6?OE.
-    - "!jF^y+xV"
-    - 3Fal*[Ew
-    - 5L"tI:Q*
+    - u8zH0pI;
+    - F0J<FH1o
+    - ht%(HKEW
+    - sO45=k'G
   title: Password or hash of password.
-  universal: true
 person.phone_number:
+  aliases: null
+  description: null
   designation: locale_specific
   locales:
     - AR_AE
@@ -3935,15 +4619,17 @@ person.phone_number:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 4
   samples:
-    - "+12526493357"
-    - "+17721532669"
-    - +1-283-893-8512
-    - "+17704553071"
+    - +1-313-834-2568
+    - "+12196205059"
+    - +1-269-029-1593
+    - "+16055524241"
   title: Phone number.
-  universal: false
 person.political_views:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -3951,15 +4637,17 @@ person.political_views:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 0
   samples:
-    - Libertarian
-    - Apathetic
-    - Libertarian
     - Anarchism
+    - Conservative
+    - Liberal
+    - Communist
   title: Political views.
-  universal: true
 person.sex:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -3967,15 +4655,17 @@ person.sex:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 0
   samples:
     - Other
-    - Female
-    - Male
     - Other
+    - Other
+    - Male
   title: Sex.
-  universal: true
 person.surname:
+  aliases: null
+  description: null
   designation: duplicate
   locales:
     - EN
@@ -3983,15 +4673,17 @@ person.surname:
   notes: Duplicate of last_name
   primitive: str
   provider: person
+  references: null
   release_priority: 0
   samples:
-    - Gray
-    - Gallagher
-    - Calderon
-    - Cameron
+    - Cleveland
+    - Manning
+    - Wilkins
+    - Rasmussen
   title: Surname.
-  universal: true
 person.telephone:
+  aliases: null
+  description: null
   designation: duplicate
   locales:
     - EN
@@ -3999,15 +4691,17 @@ person.telephone:
   notes: Duplicate of phone_number
   primitive: str
   provider: person
+  references: null
   release_priority: 0
   samples:
-    - "+14792829507"
-    - +1-480-018-7780
-    - +1-442-168-4099
-    - +1-503-427-2973
+    - "+17521401076"
+    - "+12251867710"
+    - "+14690700804"
+    - +1-935-859-0218
   title: null
-  universal: true
 person.title:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -4015,15 +4709,17 @@ person.title:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 0
   samples:
-    - B.A.
-    - LL.D
     - Sir
-    - B.A.
+    - Sir
+    - M.D.
+    - M.D.
   title: The title.
-  universal: true
 person.university:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -4031,15 +4727,17 @@ person.university:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 0
   samples:
-    - University of California, Irvine (UC Irvine)
-    - Framingham State University
-    - University of South Florida (USF)
-    - New College of Florida
+    - Fort Valley State University
+    - Westfield State University
+    - Eastern Kentucky University (EKU)
+    - University of California, Davis (UC Davis)
   title: University name.
-  universal: true
 person.username:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -4047,15 +4745,17 @@ person.username:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 0
   samples:
-    - columbia_1934
-    - tiger_1804
-    - equal_1952
-    - collectibles_1996
+    - danger_1978
+    - allah_1955
+    - hand_2004
+    - beginning_1837
   title: Username as string.
-  universal: true
 person.views_on:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -4063,15 +4763,17 @@ person.views_on:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 0
   samples:
-    - Negative
     - Positive
+    - Very negative
     - Neutral
     - Neutral
   title: Views on.
-  universal: true
 person.weight:
+  aliases: null
+  description: null
   designation: broad_numbers
   locales:
     - EN
@@ -4079,15 +4781,17 @@ person.weight:
   notes: null
   primitive: int
   provider: person
+  references: null
   release_priority: 0
   samples:
-    - 40
-    - 81
-    - 82
+    - 84
     - 43
+    - 67
+    - 58
   title: Weight.
-  universal: true
 person.worldview:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -4095,15 +4799,17 @@ person.worldview:
   notes: null
   primitive: str
   provider: person
+  references: null
   release_priority: 0
   samples:
-    - Confucianism
-    - Secular humanism
-    - Confucianism
+    - Agnosticism
     - Catholicism
+    - Atheism
+    - Secular humanism
   title: Worldview.
-  universal: true
 science.dna_sequence:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -4111,15 +4817,17 @@ science.dna_sequence:
   notes: null
   primitive: str
   provider: science
+  references: null
   release_priority: 5
   samples:
-    - TTCCATGTCA
-    - ATGGGTATAA
-    - CCTATAGCAA
-    - CACTCGGGCC
+    - AAAATGTTTA
+    - AAATGTGGGG
+    - AGAATCCGGC
+    - TAGGACCTCC
   title: DNA sequence.
-  universal: true
 science.measure_unit:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -4127,15 +4835,17 @@ science.measure_unit:
   notes: null
   primitive: str
   provider: science
+  references: null
   release_priority: 0
   samples:
-    - henry
-    - newton
     - farad
-    - coulomb
+    - siemens
+    - kelvin
+    - becquerel
   title: Unit.
-  universal: true
 science.metric_prefix:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -4143,15 +4853,17 @@ science.metric_prefix:
   notes: null
   primitive: str
   provider: science
+  references: null
   release_priority: 0
   samples:
-    - zetta
-    - yocto
     - pico
-    - deci
+    - micro
+    - hecto
+    - zetta
   title: Metric prefix for SI measure units.
-  universal: true
 science.rna_sequence:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -4159,15 +4871,17 @@ science.rna_sequence:
   notes: null
   primitive: str
   provider: science
+  references: null
   release_priority: 5
   samples:
-    - UUGUUUAAAG
-    - AUUCUCGCAA
-    - GUUCCAUCUU
-    - AUCCCUUUUG
+    - UGGGGGGCGC
+    - AUCUAAACAA
+    - GGCGACUUAA
+    - AAAUGUCCAC
   title: RNA sequence.
-  universal: true
 text.alphabet:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -4175,6 +4889,7 @@ text.alphabet:
   notes: null
   primitive: List[str]
   provider: text
+  references: null
   release_priority: 0
   samples:
     - - A
@@ -4282,8 +4997,9 @@ text.alphabet:
       - Y
       - Z
   title: Alphabet.
-  universal: true
 text.answer:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -4291,15 +5007,17 @@ text.answer:
   notes: null
   primitive: str
   provider: text
+  references: null
   release_priority: 0
   samples:
-    - "No"
-    - "No"
-    - "No"
-    - "No"
+    - "Yes"
+    - "Yes"
+    - "Yes"
+    - Maybe
   title: An answer.
-  universal: true
 text.color:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -4307,15 +5025,17 @@ text.color:
   notes: null
   primitive: str
   provider: text
+  references: null
   release_priority: 0
   samples:
-    - Black
-    - Pink
-    - Beige
+    - Cyan
+    - Cyan
+    - Red
     - Blue
   title: Color name.
-  universal: true
 text.emoji:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -4323,15 +5043,17 @@ text.emoji:
   notes: null
   primitive: str
   provider: text
+  references: null
   release_priority: 0
   samples:
-    - 😖
-    - 😴
-    - 🤡
-    - 😩
+    - 💔
+    - 👁️‍🗨️
+    - 🤗
+    - 💖
   title: Emoji code.
-  universal: true
 text.get_current_locale:
+  aliases: null
+  description: null
   designation: system_internal
   locales:
     - EN
@@ -4339,6 +5061,7 @@ text.get_current_locale:
   notes: null
   primitive: str
   provider: text
+  references: null
   release_priority: 0
   samples:
     - en
@@ -4346,8 +5069,9 @@ text.get_current_locale:
     - en
     - en
   title: Current locale.
-  universal: true
 text.hex_color:
+  aliases: null
+  description: null
   designation: universal
   locales:
     - EN
@@ -4355,15 +5079,17 @@ text.hex_color:
   notes: null
   primitive: str
   provider: text
+  references: null
   release_priority: 5
   samples:
-    - "#645265"
-    - "#d9cde9"
-    - "#34ebf4"
-    - "#0bb22e"
+    - "#36a4fe"
+    - "#3fa620"
+    - "#ade589"
+    - "#6248ea"
   title: Hex color code.
-  universal: true
 text.level:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -4371,15 +5097,17 @@ text.level:
   notes: null
   primitive: str
   provider: text
+  references: null
   release_priority: 0
   samples:
-    - low
+    - high
+    - high
     - low
     - critical
-    - moderate
   title: Level.
-  universal: true
 text.quote:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -4387,15 +5115,17 @@ text.quote:
   notes: null
   primitive: str
   provider: text
+  references: null
   release_priority: 0
   samples:
-    - I'm gonna make him an offer he can't refuse.
-    - Houston, we have a problem.
-    - Get your stinking paws off me, you damned dirty ape.
     - Frankly, my dear, I don't give a damn.
+    - Ask not what your country can do for you; ask what you can do for your country.
+    - The only thing we have to fear is fear itself.
+    - Let them eat cake.
   title: Random quote.
-  universal: true
 text.rgb_color:
+  aliases: null
+  description: null
   designation: broad_characters
   locales:
     - EN
@@ -4403,27 +5133,25 @@ text.rgb_color:
   notes: null
   primitive: List[int]
   provider: text
+  references: null
   release_priority: 0
   samples:
-    - !!python/tuple
-      - 51
-      - 104
-      - 38
-    - !!python/tuple
-      - 178
-      - 193
-      - 230
-    - !!python/tuple
-      - 207
-      - 232
-      - 225
-    - !!python/tuple
-      - 219
-      - 181
-      - 12
+    - - 73
+      - 210
+      - 10
+    - - 8
+      - 168
+      - 66
+    - - 89
+      - 186
+      - 93
+    - - 247
+      - 72
+      - 8
   title: RGB tuple.
-  universal: true
 text.sentence:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -4431,17 +5159,17 @@ text.sentence:
   notes: null
   primitive: str
   provider: text
+  references: null
   release_priority: 0
   samples:
-    - Atoms are used within a program to denote distinguished values.
-    - The Galactic Empire is nearing completion of the Death Star, a space station with
-      the power to destroy entire planets.
-    - The Galactic Empire is nearing completion of the Death Star, a space station with
-      the power to destroy entire planets.
-    - Ports are created with the built-in function open_port.
+    - Ports are used to communicate with the external world.
+    - Make me a sandwich.
+    - Erlang is known for its designs that are well suited for systems.
+    - Make me a sandwich.
   title: Sentence.
-  universal: true
 text.text:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -4449,29 +5177,31 @@ text.text:
   notes: null
   primitive: str
   provider: text
+  references: null
   release_priority: 0
   samples:
-    - Haskell features a type system with type inference and lazy evaluation. Erlang
-      is a general-purpose, concurrent, functional programming language. She spent her
-      earliest years reading classic literature, and writing poetry. Its main implementation
-      is the Glasgow Haskell Compiler. I don't even care.
     - Messages can be sent to and received from ports, but these messages must obey
-      the so-called "port protocol." Where are my pants? Do you have any idea why this
-      is not working? Where are my pants? In 1989 the building was heavily damaged by
-      fire, but it has since been restored.
-    - They are written as strings of consecutive alphanumeric characters, the first
-      character being lowercase. Messages can be sent to and received from ports, but
-      these messages must obey the so-called "port protocol." Type classes first appeared
-      in the Haskell programming language. Do you come here often? Erlang is known for
-      its designs that are well suited for systems.
-    - They are written as strings of consecutive alphanumeric characters, the first
-      character being lowercase. She spent her earliest years reading classic literature,
-      and writing poetry. It is also a garbage-collected runtime system. Messages can
-      be sent to and received from ports, but these messages must obey the so-called
-      "port protocol." Do you come here often?
+      the so-called "port protocol." The sequential subset of Erlang supports eager
+      evaluation, single assignment, and dynamic typing. The syntax {D1,D2,...,Dn} denotes
+      a tuple whose arguments are D1, D2, ... Dn. Make me a sandwich. Make me a sandwich.
+    - Ports are used to communicate with the external world. Its main implementation
+      is the Glasgow Haskell Compiler. Initially composing light-hearted and irreverent
+      works, he also wrote serious, sombre and religious pieces beginning in the 1930s.
+      Atoms are used within a program to denote distinguished values. It is also a garbage-collected
+      runtime system.
+    - Its main implementation is the Glasgow Haskell Compiler. He looked inquisitively
+      at his keyboard and wrote another sentence. Atoms are used within a program to
+      denote distinguished values. Make me a sandwich. Type classes first appeared in
+      the Haskell programming language.
+    - Initially composing light-hearted and irreverent works, he also wrote serious,
+      sombre and religious pieces beginning in the 1930s. The Galactic Empire is nearing
+      completion of the Death Star, a space station with the power to destroy entire
+      planets. They are written as strings of consecutive alphanumeric characters, the
+      first character being lowercase. Where are my pants? I don't even care.
   title: Text.
-  universal: true
 text.title:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -4479,17 +5209,19 @@ text.title:
   notes: null
   primitive: str
   provider: text
+  references: null
   release_priority: 0
   samples:
-    - Haskell is a standardized, general-purpose purely functional programming language,
-      with non-strict semantics and strong static typing.
+    - Messages can be sent to and received from ports, but these messages must obey
+      the so-called "port protocol."
+    - Messages can be sent to and received from ports, but these messages must obey
+      the so-called "port protocol."
     - He looked inquisitively at his keyboard and wrote another sentence.
-    - Do you come here often?
-    - Atoms can contain any character if they are enclosed within single quotes and
-      an escape convention exists which allows any character to be used within an atom.
+    - Ports are created with the built-in function open_port.
   title: The title.
-  universal: true
 text.word:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -4497,15 +5229,17 @@ text.word:
   notes: null
   primitive: str
   provider: text
+  references: null
   release_priority: 0
   samples:
-    - johnny
-    - property
-    - two
-    - promotions
+    - minimal
+    - star
+    - fantasy
+    - modules
   title: Single word.
-  universal: true
 text.words:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -4513,31 +5247,33 @@ text.words:
   notes: null
   primitive: List[str]
   provider: text
+  references: null
   release_priority: 0
   samples:
-    - - allow
-      - ian
-      - gary
-      - guidelines
-      - anna
-    - - folks
-      - anonymous
-      - der
-      - port
-      - duty
-    - - suit
-      - sin
+    - - tiny
+      - should
+      - ethernet
+      - multi
+      - battery
+    - - failed
+      - lyrics
+      - essential
+      - talk
+      - parts
+    - - housing
+      - wayne
       - mobility
-      - favor
-      - walk
-    - - genes
-      - plane
-      - bottom
-      - personals
-      - england
+      - army
+      - designers
+    - - structural
+      - donald
+      - forces
+      - filter
+      - about
   title: Word list.
-  universal: true
 transport.airplane:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -4545,15 +5281,17 @@ transport.airplane:
   notes: null
   primitive: str
   provider: transport
+  references: null
   release_priority: 0
   samples:
-    - Pipistrel Sinus
-    - Boeing 747SR
-    - Boeing 747-200M
-    - Boeing 747-200F
+    - Boeing 737 MAX 7
+    - Socata TB-20 Trinidad
+    - Hawker Siddeley HS 748
+    - Boeing 747-400F
   title: Airplane model.
-  universal: true
 transport.car:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -4561,15 +5299,17 @@ transport.car:
   notes: null
   primitive: str
   provider: transport
+  references: null
   release_priority: 0
   samples:
-    - Porsche Macan
-    - Nissan Pulsar
-    - Peugeot 205
-    - Opel Astra cabrio
+    - Peugeot Bipper
+    - Mitsubishi Pajero Sport
+    - Nissan Maxima QX
+    - Nissan Maxima QX
   title: A vehicle.
-  universal: true
 transport.manufacturer:
+  aliases: null
+  description: null
   designation: broad_words
   locales:
     - EN
@@ -4577,15 +5317,17 @@ transport.manufacturer:
   notes: null
   primitive: str
   provider: transport
+  references: null
   release_priority: 0
   samples:
-    - Jeep
-    - Tesla
+    - Iveco
+    - Hyundai
+    - Maybach
     - Mazda
-    - Audi
   title: A car manufacturer
-  universal: true
 transport.vehicle_registration_code:
+  aliases: null
+  description: null
   designation: locale_specific
   locales:
     - AR_AE
@@ -4634,11 +5376,11 @@ transport.vehicle_registration_code:
   notes: null
   primitive: str
   provider: transport
+  references: null
   release_priority: 3
   samples:
-    - AL
-    - USA
-    - MAL
-    - NIC
+    - RCH
+    - RB
+    - DK
+    - SMOM
   title: Vehicle registration code.
-  universal: false
