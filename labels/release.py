@@ -1,17 +1,16 @@
 import argparse
-import json
+from pathlib import Path
 
 import mimesis
 import yaml
 from mimesis import Fieldset, random
 from mimesis.locales import Locale
-from models.core import Defintion
+from models.core import Defintion, Record
 from tqdm import tqdm
-from utils import determine_primitive
 from yamlcore import CoreLoader
 
 parser = argparse.ArgumentParser(
-    description="Release data using mimesis with given definitions."
+    description="Release data using mimesis with given definitions.",
 )
 parser.add_argument(
     "--texts",
@@ -41,15 +40,15 @@ args = parser.parse_args()
 
 TEXTS = args.texts
 PRIORITY = args.priority
-OUTFILE = args.output
+OUTFILE = Path(args.output)
 SEED = args.seed
 
-DEFINITIONS = "definitions.yaml"
+DEFINITIONS = Path("definitions.yaml")
 
 random.global_seed = SEED
 
 
-with open(DEFINITIONS, encoding="utf-8") as f:
+with DEFINITIONS.open("r", encoding="utf-8") as f:
     release_data = yaml.load(f, Loader=CoreLoader)
     releases = [Defintion(**release_data[r]) for r in release_data]
 
@@ -61,11 +60,7 @@ for release in releases:
 # Start tqdm progress bar
 with (
     tqdm(total=total_iterations, desc="Generating data") as pbar,
-    open(
-        OUTFILE,
-        "w",
-        encoding="utf-8",
-    ) as ndjson_file,
+    OUTFILE.open("w", encoding="utf-8") as ndjson_file,
 ):
     for release in releases:
         if release.release_priority >= PRIORITY:
@@ -81,19 +76,14 @@ with (
                 texts = fs(f"{release.provider}.{release.method}")
                 # Determine data type from the first text
                 if texts:
-                    primative = determine_primitive(texts[0])
-                    locale_class = "UNIVERSAL" if release.universal else locale_name
+                    locale_name = "UNIVERSAL" if release.universal else locale_name
                     # Write data to ndjson file
                     for text in texts:
-                        data = {
-                            "class": f"{release.provider}.{release.method}.{locale_class}",
-                            "provider": release.provider,
-                            "method": release.method,
-                            "locale": locale_class,
-                            "primative": primative,
-                            "text": str(text),
-                        }
-                        ndjson_file.write(json.dumps(data, ensure_ascii=False) + "\n")
+                        record = Record(
+                            tag=f"{release.provider}.{release.method}.{locale_name}",
+                            text=str(text),
+                        )
+                        ndjson_file.write(record.json() + "\n")
 
             pbar.update(1)
 

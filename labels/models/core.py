@@ -1,9 +1,9 @@
-from dataclasses import dataclass
-from typing import List, Optional
+from typing import Any, List, Optional
+
+from pydantic import BaseModel
 
 
-@dataclass
-class Defintion:
+class Defintion(BaseModel):
     """
     A definition to release of data generation.
     """
@@ -14,5 +14,14 @@ class Defintion:
     universal: bool
     release_priority: int
     locales: List[str]
-    samples: List[str]
+    samples: List[Any]
     notes: Optional[str] = None
+
+
+class Record(BaseModel):
+    """
+    A record of data generated.
+    """
+
+    tag: str
+    text: str

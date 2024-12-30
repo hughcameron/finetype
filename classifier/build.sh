@@ -8,9 +8,9 @@ cargo build --release --bin infer --features wgpu
 echo "bc89:60a9:23b8:c1e9:3924:56de:3eb1:3b90" | ./classifier/target/release/infer
 
 # Inference from input:
-./classifier/target/release/infer -i "bc89:60a9:23b8:c1e9:3924:56de:3eb1:3b90"
-./classifier/target/release/infer -i '["bc89:60a9:23b8:c1e9:3924:56de:3eb1:3b90", "00:16:3e:1c:0c:8c"]'
+./target/release/infer -i "bc89:60a9:23b8:c1e9:3924:56de:3eb1:3b90"
+./target/release/infer -i '["bc89:60a9:23b8:c1e9:3924:56de:3eb1:3b90", "00:16:3e:1c:0c:8c"]'
 
 # Inference from file:
 echo '["bc89:60a9:23b8:c1e9:3924:56de:3eb1:3b90", "00:16:3e:1c:0c:8c"]' > data.json
-./classifier/target/release/infer -f data.json
+./target/release/infer -f data.json

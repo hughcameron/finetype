@@ -7,17 +7,17 @@ SELECT
     *,
     ROW_NUMBER() OVER (
         PARTITION BY
-            class
+        tag
     ) AS split,
     DENSE_RANK() OVER (
         ORDER BY
-            class
+        tag
     ) - 1 AS label
 FROM
 read_json (
     'labels/learning_data/type_domain.ndjson',
     FORMAT = 'newline_delimited',
-    COLUMNS = {"class": "string", "provider": "string", "method": "string", "locale": "string", "text": "string"});
+    COLUMNS = {"tag": "string", "provider": "string", "method": "string", "locale": "string", "text": "string"});
 
 -- Attach the SQLite database
 ATTACH '/Users/hugh/.cache/burn-dataset/hughcameronfinetype_01.db' AS finetype (TYPE SQLITE);
@@ -26,7 +26,7 @@ CREATE TABLE train AS
 SELECT
     ROW_NUMBER() OVER () AS row_id,
     label,
-    class,
+    tag,
     provider,
     method,
     locale,
@@ -40,7 +40,7 @@ CREATE TABLE test AS
 SELECT
     ROW_NUMBER() OVER () AS row_id,
     label,
-    class,
+    tag,
     provider,
     method,
     locale,
@@ -55,7 +55,7 @@ CREATE
 OR REPLACE TABLE finetype.test (
     row_id INTEGER,
     label INTEGER,
-    class VARCHAR,
+    tag VARCHAR,
     provider VARCHAR,
     method VARCHAR,
     locale VARCHAR,
@@ -75,7 +75,7 @@ CREATE
     OR REPLACE TABLE finetype.train (
         row_id INTEGER,
         label INTEGER,
-        class VARCHAR,
+        tag VARCHAR,
         provider VARCHAR,
         method VARCHAR,
         locale VARCHAR,
@@ -94,7 +94,7 @@ FROM
 CREATE
     OR REPLACE TABLE finetype.labels (
         label INTEGER,
-        class VARCHAR
+        tag VARCHAR
     );
 
 
@@ -103,7 +103,7 @@ INSERT INTO
 SELECT
 distinct
     label,
-    class
+    tag
     from type_domain;
 
 COPY (
@@ -125,6 +125,6 @@ WITH
     (FORMAT 'parquet');
 
 
-COPY (select distinct label, class from type_domain order by label)
+COPY (select distinct label, tag from type_domain order by label)
 TO 'labels/learning_data/labels.parquet' WITH (FORMAT 'parquet')
 ;
