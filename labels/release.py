@@ -7,7 +7,6 @@ from mimesis import Fieldset, random
 from mimesis.locales import Locale
 from models.core import Defintion, Record
 from tqdm import tqdm
-from yamlcore import CoreLoader
 
 parser = argparse.ArgumentParser(
     description="Release data using mimesis with given definitions.",
@@ -49,7 +48,7 @@ random.global_seed = SEED
 
 
 with DEFINITIONS.open("r", encoding="utf-8") as f:
-    release_data = yaml.load(f, Loader=CoreLoader)
+    release_data = yaml.load(f, Loader=yaml.FullLoader)
     releases = [Defintion(**release_data[r]) for r in release_data]
 
 total_iterations = 0
@@ -83,7 +82,7 @@ with (
                             tag=f"{release.provider}.{release.method}.{locale_name}",
                             text=str(text),
                         )
-                        ndjson_file.write(record.json() + "\n")
+                        ndjson_file.write(record.model_dump_json() + "\n")
 
             pbar.update(1)
 

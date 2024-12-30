@@ -12,9 +12,13 @@ class Defintion(BaseModel):
     method: str
     designation: str
     universal: bool
-    release_priority: int
+    primitive: str
     locales: List[str]
     samples: List[Any]
+    release_priority: int
+    title: Optional[str] = None
+    description: Optional[str] = None
+    aliases: Optional[List[str]] = None
     notes: Optional[str] = None
 
 
