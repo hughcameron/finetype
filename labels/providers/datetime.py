@@ -75,12 +75,28 @@ class Datetime(MimesisDatetime):
         format = "dd/MM/yyyy HH:mm"
         return format_datetime(self.datetime(), format=format, locale=self.locale)
 
-    def shortened_year(self) -> str:
-        format = "[yy-MM-dd|MM/dd/yy]"
+    def short_ymd(self) -> str:
+        format = "yy-MM-dd"
         return format_datetime(self.datetime(), format=format, locale=self.locale)
 
-    def numeric(self) -> str:
-        format = "[yyyyMMdd|ddMMyyyy]"
+    def short_dmy(self) -> str:
+        format = "dd-MM-yy"
+        return format_datetime(self.datetime(), format=format, locale=self.locale)
+
+    def short_mdy(self) -> str:
+        format = "MM-dd-yy"
+        return format_datetime(self.datetime(), format=format, locale=self.locale)
+
+    def numeric_ymd(self) -> str:
+        format = "yyyyMMdd"
+        return format_datetime(self.datetime(), format=format, locale=self.locale)
+
+    def numeric_dmy(self) -> str:
+        format = "ddMMyyyy"
+        return format_datetime(self.datetime(), format=format, locale=self.locale)
+
+    def numeric_mdy(self) -> str:
+        format = "MMddyyyy"
         return format_datetime(self.datetime(), format=format, locale=self.locale)
 
     def long_full_month_name(self) -> str:

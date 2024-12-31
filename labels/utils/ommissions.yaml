@@ -1,0 +1,40 @@
+address.locale:
+  reason: Duplicate of locale method
+binaryfile.audio:
+  reason: Not a text object
+binaryfile.compressed:
+  reason: Not a text object
+binaryfile.document:
+  reason: Not a text object
+binaryfile.image:
+  reason: Not a text object
+binaryfile.video:
+  reason: Not a text object
+choice.choice:
+  reason: Duplicate of any other definition
+cryptographic.token_bytes:
+  reason: Not a text object
+cryptographic.uuid_object:
+  reason: Not a text object
+datetime.bulk_create_datetimes:
+  reason: Private method
+datetime.locale:
+  reason: Duplicate of locale method
+finance.locale:
+  reason: Duplicate of locale method
+food.locale:
+  reason: Duplicate of locale method
+internet.ip_v4_object:
+  reason: Not a text object
+internet.ip_v6_object:
+  reason: Not a text object
+internet.special_ip_v4_object:
+  reason: Not a text object
+path.platform:
+  reason: Returns current platform
+person.birthdate:
+  reason: Duplicate of other date method
+person.locale:
+  reason: Duplicate of locale method
+text.locale:
+  reason: Duplicate of locale method
