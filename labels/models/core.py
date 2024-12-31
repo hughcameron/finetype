@@ -19,9 +19,6 @@ class Designation(str, Enum):
     duplicate = "duplicate"
     system_internal = "system_internal"
 
-    def __repr__(self) -> str:
-        return self.value
-
 
 class Definition(BaseModel):
     """
@@ -47,5 +44,5 @@ class Record(BaseModel):
     A record of data generated.
     """
 
-    tag: str
+    classification: str
     text: str

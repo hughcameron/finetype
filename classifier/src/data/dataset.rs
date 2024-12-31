@@ -26,7 +26,7 @@ pub trait TextClassificationDataset: Dataset<TextClassificationItem> {
 /// Struct for items in the FineType dataset
 #[derive(Clone, Debug, serde::Serialize, serde::Deserialize)]
 pub struct FineTypeItem {
-    pub tag: String,  // The tag (class - locale) of the item
+    pub classification: String,  // The classification (class - locale) of the item
     pub text: String, // The text of the item
     pub label: usize, // The label of the item (classification category)
 }
@@ -80,14 +80,14 @@ impl FineTypeDataset {
     /// Fetches the labels from the SQLite table and returns a HashMap
     fn fetch_labels(dataset: &SqliteDataset<FineTypeItem>) -> HashMap<usize, String> {
         let conn = Connection::open(dataset.db_file()).unwrap();
-        let mut stmt = conn.prepare("SELECT label, tag FROM labels").unwrap();
+        let mut stmt = conn.prepare("SELECT label, classification FROM labels").unwrap();
         let mut rows = stmt.query([]).unwrap();
 
         let mut labels = HashMap::new();
         while let Some(row) = rows.next().unwrap() {
             let label: usize = row.get(0).unwrap();
-            let tag: String = row.get(1).unwrap();
-            labels.insert(label, tag);
+            let classification: String = row.get(1).unwrap();
+            labels.insert(label, classification);
         }
         labels
     }

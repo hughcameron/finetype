@@ -77,13 +77,13 @@ with (
                 # Determine data type from the first text
                 if texts:
                     if release.designation == "universal":
-                        locale_tag = "UNIVERSAL"
+                        locale_ext = "UNIVERSAL"
                     else:
-                        locale_tag = locale_name
+                        locale_ext = locale_name
                     # Write data to ndjson file
                     for text in texts:
                         record = Record(
-                            tag=f"{release.provider}.{release.method}.{locale_tag}",
+                            classification=f"{release.provider}.{release.method}.{locale_ext}",
                             text=str(text),
                         )
                         ndjson_file.write(record.model_dump_json() + "\n")
