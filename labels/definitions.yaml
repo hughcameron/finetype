@@ -428,24 +428,6 @@ address.federal_subject:
     - Massachusetts
     - Illinois
   title: null
-address.get_current_locale:
-  aliases: null
-  description: null
-  designation: system_internal
-  locales:
-    - EN
-  method: get_current_locale
-  notes: null
-  primitive: str
-  provider: address
-  references: null
-  release_priority: 0
-  samples:
-    - en
-    - en
-    - en
-    - en
-  title: Current locale.
 address.iata_code:
   aliases: null
   description: null
@@ -1411,24 +1393,6 @@ datetime.full_weekday_abbreviated_month:
     - Sunday, 22 Dec 2024
     - Tuesday, 16 Jul 2024
   title: Full Weekday and Abbreviated Month Date
-datetime.get_current_locale:
-  aliases: null
-  description: null
-  designation: system_internal
-  locales:
-    - EN
-  method: get_current_locale
-  notes: null
-  primitive: str
-  provider: datetime
-  references: null
-  release_priority: 0
-  samples:
-    - en
-    - en
-    - en
-    - en
-  title: Current locale.
 datetime.gmt_offset:
   aliases: null
   description: null
@@ -2194,24 +2158,6 @@ finance.currency_symbol:
     - $
     - $
   title: Currency symbol.
-finance.get_current_locale:
-  aliases: null
-  description: null
-  designation: system_internal
-  locales:
-    - EN
-  method: get_current_locale
-  notes: null
-  primitive: str
-  provider: finance
-  references: null
-  release_priority: 0
-  samples:
-    - en
-    - en
-    - en
-    - en
-  title: Current locale.
 finance.price:
   aliases: null
   description: null
@@ -2356,24 +2302,6 @@ food.fruit:
     - Beach plum
     - Kakadu plum
   title: Fruit name.
-food.get_current_locale:
-  aliases: null
-  description: null
-  designation: system_internal
-  locales:
-    - EN
-  method: get_current_locale
-  notes: null
-  primitive: str
-  provider: food
-  references: null
-  release_priority: 0
-  samples:
-    - en
-    - en
-    - en
-    - en
-  title: Current locale.
 food.spices:
   aliases: null
   description: null
@@ -4365,24 +4293,6 @@ person.gender_symbol:
     - ♂
     - ♀
   title: null
-person.get_current_locale:
-  aliases: null
-  description: null
-  designation: system_internal
-  locales:
-    - EN
-  method: get_current_locale
-  notes: null
-  primitive: str
-  provider: person
-  references: null
-  release_priority: 0
-  samples:
-    - en
-    - en
-    - en
-    - en
-  title: Current locale.
 person.height:
   aliases: null
   description: null
@@ -5051,24 +4961,6 @@ text.emoji:
     - 🤗
     - 💖
   title: Emoji code.
-text.get_current_locale:
-  aliases: null
-  description: null
-  designation: system_internal
-  locales:
-    - EN
-  method: get_current_locale
-  notes: null
-  primitive: str
-  provider: text
-  references: null
-  release_priority: 0
-  samples:
-    - en
-    - en
-    - en
-    - en
-  title: Current locale.
 text.hex_color:
   aliases: null
   description: null
