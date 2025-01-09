@@ -7,7 +7,7 @@ import yaml
 from mimesis import random
 from models.core import Definition, Record
 from providers.collection import generic_set
-from tqdm import tqdm
+from tqdm.asyncio import tqdm
 
 parser = argparse.ArgumentParser(
     description="Release data using mimesis with given definitions.",
@@ -51,12 +51,17 @@ with DEFINITIONS.open("r", encoding="utf-8") as f:
     release_data = yaml.load(f, Loader=yaml.FullLoader)
     releases = [Definition(**release_data[r]) for r in release_data]
 
-total_iterations = sum(
-    len(release.locales) for release in releases if release.release_priority >= PRIORITY
+total_iterations = (
+    sum(
+        len(release.locales)
+        for release in releases
+        if release.release_priority >= PRIORITY
+    )
+    * TEXTS
 )
 
 
-async def generate_data_for_locale(release, locale_name, texts, ndjson_file):
+async def generate_data_for_locale(release, locale_name, texts, ndjson_file, pbar):
     generic = generic_set(locale_name)
     provider = getattr(generic, release.provider)
     method = getattr(provider, release.method)
@@ -68,6 +73,7 @@ async def generate_data_for_locale(release, locale_name, texts, ndjson_file):
             text=str(method()),
         )
         records.append(record.model_dump_json())
+        pbar.update(1)  # Update the progress bar for each iteration
 
     await ndjson_file.write("\n".join(records) + "\n")
 
@@ -75,19 +81,24 @@ async def generate_data_for_locale(release, locale_name, texts, ndjson_file):
 async def main():
     async with aiofiles.open(OUTFILE, "w", encoding="utf-8") as ndjson_file:
         tasks = []
-        for release in releases:
-            if release.release_priority >= PRIORITY:
-                for locale_name in release.locales:
-                    tasks.append(
-                        generate_data_for_locale(
-                            release, locale_name, TEXTS, ndjson_file
+        pbar = tqdm(total=total_iterations, desc="Generating data")
+        try:
+            for release in releases:
+                if release.release_priority >= PRIORITY:
+                    for locale_name in release.locales:
+                        tasks.append(
+                            generate_data_for_locale(
+                                release,
+                                locale_name,
+                                TEXTS,
+                                ndjson_file,
+                                pbar,
+                            ),
                         )
-                    )
 
-        for f in tqdm(
-            asyncio.as_completed(tasks), total=total_iterations, desc="Generating data"
-        ):
-            await f
+            await asyncio.gather(*tasks)
+        finally:
+            pbar.close()
 
     print(f"Data generation complete. Saved to {OUTFILE}.")
 
