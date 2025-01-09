@@ -61,15 +61,15 @@ total_iterations = (
 )
 
 
-async def generate_data_for_locale(release, locale_name, texts, ndjson_file, pbar):
-    generic = generic_set(locale_name)
+async def generate_data_for_locale(release, locale, texts, ndjson_file, pbar):
+    generic = generic_set(locale)
     provider = getattr(generic, release.provider)
     method = getattr(provider, release.method)
 
     records = []
     for _ in range(texts):
         record = Record(
-            classification=f"{release.provider}.{release.method}.{locale_name}",
+            classification=f"{release.provider}.{release.method}.{locale.name}",
             text=str(method()),
         )
         records.append(record.model_dump_json())
@@ -81,20 +81,15 @@ async def generate_data_for_locale(release, locale_name, texts, ndjson_file, pba
 async def main():
     async with aiofiles.open(OUTFILE, "w", encoding="utf-8") as ndjson_file:
         tasks = []
-        pbar = tqdm(total=total_iterations, desc="Generating data")
+        pbar = tqdm(total=total_iterations, desc="Generating data", unit_scale=True)
         try:
             for release in releases:
                 if release.release_priority >= PRIORITY:
-                    for locale_name in release.locales:
-                        tasks.append(
-                            generate_data_for_locale(
-                                release,
-                                locale_name,
-                                TEXTS,
-                                ndjson_file,
-                                pbar,
-                            ),
+                    for locale in release.locales:
+                        task = generate_data_for_locale(
+                            release, locale, TEXTS, ndjson_file, pbar
                         )
+                        tasks.append(task)
 
             await asyncio.gather(*tasks)
         finally:

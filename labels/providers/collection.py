@@ -9,6 +9,8 @@ FINETYPE_PROVIDERS = [Datetime, Date, Time]
 
 
 def generic_set(locale: Locale | str) -> Generic:
+    if locale in (Locale.UNIVERSAL, "universal"):
+        locale = Locale.EN
     if isinstance(locale, str):
         locale = getattr(Locale, locale)
     generic = Generic(locale)

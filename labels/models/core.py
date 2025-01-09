@@ -57,7 +57,7 @@ class Locale(Enum):
     TR = "tr"
     UK = "uk"
     ZH = "zh"
-    UNIVERSAL = EN
+    UNIVERSAL = "universal"
 
     @classmethod
     def values(cls) -> List[str]:
