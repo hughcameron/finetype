@@ -1210,7 +1210,7 @@ cryptographic.uuid:
     - ed6bc250-886c-4a01-b453-1a54f80030f0
     - 9724864a-4e80-4b0d-a63a-cf5942fbc26b
   title: UUID4 as string.
-datetime.abbreviated_month:
+date.abbreviated_month:
   aliases: []
   description: Date format with abbreviated month names
   designation: universal
@@ -1219,7 +1219,7 @@ datetime.abbreviated_month:
   method: abbreviated_month
   notes: null
   primitive: str
-  provider: datetime
+  provider: date
   references: null
   release_priority: 5
   samples:
@@ -1432,7 +1432,7 @@ datetime.formatted_time:
     - "10:47:11"
     - 09:31:22
   title: String formatted time.
-datetime.full_weekday_abbreviated_month:
+date.full_weekday_abbreviated_month:
   aliases: []
   description: Date format with full weekday name and abbreviated month
   designation: universal
@@ -1441,7 +1441,7 @@ datetime.full_weekday_abbreviated_month:
   method: full_weekday_abbreviated_month
   notes: null
   primitive: str
-  provider: datetime
+  provider: date
   references: null
   release_priority: 5
   samples:
@@ -1549,7 +1549,7 @@ datetime.iso_8601_with_time_zone_name:
     - 2024-06-17T18:30:15[Z|`+0000`]
     - 2024-08-05T18:02:26[Z|`+0000`]
   title: ISO 8601 with Time Zone Name
-datetime.julian:
+date.julian:
   aliases: []
   description: Days since a fixed astronomical epoch
   designation: universal
@@ -1558,7 +1558,7 @@ datetime.julian:
   method: julian
   notes: null
   primitive: str
-  provider: datetime
+  provider: date
   references:
     - link: https://en.wikipedia.org/wiki/Julian_day
       title: Astronomical Julian Day Number
@@ -1569,7 +1569,7 @@ datetime.julian:
     - 24-006
     - 24-307
   title: Julian Date
-datetime.long_full_month_name:
+date.long_full_month_name:
   aliases: []
   description: Date format with full month names and day
   designation: universal
@@ -1578,7 +1578,7 @@ datetime.long_full_month_name:
   method: long_full_month_name
   notes: null
   primitive: str
-  provider: datetime
+  provider: date
   references: null
   release_priority: 5
   samples:
@@ -1587,7 +1587,7 @@ datetime.long_full_month_name:
     - April 1, 2024
     - January 11, 2024
   title: Long Date with Full Month Name
-datetime.long_weekday_month_name:
+date.long_weekday_month_name:
   aliases: []
   description: Date format with weekday, day, and full month name
   designation: universal
@@ -1596,7 +1596,7 @@ datetime.long_weekday_month_name:
   method: long_weekday_month_name
   notes: null
   primitive: str
-  provider: datetime
+  provider: date
   references: null
   release_priority: 5
   samples:
@@ -1605,7 +1605,7 @@ datetime.long_weekday_month_name:
     - Monday, 24 June 2024
     - Monday, 20 May 2024
   title: Long Date with Weekday and Month Name
-datetime.month:
+date.month:
   aliases: null
   description: null
   designation: duplicate
@@ -1614,7 +1614,7 @@ datetime.month:
   method: month
   notes: Duplicate of structured datetimes
   primitive: str
-  provider: datetime
+  provider: date
   references: null
   release_priority: 1
   samples:
@@ -1623,7 +1623,7 @@ datetime.month:
     - August
     - July
   title: Month name.
-datetime.numeric_dmy:
+date.numeric_dmy:
   aliases: []
   description: null
   designation: universal
@@ -1632,7 +1632,7 @@ datetime.numeric_dmy:
   method: numeric_dmy
   notes: null
   primitive: str
-  provider: datetime
+  provider: date
   references: []
   release_priority: 1
   samples:
@@ -1641,7 +1641,7 @@ datetime.numeric_dmy:
     - "15042024"
     - "28012024"
   title: Default title for datetime.numeric_dmy
-datetime.numeric_mdy:
+date.numeric_mdy:
   aliases: []
   description: null
   designation: universal
@@ -1650,7 +1650,7 @@ datetime.numeric_mdy:
   method: numeric_mdy
   notes: null
   primitive: str
-  provider: datetime
+  provider: date
   references: []
   release_priority: 1
   samples:
@@ -1659,7 +1659,7 @@ datetime.numeric_mdy:
     - "03212024"
     - 09182024
   title: Default title for datetime.numeric_mdy
-datetime.numeric_ymd:
+date.numeric_ymd:
   aliases: []
   description: null
   designation: universal
@@ -1668,7 +1668,7 @@ datetime.numeric_ymd:
   method: numeric_ymd
   notes: null
   primitive: str
-  provider: datetime
+  provider: date
   references: []
   release_priority: 1
   samples:
@@ -1677,7 +1677,7 @@ datetime.numeric_ymd:
     - "20240403"
     - "20240321"
   title: Default title for datetime.numeric_ymd
-datetime.ordinal:
+date.ordinal:
   aliases: []
   description: Year and day of the year
   designation: universal
@@ -1686,7 +1686,7 @@ datetime.ordinal:
   method: ordinal
   notes: null
   primitive: str
-  provider: datetime
+  provider: date
   references:
     - link: https://www.iso.org/standard/70907.html
       title: ISO 8601-1:2019
