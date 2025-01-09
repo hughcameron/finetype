@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 
 import yaml
+from models.core import Definition
 
 DEFINITIONS = Path("definitions.yaml")
 
@@ -18,7 +19,11 @@ def load_definitions():
 def save_definitions(definitions):
     with DEFINITIONS.open("w", encoding="utf-8") as f:
         yaml.dump(
-            definitions, f, Dumper=yaml.Dumper, allow_unicode=True, sort_keys=True,
+            definitions,
+            f,
+            Dumper=yaml.Dumper,
+            allow_unicode=True,
+            sort_keys=True,
         )
 
 
@@ -40,7 +45,10 @@ def update_definitions(file_path):
     for row in rows:
         key = row.pop("key")
         if key in definitions:
-            definitions[key].update(row)
+            new_def = definitions[key].copy()
+            new_def.update(row)
+            valid = Definition(**new_def).model_dump(mode="json")
+            definitions[key] = valid
         else:
             print(f"Warning: Key {key} not found in definitions.")
     save_definitions(definitions)
@@ -75,10 +83,17 @@ def main():
         description="Manage definitions in definitions.yaml",
     )
     parser.add_argument(
-        "--update", help="TSV or JSON file with definition keys and fields to update",
+        "--update",
+        help="TSV or JSON file with definition keys and fields to update",
     )
-    parser.add_argument("--delete", help="TSV or JSON file with definition keys to delete")
-    parser.add_argument("--create", help="TSV or JSON file with definition fields to create")
+    parser.add_argument(
+        "--delete",
+        help="TSV or JSON file with definition keys to delete",
+    )
+    parser.add_argument(
+        "--create",
+        help="TSV or JSON file with definition fields to create",
+    )
 
     args = parser.parse_args()
 
