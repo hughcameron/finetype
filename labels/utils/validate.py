@@ -1,8 +1,8 @@
 from pathlib import Path
 
 import yaml
+from domains.collection import generic_set
 from models.core import Definition
-from providers.collection import generic_set
 
 DEFINITIONS = Path("definitions.yaml")
 

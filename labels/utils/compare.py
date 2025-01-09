@@ -1,9 +1,9 @@
 from pathlib import Path
 
 import yaml
+from domains.collection import generic_set
 from mimesis.locales import Locale
 from models.core import Definition, Designation
-from providers.collection import generic_set
 
 DEFINITIONS = Path("definitions.yaml")
 OMMISSIONS = Path("utils/ommissions.yaml")

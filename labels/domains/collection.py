@@ -1,9 +1,9 @@
 from mimesis import Generic
 from models.core import Locale
 
-from providers.datetime.date import Date
-from providers.datetime.datetime import Datetime
-from providers.datetime.time import Time
+from domains.datetime.date import Date
+from domains.datetime.datetime import Datetime
+from domains.datetime.time import Time
 
 FINETYPE_PROVIDERS = [Datetime, Date, Time]
 

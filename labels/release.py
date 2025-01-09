@@ -4,9 +4,9 @@ from pathlib import Path
 
 import aiofiles
 import yaml
+from domains.collection import generic_set
 from mimesis import random
 from models.core import Definition, Record
-from providers.collection import generic_set
 from tqdm.asyncio import tqdm
 
 parser = argparse.ArgumentParser(
@@ -87,7 +87,11 @@ async def main():
                 if release.release_priority >= PRIORITY:
                     for locale in release.locales:
                         task = generate_data_for_locale(
-                            release, locale, TEXTS, ndjson_file, pbar
+                            release,
+                            locale,
+                            TEXTS,
+                            ndjson_file,
+                            pbar,
                         )
                         tasks.append(task)
 

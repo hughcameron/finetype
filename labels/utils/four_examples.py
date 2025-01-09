@@ -2,10 +2,10 @@ import random
 from pathlib import Path
 
 import yaml
+from domains.collection import generic_set
 from mimesis import Fieldset
 from mimesis.locales import Locale
 from models.core import Definition
-from providers.collection import generic_set
 
 DEFINITIONS = Path("definitions.yaml")
 DEFINITIONS_UPDATE = Path("definitions_update.yaml")
