@@ -2,10 +2,9 @@ import argparse
 from pathlib import Path
 
 import yaml
-from mimesis import Fieldset, random
-from mimesis.locales import Locale
+from mimesis import random
 from models.core import Definition, Record
-from providers.collection import generic_set
+from providers.collection import Locale, generic_set
 from tqdm import tqdm
 
 parser = argparse.ArgumentParser(
@@ -65,28 +64,18 @@ with (
         if release.release_priority >= PRIORITY:
             # For each locale_selection
             for locale_name in release.locales:
-                # Instantiate a Fieldset object
                 locale = getattr(Locale, locale_name)
-                fs = Fieldset(locale=locale, i=TEXTS)  # Generate VALUES texts at once
                 generic = generic_set(locale_name)
                 provider = getattr(generic, release.provider)
                 method = getattr(provider, release.method)
 
-                # Generate texts using Fieldset
-                texts = fs(f"{release.provider}.{release.method}")
-                # Determine data type from the first text
-                if texts:
-                    if release.designation == "universal":
-                        locale_ext = "UNIVERSAL"
-                    else:
-                        locale_ext = locale_name
-                    # Write data to ndjson file
-                    for text in texts:
-                        record = Record(
-                            classification=f"{release.provider}.{release.method}.{locale_ext}",
-                            text=str(text),
-                        )
-                        ndjson_file.write(record.model_dump_json() + "\n")
+                # Write data to ndjson file
+                for _ in range(TEXTS):
+                    record = Record(
+                        classification=f"{release.provider}.{release.method}.{locale_name}",
+                        text=str(method()),
+                    )
+                    ndjson_file.write(record.model_dump_json() + "\n")
 
             pbar.update(1)
 
