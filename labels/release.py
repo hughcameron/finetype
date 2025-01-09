@@ -3,14 +3,19 @@ import asyncio
 from pathlib import Path
 
 import aiofiles
-import yaml
-from domains.collection import generic_set
+from domains.collection import generic_set, load_releases
 from mimesis import random
-from models.core import Definition, Record
+from models.core import Record
 from tqdm.asyncio import tqdm
 
 parser = argparse.ArgumentParser(
     description="Release data using mimesis with given definitions.",
+)
+parser.add_argument(
+    "--release",
+    type=str,
+    default="definitions_tier.yaml",
+    help="Path to the release definitions file (default: definitions_tier.yaml)",
 )
 parser.add_argument(
     "--texts",
@@ -40,36 +45,39 @@ args = parser.parse_args()
 
 TEXTS = args.texts
 PRIORITY = args.priority
+RELEASE_PATH = args.release
 OUTFILE = Path(args.output)
 SEED = args.seed
 
-DEFINITIONS = Path("definitions.yaml")
 
 random.global_seed = SEED
 
-with DEFINITIONS.open("r", encoding="utf-8") as f:
-    release_data = yaml.load(f, Loader=yaml.FullLoader)
-    releases = [Definition(**release_data[r]) for r in release_data]
+release = load_releases(RELEASE_PATH)
 
-total_iterations = (
-    sum(
-        len(release.locales)
-        for release in releases
-        if release.release_priority >= PRIORITY
-    )
-    * TEXTS
-)
+total_iterations = 0
+for domain in release.domains:
+    for sector in domain.sectors:
+        for definition in sector.definitions:
+            if definition.release_priority >= PRIORITY:
+                total_iterations += len(definition.locales) * TEXTS
 
 
-async def generate_data_for_locale(release, locale, texts, ndjson_file, pbar):
+async def generate_data_for_locale(
+    sector,
+    definition,
+    locale,
+    texts,
+    ndjson_file,
+    pbar,
+):
     generic = generic_set(locale)
-    provider = getattr(generic, release.provider)
-    method = getattr(provider, release.method)
+    provider = getattr(generic, sector.name)
+    method = getattr(provider, definition.name)
 
     records = []
     for _ in range(texts):
         record = Record(
-            classification=f"{release.provider}.{release.method}.{locale.name}",
+            classification=f"{sector.name}.{definition.name}.{locale.name}",
             text=str(method()),
         )
         records.append(record.model_dump_json())
@@ -83,17 +91,20 @@ async def main():
         tasks = []
         pbar = tqdm(total=total_iterations, desc="Generating data", unit_scale=True)
         try:
-            for release in releases:
-                if release.release_priority >= PRIORITY:
-                    for locale in release.locales:
-                        task = generate_data_for_locale(
-                            release,
-                            locale,
-                            TEXTS,
-                            ndjson_file,
-                            pbar,
-                        )
-                        tasks.append(task)
+            for domain in release.domains:
+                for sector in domain.sectors:
+                    for definition in sector.definitions:
+                        if definition.release_priority >= PRIORITY:
+                            for locale in definition.locales:
+                                task = generate_data_for_locale(
+                                    sector,
+                                    definition,
+                                    locale,
+                                    TEXTS,
+                                    ndjson_file,
+                                    pbar,
+                                )
+                                tasks.append(task)
 
             await asyncio.gather(*tasks)
         finally:

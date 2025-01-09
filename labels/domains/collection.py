@@ -1,5 +1,6 @@
 from mimesis import Generic
-from models.core import Locale
+from models.core import Locale, Release
+from pydantic_yaml import parse_yaml_file_as
 
 from domains.datetime.date import Date
 from domains.datetime.datetime import Datetime
@@ -17,3 +18,7 @@ def generic_set(locale: Locale | str) -> Generic:
     for provider in FINETYPE_PROVIDERS:
         generic.add_provider(provider)
     return generic
+
+
+def load_releases(release_path) -> Release:
+    return parse_yaml_file_as(Release, release_path)

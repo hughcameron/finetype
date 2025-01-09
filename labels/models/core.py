@@ -80,8 +80,7 @@ class Definition(BaseModel):
     A definition to release of data generation.
     """
 
-    provider: str
-    method: str
+    name: str
     designation: Designation
     primitive: str
     locales: List[Locale]
@@ -100,6 +99,20 @@ class Definition(BaseModel):
             for v in values:
                 assert hasattr(Locale, v), f"{v} is not an attribute of Locale"
             return [getattr(Locale, value) for value in values]
+
+
+class Sector(BaseModel):
+    name: str
+    definitions: List[Definition]
+
+
+class Domain(BaseModel):
+    name: str
+    sectors: List[Sector]
+
+
+class Release(BaseModel):
+    domains: List[Domain]
 
 
 class Record(BaseModel):
