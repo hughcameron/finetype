@@ -239,7 +239,7 @@ address.coordinates:
   description: null
   designation: broad_object
   locales:
-    - EN
+    - UNIVERSAL
   method: coordinates
   notes: Find a universal format
   primitive: Dict[str, float]
@@ -320,7 +320,7 @@ address.country_code:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: country_code
   notes: "Split out country codes: ISO 3166"
   primitive: str
@@ -338,7 +338,7 @@ address.country_emoji_flag:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: country_emoji_flag
   notes: null
   primitive: str
@@ -356,7 +356,7 @@ address.default_country:
   description: null
   designation: duplicate
   locales:
-    - EN
+    - UNIVERSAL
   method: default_country
   notes: Duplicate of country
   primitive: str
@@ -433,7 +433,7 @@ address.iata_code:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: iata_code
   notes: null
   primitive: str
@@ -451,7 +451,7 @@ address.icao_code:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: icao_code
   notes: null
   primitive: str
@@ -469,7 +469,7 @@ address.isd_code:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: isd_code
   notes: null
   primitive: str
@@ -487,7 +487,7 @@ address.latitude:
   description: null
   designation: broad_numbers
   locales:
-    - EN
+    - UNIVERSAL
   method: latitude
   notes: null
   primitive: float
@@ -505,7 +505,7 @@ address.longitude:
   description: null
   designation: broad_numbers
   locales:
-    - EN
+    - UNIVERSAL
   method: longitude
   notes: null
   primitive: float
@@ -877,7 +877,7 @@ address.street_number:
   description: null
   designation: broad_numbers
   locales:
-    - EN
+    - UNIVERSAL
   method: street_number
   notes: null
   primitive: str
@@ -1013,7 +1013,7 @@ code.ean:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: ean
   notes: null
   primitive: str
@@ -1031,7 +1031,7 @@ code.imei:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: imei
   notes: null
   primitive: str
@@ -1049,7 +1049,7 @@ code.isbn:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: isbn
   notes: null
   primitive: str
@@ -1067,7 +1067,7 @@ code.issn:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: issn
   notes: null
   primitive: str
@@ -1085,7 +1085,7 @@ code.locale_code:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: locale_code
   notes: null
   primitive: str
@@ -1103,7 +1103,7 @@ code.pin:
   description: null
   designation: broad_numbers
   locales:
-    - EN
+    - UNIVERSAL
   method: pin
   notes: null
   primitive: str
@@ -1121,7 +1121,7 @@ cryptographic.hash:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: hash
   notes: Split out hash types - eg MD5, SHA256
   primitive: str
@@ -1139,7 +1139,7 @@ cryptographic.mnemonic_phrase:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: mnemonic_phrase
   notes: null
   primitive: str
@@ -1161,7 +1161,7 @@ cryptographic.token_hex:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: token_hex
   notes: null
   primitive: str
@@ -1179,7 +1179,7 @@ cryptographic.token_urlsafe:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: token_urlsafe
   notes: null
   primitive: str
@@ -1197,7 +1197,7 @@ cryptographic.uuid:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: uuid
   notes: null
   primitive: str
@@ -1215,7 +1215,7 @@ datetime.abbreviated_month:
   description: Date format with abbreviated month names
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: abbreviated_month
   notes: null
   primitive: str
@@ -1234,7 +1234,7 @@ datetime.american:
   description: Common U.S. date and time format
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: american
   notes: null
   primitive: str
@@ -1254,7 +1254,7 @@ datetime.century:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: century
   notes: Rename to Roman Numberals
   primitive: str
@@ -1272,7 +1272,7 @@ datetime.date:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: date
   notes: null
   primitive: str
@@ -1290,7 +1290,7 @@ datetime.datetime:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: datetime
   notes: null
   primitive: str
@@ -1308,13 +1308,13 @@ datetime.day_of_month:
   description: null
   designation: broad_numbers
   locales:
-    - EN
+    - UNIVERSAL
   method: day_of_month
   notes: null
   primitive: int
   provider: datetime
   references: null
-  release_priority: 0
+  release_priority: 1
   samples:
     - 24
     - 8
@@ -1326,13 +1326,13 @@ datetime.day_of_week:
   description: null
   designation: duplicate
   locales:
-    - EN
+    - UNIVERSAL
   method: day_of_week
   notes: Duplicate of structured datetimes
   primitive: str
   provider: datetime
   references: null
-  release_priority: 0
+  release_priority: 1
   samples:
     - Sunday
     - Monday
@@ -1344,7 +1344,7 @@ datetime.duration:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: duration
   notes: null
   primitive: str
@@ -1363,7 +1363,7 @@ datetime.european:
   description: Common European date and time format
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: european
   notes: null
   primitive: str
@@ -1383,13 +1383,13 @@ datetime.formatted_date:
   description: null
   designation: duplicate
   locales:
-    - EN
+    - UNIVERSAL
   method: formatted_date
   notes: Duplicate of structured datetimes
   primitive: str
   provider: datetime
   references: null
-  release_priority: 0
+  release_priority: 1
   samples:
     - 08/29/2024
     - 08/30/2024
@@ -1401,13 +1401,13 @@ datetime.formatted_datetime:
   description: null
   designation: duplicate
   locales:
-    - EN
+    - UNIVERSAL
   method: formatted_datetime
   notes: Duplicate of structured datetimes
   primitive: str
   provider: datetime
   references: null
-  release_priority: 0
+  release_priority: 1
   samples:
     - 05/22/2024 19:01:25
     - 10/09/2024 10:20:27
@@ -1419,13 +1419,13 @@ datetime.formatted_time:
   description: null
   designation: duplicate
   locales:
-    - EN
+    - UNIVERSAL
   method: formatted_time
   notes: Duplicate of structured datetimes
   primitive: str
   provider: datetime
   references: null
-  release_priority: 0
+  release_priority: 1
   samples:
     - "22:32:51"
     - "10:56:18"
@@ -1437,7 +1437,7 @@ datetime.full_weekday_abbreviated_month:
   description: Date format with full weekday name and abbreviated month
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: full_weekday_abbreviated_month
   notes: null
   primitive: str
@@ -1455,7 +1455,7 @@ datetime.gmt_offset:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: gmt_offset
   notes: null
   primitive: str
@@ -1474,7 +1474,7 @@ datetime.iso_8601:
   description: Standard international format
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: iso_8601
   notes: null
   primitive: str
@@ -1496,7 +1496,7 @@ datetime.iso_8601_compact:
   description: Compact ISO 8601 without separators
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: iso_8601_compact
   notes: null
   primitive: str
@@ -1516,7 +1516,7 @@ datetime.iso_8601_ext:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: iso_8601_ext
   notes: null
   primitive: str
@@ -1534,7 +1534,7 @@ datetime.iso_8601_with_time_zone_name:
   description: ISO 8601 with Z for UTC or time zone offset - 2023-12-29T10:45:30-05:00
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: iso_8601_with_time_zone_name
   notes: null
   primitive: str
@@ -1554,7 +1554,7 @@ datetime.julian:
   description: Days since a fixed astronomical epoch
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: julian
   notes: null
   primitive: str
@@ -1574,7 +1574,7 @@ datetime.long_full_month_name:
   description: Date format with full month names and day
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: long_full_month_name
   notes: null
   primitive: str
@@ -1592,7 +1592,7 @@ datetime.long_weekday_month_name:
   description: Date format with weekday, day, and full month name
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: long_weekday_month_name
   notes: null
   primitive: str
@@ -1610,13 +1610,13 @@ datetime.month:
   description: null
   designation: duplicate
   locales:
-    - EN
+    - UNIVERSAL
   method: month
   notes: Duplicate of structured datetimes
   primitive: str
   provider: datetime
   references: null
-  release_priority: 0
+  release_priority: 1
   samples:
     - December
     - January
@@ -1628,7 +1628,7 @@ datetime.numeric_dmy:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: numeric_dmy
   notes: null
   primitive: str
@@ -1646,7 +1646,7 @@ datetime.numeric_mdy:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: numeric_mdy
   notes: null
   primitive: str
@@ -1664,7 +1664,7 @@ datetime.numeric_ymd:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: numeric_ymd
   notes: null
   primitive: str
@@ -1682,7 +1682,7 @@ datetime.ordinal:
   description: Year and day of the year
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: ordinal
   notes: null
   primitive: str
@@ -1702,13 +1702,13 @@ datetime.periodicity:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: periodicity
   notes: null
   primitive: str
   provider: datetime
   references: null
-  release_priority: 0
+  release_priority: 1
   samples:
     - Once
     - Never
@@ -1720,7 +1720,7 @@ datetime.rfc_2822:
   description: Email header date and time format
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: rfc_2822
   notes: null
   primitive: str
@@ -1740,7 +1740,7 @@ datetime.rfc_2822_with_ordinals:
   description: RFC 2822 format with ordinal indicators
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: rfc_2822_with_ordinals
   notes: null
   primitive: str
@@ -1760,7 +1760,7 @@ datetime.rfc_3339:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: rfc_3339
   notes: null
   primitive: str
@@ -1778,7 +1778,7 @@ datetime.short_dmy:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: short_dmy
   notes: null
   primitive: str
@@ -1796,7 +1796,7 @@ datetime.short_mdy:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: short_mdy
   notes: null
   primitive: str
@@ -1814,7 +1814,7 @@ datetime.short_ymd:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: short_ymd
   notes: null
   primitive: str
@@ -1832,7 +1832,7 @@ datetime.sql_standard:
   description: Common SQL format for datetime values
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: sql_standard
   notes: null
   primitive: str
@@ -1852,7 +1852,7 @@ datetime.time:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: time
   notes: null
   primitive: str
@@ -1870,7 +1870,7 @@ datetime.timestamp:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: timestamp
   notes: null
   primitive: int
@@ -1888,7 +1888,7 @@ datetime.timezone:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: timezone
   notes: null
   primitive: str
@@ -1906,7 +1906,7 @@ datetime.unix_epoch_in_milliseconds:
   description: Unix timestamp with milliseconds precision
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: unix_epoch_in_milliseconds
   notes: null
   primitive: str
@@ -1926,7 +1926,7 @@ datetime.unix_timestamp:
   description: Seconds since 1970-01-01 00:00:00 UTC
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: unix_timestamp
   notes: null
   primitive: str
@@ -1946,13 +1946,13 @@ datetime.week_date:
   description: null
   designation: duplicate
   locales:
-    - EN
+    - UNIVERSAL
   method: week_date
   notes: Duplicate of structured datetimes
   primitive: str
   provider: datetime
   references: null
-  release_priority: 0
+  release_priority: 1
   samples:
     - 2017-W3
     - 2023-W9
@@ -1964,13 +1964,13 @@ datetime.year:
   description: null
   designation: duplicate
   locales:
-    - EN
+    - UNIVERSAL
   method: year
   notes: Duplicate of structured datetimes
   primitive: int
   provider: datetime
   references: null
-  release_priority: 0
+  release_priority: 1
   samples:
     - 1992
     - 2008
@@ -1982,7 +1982,7 @@ development.boolean:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: boolean
   notes: null
   primitive: bool
@@ -2000,7 +2000,7 @@ development.calver:
   description: null
   designation: duplicate
   locales:
-    - EN
+    - UNIVERSAL
   method: calver
   notes: Duplicate of structured datetimes
   primitive: str
@@ -2018,7 +2018,7 @@ development.ility:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: ility
   notes: null
   primitive: str
@@ -2036,7 +2036,7 @@ development.os:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: os
   notes: null
   primitive: str
@@ -2054,7 +2054,7 @@ development.programming_language:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: programming_language
   notes: null
   primitive: str
@@ -2072,7 +2072,7 @@ development.software_license:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: software_license
   notes: null
   primitive: str
@@ -2090,7 +2090,7 @@ development.stage:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: stage
   notes: null
   primitive: str
@@ -2108,7 +2108,7 @@ development.system_quality_attribute:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: system_quality_attribute
   notes: null
   primitive: str
@@ -2126,7 +2126,7 @@ development.version:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: version
   notes: null
   primitive: str
@@ -2144,7 +2144,7 @@ file.extension:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: extension
   notes: null
   primitive: str
@@ -2162,7 +2162,7 @@ file.file_name:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: file_name
   notes: null
   primitive: str
@@ -2180,7 +2180,7 @@ file.mime_type:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: mime_type
   notes: null
   primitive: str
@@ -2198,7 +2198,7 @@ file.size:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: size
   notes: null
   primitive: str
@@ -2216,7 +2216,7 @@ finance.bank:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: bank
   notes: null
   primitive: str
@@ -2234,7 +2234,7 @@ finance.company:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: company
   notes: null
   primitive: str
@@ -2252,7 +2252,7 @@ finance.company_type:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: company_type
   notes: null
   primitive: str
@@ -2270,7 +2270,7 @@ finance.cryptocurrency_iso_code:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: cryptocurrency_iso_code
   notes: null
   primitive: str
@@ -2288,7 +2288,7 @@ finance.cryptocurrency_symbol:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: cryptocurrency_symbol
   notes: null
   primitive: str
@@ -2306,7 +2306,7 @@ finance.currency_iso_code:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: currency_iso_code
   notes: null
   primitive: str
@@ -2324,7 +2324,7 @@ finance.currency_symbol:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: currency_symbol
   notes: null
   primitive: str
@@ -2342,7 +2342,7 @@ finance.price:
   description: null
   designation: broad_numbers
   locales:
-    - EN
+    - UNIVERSAL
   method: price
   notes: null
   primitive: float
@@ -2360,7 +2360,7 @@ finance.price_in_btc:
   description: null
   designation: broad_numbers
   locales:
-    - EN
+    - UNIVERSAL
   method: price_in_btc
   notes: null
   primitive: float
@@ -2378,7 +2378,7 @@ finance.stock_exchange:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: stock_exchange
   notes: null
   primitive: str
@@ -2396,7 +2396,7 @@ finance.stock_name:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: stock_name
   notes: null
   primitive: str
@@ -2414,7 +2414,7 @@ finance.stock_ticker:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: stock_ticker
   notes: null
   primitive: str
@@ -2432,7 +2432,7 @@ food.dish:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: dish
   notes: null
   primitive: str
@@ -2450,7 +2450,7 @@ food.drink:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: drink
   notes: null
   primitive: str
@@ -2468,7 +2468,7 @@ food.fruit:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: fruit
   notes: null
   primitive: str
@@ -2486,7 +2486,7 @@ food.spices:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: spices
   notes: null
   primitive: str
@@ -2504,7 +2504,7 @@ food.vegetable:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: vegetable
   notes: null
   primitive: str
@@ -2522,7 +2522,7 @@ hardware.cpu:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: cpu
   notes: null
   primitive: str
@@ -2540,7 +2540,7 @@ hardware.cpu_codename:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: cpu_codename
   notes: null
   primitive: str
@@ -2558,7 +2558,7 @@ hardware.cpu_frequency:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: cpu_frequency
   notes: null
   primitive: str
@@ -2576,7 +2576,7 @@ hardware.generation:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: generation
   notes: null
   primitive: str
@@ -2594,7 +2594,7 @@ hardware.graphics:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: graphics
   notes: null
   primitive: str
@@ -2612,7 +2612,7 @@ hardware.manufacturer:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: manufacturer
   notes: null
   primitive: str
@@ -2630,7 +2630,7 @@ hardware.phone_model:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: phone_model
   notes: null
   primitive: str
@@ -2648,7 +2648,7 @@ hardware.ram_size:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: ram_size
   notes: null
   primitive: str
@@ -2666,7 +2666,7 @@ hardware.ram_type:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: ram_type
   notes: null
   primitive: str
@@ -2684,7 +2684,7 @@ hardware.resolution:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: resolution
   notes: null
   primitive: str
@@ -2702,7 +2702,7 @@ hardware.screen_size:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: screen_size
   notes: null
   primitive: str
@@ -2720,7 +2720,7 @@ hardware.ssd_or_hdd:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: ssd_or_hdd
   notes: null
   primitive: str
@@ -2738,7 +2738,7 @@ internet.asn:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: asn
   notes: null
   primitive: str
@@ -2756,7 +2756,7 @@ internet.content_type:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: content_type
   notes: null
   primitive: str
@@ -2774,7 +2774,7 @@ internet.dsn:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: dsn
   notes: null
   primitive: str
@@ -2792,7 +2792,7 @@ internet.hostname:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: hostname
   notes: null
   primitive: str
@@ -2810,7 +2810,7 @@ internet.http_method:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: http_method
   notes: null
   primitive: str
@@ -2828,7 +2828,7 @@ internet.http_request_headers:
   description: null
   designation: broad_object
   locales:
-    - EN
+    - UNIVERSAL
   method: http_request_headers
   notes: null
   primitive: Dict[Union[str], Union[int, str]]
@@ -2894,7 +2894,7 @@ internet.http_response_headers:
   description: null
   designation: broad_object
   locales:
-    - EN
+    - UNIVERSAL
   method: http_response_headers
   notes: null
   primitive: Dict[Union[str], Union[int, str]]
@@ -2984,7 +2984,7 @@ internet.http_status_code:
   description: null
   designation: broad_numbers
   locales:
-    - EN
+    - UNIVERSAL
   method: http_status_code
   notes: null
   primitive: int
@@ -3002,7 +3002,7 @@ internet.http_status_message:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: http_status_message
   notes: null
   primitive: str
@@ -3020,7 +3020,7 @@ internet.ip_v4:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: ip_v4
   notes: null
   primitive: str
@@ -3038,7 +3038,7 @@ internet.ip_v4_with_port:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: ip_v4_with_port
   notes: null
   primitive: str
@@ -3056,7 +3056,7 @@ internet.ip_v6:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: ip_v6
   notes: null
   primitive: str
@@ -3074,7 +3074,7 @@ internet.mac_address:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: mac_address
   notes: null
   primitive: str
@@ -3092,7 +3092,7 @@ internet.path:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: path
   notes: null
   primitive: str
@@ -3110,7 +3110,7 @@ internet.port:
   description: null
   designation: broad_numbers
   locales:
-    - EN
+    - UNIVERSAL
   method: port
   notes: null
   primitive: int
@@ -3128,7 +3128,7 @@ internet.public_dns:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: public_dns
   notes: null
   primitive: str
@@ -3146,7 +3146,7 @@ internet.query_parameters:
   description: null
   designation: broad_object
   locales:
-    - EN
+    - UNIVERSAL
   method: query_parameters
   notes: null
   primitive: Dict[str, str]
@@ -3181,7 +3181,7 @@ internet.query_string:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: query_string
   notes: null
   primitive: str
@@ -3199,7 +3199,7 @@ internet.slug:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: slug
   notes: null
   primitive: str
@@ -3217,7 +3217,7 @@ internet.special_ip_v4:
   description: null
   designation: duplicate
   locales:
-    - EN
+    - UNIVERSAL
   method: special_ip_v4
   notes: Duplicate of ip_v4
   primitive: str
@@ -3235,7 +3235,7 @@ internet.stock_image_url:
   description: null
   designation: duplicate
   locales:
-    - EN
+    - UNIVERSAL
   method: stock_image_url
   notes: Duplicate of url
   primitive: str
@@ -3253,7 +3253,7 @@ internet.tld:
   description: null
   designation: duplicate
   locales:
-    - EN
+    - UNIVERSAL
   method: tld
   notes: Duplicate of top level domain
   primitive: str
@@ -3271,7 +3271,7 @@ internet.top_level_domain:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: top_level_domain
   notes: null
   primitive: str
@@ -3289,7 +3289,7 @@ internet.uri:
   description: null
   designation: duplicate
   locales:
-    - EN
+    - UNIVERSAL
   method: uri
   notes: Duplicate of url
   primitive: str
@@ -3307,7 +3307,7 @@ internet.url:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: url
   notes: null
   primitive: str
@@ -3325,7 +3325,7 @@ internet.user_agent:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: user_agent
   notes: null
   primitive: str
@@ -3347,7 +3347,7 @@ numeric.complex_number:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: complex_number
   notes: null
   primitive: str
@@ -3365,7 +3365,7 @@ numeric.complexes:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: complexes
   notes: null
   primitive: str
@@ -3419,7 +3419,7 @@ numeric.decimal_number:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: decimal_number
   notes: null
   primitive: str
@@ -3437,7 +3437,7 @@ numeric.decimals:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: decimals
   notes: null
   primitive: str
@@ -3491,7 +3491,7 @@ numeric.float_number:
   description: null
   designation: broad_numbers
   locales:
-    - EN
+    - UNIVERSAL
   method: float_number
   notes: null
   primitive: float
@@ -3509,7 +3509,7 @@ numeric.floats:
   description: null
   designation: broad_numbers
   locales:
-    - EN
+    - UNIVERSAL
   method: floats
   notes: null
   primitive: List[float]
@@ -3563,7 +3563,7 @@ numeric.increment:
   description: null
   designation: broad_numbers
   locales:
-    - EN
+    - UNIVERSAL
   method: increment
   notes: null
   primitive: int
@@ -3581,7 +3581,7 @@ numeric.integer_number:
   description: null
   designation: broad_numbers
   locales:
-    - EN
+    - UNIVERSAL
   method: integer_number
   notes: null
   primitive: int
@@ -3599,7 +3599,7 @@ numeric.integers:
   description: null
   designation: broad_object
   locales:
-    - EN
+    - UNIVERSAL
   method: integers
   notes: null
   primitive: List[int]
@@ -3653,7 +3653,7 @@ numeric.matrix:
   description: null
   designation: broad_object
   locales:
-    - EN
+    - UNIVERSAL
   method: matrix
   notes: null
   primitive: List[List[float]]
@@ -4067,7 +4067,7 @@ path.dev_dir:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: dev_dir
   notes: null
   primitive: str
@@ -4085,7 +4085,7 @@ path.home:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: home
   notes: null
   primitive: str
@@ -4103,7 +4103,7 @@ path.project_dir:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: project_dir
   notes: null
   primitive: str
@@ -4121,7 +4121,7 @@ path.root:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: root
   notes: null
   primitive: str
@@ -4139,7 +4139,7 @@ path.user:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: user
   notes: null
   primitive: str
@@ -4157,7 +4157,7 @@ path.users_folder:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: users_folder
   notes: null
   primitive: str
@@ -4175,7 +4175,7 @@ payment.bitcoin_address:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: bitcoin_address
   notes: May need to be split (https://bitcoin.design/guide/glossary/address)
   primitive: str
@@ -4193,7 +4193,7 @@ payment.cid:
   description: null
   designation: broad_numbers
   locales:
-    - EN
+    - UNIVERSAL
   method: cid
   notes: null
   primitive: str
@@ -4211,7 +4211,7 @@ payment.credit_card_expiration_date:
   description: null
   designation: duplicate
   locales:
-    - EN
+    - UNIVERSAL
   method: credit_card_expiration_date
   notes: Duplicate of structured datetimes
   primitive: str
@@ -4229,7 +4229,7 @@ payment.credit_card_network:
   description: null
   designation: broad_numbers
   locales:
-    - EN
+    - UNIVERSAL
   method: credit_card_network
   notes: null
   primitive: str
@@ -4247,7 +4247,7 @@ payment.credit_card_number:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: credit_card_number
   notes: null
   primitive: str
@@ -4265,7 +4265,7 @@ payment.credit_card_owner:
   description: null
   designation: broad_object
   locales:
-    - EN
+    - UNIVERSAL
   method: credit_card_owner
   notes: null
   primitive: Dict[str, str]
@@ -4291,7 +4291,7 @@ payment.cvv:
   description: null
   designation: broad_numbers
   locales:
-    - EN
+    - UNIVERSAL
   method: cvv
   notes: null
   primitive: str
@@ -4309,7 +4309,7 @@ payment.ethereum_address:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: ethereum_address
   notes: null
   primitive: str
@@ -4327,7 +4327,7 @@ payment.paypal:
   description: null
   designation: duplicate
   locales:
-    - EN
+    - UNIVERSAL
   method: paypal
   notes: Duplicate of email
   primitive: str
@@ -4345,7 +4345,7 @@ person.academic_degree:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: academic_degree
   notes: null
   primitive: str
@@ -4363,7 +4363,7 @@ person.blood_type:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: blood_type
   notes: null
   primitive: str
@@ -4381,7 +4381,7 @@ person.email:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: email
   notes: null
   primitive: str
@@ -4576,7 +4576,7 @@ person.gender_code:
   description: null
   designation: broad_numbers
   locales:
-    - EN
+    - UNIVERSAL
   method: gender_code
   notes: null
   primitive: int
@@ -4594,7 +4594,7 @@ person.gender_symbol:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: gender_symbol
   notes: null
   primitive: str
@@ -4612,7 +4612,7 @@ person.height:
   description: null
   designation: broad_numbers
   locales:
-    - EN
+    - UNIVERSAL
   method: height
   notes: null
   primitive: str
@@ -4630,7 +4630,7 @@ person.identifier:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: identifier
   notes: null
   primitive: str
@@ -4648,7 +4648,7 @@ person.language:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: language
   notes: null
   primitive: str
@@ -4725,7 +4725,7 @@ person.name:
   description: null
   designation: duplicate
   locales:
-    - EN
+    - UNIVERSAL
   method: name
   notes: Duplicate of first_name
   primitive: str
@@ -4743,7 +4743,7 @@ person.nationality:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: nationality
   notes: null
   primitive: str
@@ -4761,7 +4761,7 @@ person.occupation:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: occupation
   notes: null
   primitive: str
@@ -4779,7 +4779,7 @@ person.password:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: password
   notes: null
   primitive: str
@@ -4856,7 +4856,7 @@ person.political_views:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: political_views
   notes: null
   primitive: str
@@ -4874,7 +4874,7 @@ person.sex:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: sex
   notes: null
   primitive: str
@@ -4892,7 +4892,7 @@ person.surname:
   description: null
   designation: duplicate
   locales:
-    - EN
+    - UNIVERSAL
   method: surname
   notes: Duplicate of last_name
   primitive: str
@@ -4910,7 +4910,7 @@ person.telephone:
   description: null
   designation: duplicate
   locales:
-    - EN
+    - UNIVERSAL
   method: telephone
   notes: Duplicate of phone_number
   primitive: str
@@ -4928,7 +4928,7 @@ person.title:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: title
   notes: null
   primitive: str
@@ -4946,7 +4946,7 @@ person.university:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: university
   notes: null
   primitive: str
@@ -4964,7 +4964,7 @@ person.username:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: username
   notes: null
   primitive: str
@@ -4982,7 +4982,7 @@ person.views_on:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: views_on
   notes: null
   primitive: str
@@ -5000,7 +5000,7 @@ person.weight:
   description: null
   designation: broad_numbers
   locales:
-    - EN
+    - UNIVERSAL
   method: weight
   notes: null
   primitive: int
@@ -5018,7 +5018,7 @@ person.worldview:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: worldview
   notes: null
   primitive: str
@@ -5036,7 +5036,7 @@ science.dna_sequence:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: dna_sequence
   notes: null
   primitive: str
@@ -5054,7 +5054,7 @@ science.measure_unit:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: measure_unit
   notes: null
   primitive: str
@@ -5072,7 +5072,7 @@ science.metric_prefix:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: metric_prefix
   notes: null
   primitive: str
@@ -5090,7 +5090,7 @@ science.rna_sequence:
   description: null
   designation: universal
   locales:
-    - EN
+    - UNIVERSAL
   method: rna_sequence
   notes: null
   primitive: str
@@ -5108,7 +5108,7 @@ text.alphabet:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: alphabet
   notes: null
   primitive: List[str]
@@ -5226,7 +5226,7 @@ text.answer:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: answer
   notes: null
   primitive: str
@@ -5244,7 +5244,7 @@ text.color:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: color
   notes: null
   primitive: str
@@ -5262,7 +5262,7 @@ text.emoji:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: emoji
   notes: null
   primitive: str
@@ -5275,30 +5275,30 @@ text.emoji:
     - 💜
     - 🫤
   title: Emoji code.
-text.hex_color:
-  aliases: null
-  description: null
-  designation: universal
-  locales:
-    - EN
-  method: hex_color
-  notes: null
-  primitive: str
-  provider: text
-  references: null
-  release_priority: 5
-  samples:
-    - "#19bec2"
-    - "#b4f76b"
-    - "#816bef"
-    - "#413c1e"
-  title: Hex color code.
+# text.hex_color:
+#   aliases: null
+#   description: null
+#   designation: universal
+#   locales:
+#     - UNIVERSAL
+#   method: hex_color
+#   notes: null
+#   primitive: str
+#   provider: text
+#   references: null
+#   release_priority: 5
+#   samples:
+#     - "#19bec2"
+#     - "#b4f76b"
+#     - "#816bef"
+#     - "#413c1e"
+#   title: Hex color code.
 text.level:
   aliases: null
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: level
   notes: null
   primitive: str
@@ -5316,7 +5316,7 @@ text.quote:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: quote
   notes: null
   primitive: str
@@ -5334,7 +5334,7 @@ text.rgb_color:
   description: null
   designation: broad_characters
   locales:
-    - EN
+    - UNIVERSAL
   method: rgb_color
   notes: null
   primitive: List[int]
@@ -5360,7 +5360,7 @@ text.sentence:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: sentence
   notes: null
   primitive: str
@@ -5379,7 +5379,7 @@ text.text:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: text
   notes: null
   primitive: str
@@ -5411,7 +5411,7 @@ text.title:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: title
   notes: null
   primitive: str
@@ -5433,7 +5433,7 @@ text.word:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: word
   notes: null
   primitive: str
@@ -5451,7 +5451,7 @@ text.words:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: words
   notes: null
   primitive: List[str]
@@ -5485,7 +5485,7 @@ transport.airplane:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: airplane
   notes: null
   primitive: str
@@ -5503,7 +5503,7 @@ transport.car:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: car
   notes: null
   primitive: str
@@ -5521,7 +5521,7 @@ transport.manufacturer:
   description: null
   designation: broad_words
   locales:
-    - EN
+    - UNIVERSAL
   method: manufacturer
   notes: null
   primitive: str
