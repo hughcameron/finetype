@@ -1,10 +1,12 @@
 import argparse
+import asyncio
 from pathlib import Path
 
+import aiofiles
 import yaml
 from mimesis import random
 from models.core import Definition, Record
-from providers.collection import Locale, generic_set
+from providers.collection import generic_set
 from tqdm import tqdm
 
 parser = argparse.ArgumentParser(
@@ -45,38 +47,50 @@ DEFINITIONS = Path("definitions.yaml")
 
 random.global_seed = SEED
 
-
 with DEFINITIONS.open("r", encoding="utf-8") as f:
     release_data = yaml.load(f, Loader=yaml.FullLoader)
     releases = [Definition(**release_data[r]) for r in release_data]
 
-total_iterations = 0
-for release in releases:
-    if release.release_priority >= PRIORITY:
-        total_iterations += len(release.locales)
+total_iterations = sum(
+    len(release.locales) for release in releases if release.release_priority >= PRIORITY
+)
 
-# Start tqdm progress bar
-with (
-    tqdm(total=total_iterations, desc="Generating data") as pbar,
-    OUTFILE.open("w", encoding="utf-8") as ndjson_file,
-):
-    for release in releases:
-        if release.release_priority >= PRIORITY:
-            # For each locale_selection
-            for locale_name in release.locales:
-                locale = getattr(Locale, locale_name)
-                generic = generic_set(locale_name)
-                provider = getattr(generic, release.provider)
-                method = getattr(provider, release.method)
 
-                # Write data to ndjson file
-                for _ in range(TEXTS):
-                    record = Record(
-                        classification=f"{release.provider}.{release.method}.{locale_name}",
-                        text=str(method()),
+async def generate_data_for_locale(release, locale_name, texts, ndjson_file):
+    generic = generic_set(locale_name)
+    provider = getattr(generic, release.provider)
+    method = getattr(provider, release.method)
+
+    records = []
+    for _ in range(texts):
+        record = Record(
+            classification=f"{release.provider}.{release.method}.{locale_name}",
+            text=str(method()),
+        )
+        records.append(record.model_dump_json())
+
+    await ndjson_file.write("\n".join(records) + "\n")
+
+
+async def main():
+    async with aiofiles.open(OUTFILE, "w", encoding="utf-8") as ndjson_file:
+        tasks = []
+        for release in releases:
+            if release.release_priority >= PRIORITY:
+                for locale_name in release.locales:
+                    tasks.append(
+                        generate_data_for_locale(
+                            release, locale_name, TEXTS, ndjson_file
+                        )
                     )
-                    ndjson_file.write(record.model_dump_json() + "\n")
 
-            pbar.update(1)
+        for f in tqdm(
+            asyncio.as_completed(tasks), total=total_iterations, desc="Generating data"
+        ):
+            await f
 
-print(f"Data generation complete. Saved to {OUTFILE}.")
+    print(f"Data generation complete. Saved to {OUTFILE}.")
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
