@@ -8,13 +8,16 @@ from mimesis import random
 from models.core import Definition, Record, Sector
 from tqdm.asyncio import tqdm
 
+DOMAINS_DIR = Path("domains")
+DOMAIN_CONFIGS = DOMAINS_DIR.rglob("domain.yaml")
+
 parser = argparse.ArgumentParser(
     description="Release data using mimesis with given definitions.",
 )
 parser.add_argument(
     "--release",
     type=str,
-    default="definitions_tier.yaml",
+    default=DOMAIN_CONFIGS,
     help="Path to the release definitions file.",
 )
 parser.add_argument(

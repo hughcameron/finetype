@@ -1,6 +1,10 @@
+from collections.abc import Generator
+from pathlib import Path
+
+import yaml
 from mimesis import Generic
-from models.core import Locale, Release
-from pydantic_yaml import parse_yaml_file_as
+from models.core import Domain, Locale, Release
+from pydantic import BaseModel
 
 from domains.datetime.date import Date
 from domains.datetime.datetime import Datetime
@@ -20,5 +24,27 @@ def generic_set(locale: Locale | str) -> Generic:
     return generic
 
 
-def load_releases(release_path) -> Release:
-    return parse_yaml_file_as(Release, release_path)
+def load_yaml_model(model: BaseModel, path: Path):
+    with path.open("r", encoding="utf-8") as file:
+        data = yaml.load(file, Loader=yaml.FullLoader)
+        return model.parse_obj(data)
+
+
+def save_yaml_model(model: BaseModel, path: Path):
+    with path.open("w", encoding="utf-8") as file:
+        yaml.dump(
+            model.model_dump(mode="json"),
+            file,
+            Dumper=yaml.Dumper,
+            allow_unicode=True,
+            sort_keys=False,
+        )
+
+
+def load_domain(domain_config: Path) -> Domain:
+    return load_yaml_model(Domain, domain_config)
+
+
+def load_releases(domain_configs: Generator[Path]) -> Release:
+    domains = [load_domain(conf) for conf in domain_configs]
+    return Release(domains=domains)

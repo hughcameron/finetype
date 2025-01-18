@@ -1,486 +1,486 @@
 name: datetime
 sectors:
-- definitions:
-  - aliases: []
-    description: Date format with abbreviated month names
+- name: date
+  definitions:
+  - name: abbreviated_month
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references: null
     release_priority: 5
     title: Abbreviated Month Date
-  - aliases: []
-    description: Date format with full weekday name and abbreviated month
+    description: Date format with abbreviated month names
+    references: null
+    aliases: []
+    notes: null
+  - name: full_weekday_abbreviated_month
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references: null
     release_priority: 5
     title: Full Weekday and Abbreviated Month Date
-  - aliases: []
-    description: Days since a fixed astronomical epoch
+    description: Date format with full weekday name and abbreviated month
+    references: null
+    aliases: []
+    notes: null
+  - name: julian
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references:
-    - link: https://en.wikipedia.org/wiki/Julian_day
-      title: Astronomical Julian Day Number
     release_priority: 5
     title: Julian Date
-  - aliases: []
-    description: Date format with full month names and day
+    description: Days since a fixed astronomical epoch
+    references:
+    - title: Astronomical Julian Day Number
+      link: https://en.wikipedia.org/wiki/Julian_day
+    aliases: []
+    notes: null
+  - name: long_full_month_name
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references: null
     release_priority: 5
     title: Long Date with Full Month Name
-  - aliases: []
-    description: Date format with weekday, day, and full month name
+    description: Date format with full month names and day
+    references: null
+    aliases: []
+    notes: null
+  - name: long_weekday_month_name
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references: null
     release_priority: 5
     title: Long Date with Weekday and Month Name
-  - aliases: null
-    description: null
+    description: Date format with weekday, day, and full month name
+    references: null
+    aliases: []
+    notes: null
+  - name: month
     designation: duplicate
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: Duplicate of structured datetimes
-    primitive: str
-    references: null
     release_priority: 1
     title: Month name.
-  - aliases: []
     description: null
+    references: null
+    aliases: null
+    notes: Duplicate of structured datetimes
+  - name: numeric_dmy
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references: []
     release_priority: 1
     title: Default title for datetime.numeric_dmy
-  - aliases: []
     description: null
+    references: []
+    aliases: []
+    notes: null
+  - name: numeric_mdy
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references: []
     release_priority: 1
     title: Default title for datetime.numeric_mdy
-  - aliases: []
     description: null
+    references: []
+    aliases: []
+    notes: null
+  - name: numeric_ymd
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references: []
     release_priority: 1
     title: Default title for datetime.numeric_ymd
-  - aliases: []
-    description: Year and day of the year
+    description: null
+    references: []
+    aliases: []
+    notes: null
+  - name: ordinal
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references:
-    - link: https://www.iso.org/standard/70907.html
-      title: ISO 8601-1:2019
     release_priority: 5
     title: Ordinal Date
-  name: date
-- definitions:
-  - aliases:
-    - Middle-Endian
-    description: Common U.S. date and time format
+    description: Year and day of the year
+    references:
+    - title: ISO 8601-1:2019
+      link: https://www.iso.org/standard/70907.html
+    aliases: []
+    notes: null
+- name: datetime
+  definitions:
+  - name: american
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references:
-    - link: https://en.wikipedia.org/wiki/Date_by_country#United_States
-      title: Common Style Guides
     release_priority: 5
     title: American
-  - aliases: null
-    description: null
+    description: Common U.S. date and time format
+    references:
+    - title: Common Style Guides
+      link: https://en.wikipedia.org/wiki/Date_by_country#United_States
+    aliases:
+    - Middle-Endian
+    notes: null
+  - name: century
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: Rename to Roman Numberals
-    primitive: str
-    references: null
     release_priority: 3
     title: Century.
-  - aliases: []
     description: null
+    references: null
+    aliases: null
+    notes: Rename to Roman Numberals
+  - name: date
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references: []
     release_priority: 1
     title: Default title for datetime.date
-  - aliases: []
     description: null
+    references: []
+    aliases: []
+    notes: null
+  - name: datetime
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references: []
     release_priority: 1
     title: Default title for datetime.datetime
-  - aliases: null
     description: null
+    references: []
+    aliases: []
+    notes: null
+  - name: day_of_month
     designation: broad_numbers
+    primitive: int
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: int
-    references: null
     release_priority: 1
     title: Random value from 1 to 31.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: day_of_week
     designation: duplicate
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: Duplicate of structured datetimes
-    primitive: str
-    references: null
     release_priority: 1
     title: Day of the week.
-  - aliases: []
     description: null
+    references: null
+    aliases: null
+    notes: Duplicate of structured datetimes
+  - name: duration
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references: []
     release_priority: 1
     title: Default title for datetime.duration
-  - aliases:
-    - Little-Endian
-    description: Common European date and time format
+    description: null
+    references: []
+    aliases: []
+    notes: null
+  - name: european
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references:
-    - link: https://en.wikipedia.org/wiki/Date_by_country#Europe
-      title: Common Style Guides
     release_priority: 5
     title: European
-  - aliases: null
-    description: null
+    description: Common European date and time format
+    references:
+    - title: Common Style Guides
+      link: https://en.wikipedia.org/wiki/Date_by_country#Europe
+    aliases:
+    - Little-Endian
+    notes: null
+  - name: formatted_date
     designation: duplicate
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: Duplicate of structured datetimes
-    primitive: str
-    references: null
     release_priority: 1
     title: Formatted date.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: Duplicate of structured datetimes
+  - name: formatted_datetime
     designation: duplicate
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: Duplicate of structured datetimes
-    primitive: str
-    references: null
     release_priority: 1
     title: Formatted datetime string.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: Duplicate of structured datetimes
+  - name: formatted_time
     designation: duplicate
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: Duplicate of structured datetimes
-    primitive: str
-    references: null
     release_priority: 1
     title: String formatted time.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: Duplicate of structured datetimes
+  - name: gmt_offset
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references: null
     release_priority: 4
     title: GMT Offset.
-  - aliases:
-    - Big-Endian
-    description: Standard international format
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: iso_8601
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references:
-    - link: https://www.iso.org/standard/70907.html
-      title: ISO 8601-1:2019
-    - link: https://www.w3.org/TR/NOTE-datetime
-      title: Date and Time Formats
     release_priority: 5
     title: ISO 8601
-  - aliases: []
-    description: Compact ISO 8601 without separators
+    description: Standard international format
+    references:
+    - title: ISO 8601-1:2019
+      link: https://www.iso.org/standard/70907.html
+    - title: Date and Time Formats
+      link: https://www.w3.org/TR/NOTE-datetime
+    aliases:
+    - Big-Endian
+    notes: null
+  - name: iso_8601_compact
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references:
-    - link: https://www.iso.org/standard/70907.html
-      title: ISO 8601-1:2019
     release_priority: 5
     title: ISO 8601 Compact
-  - aliases: []
-    description: null
+    description: Compact ISO 8601 without separators
+    references:
+    - title: ISO 8601-1:2019
+      link: https://www.iso.org/standard/70907.html
+    aliases: []
+    notes: null
+  - name: iso_8601_ext
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references: []
     release_priority: 1
     title: Default title for datetime.iso_8601_ext
-  - aliases: []
-    description: ISO 8601 with Z for UTC or time zone offset - 2023-12-29T10:45:30-05:00
+    description: null
+    references: []
+    aliases: []
+    notes: null
+  - name: iso_8601_with_time_zone_name
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references:
-    - link: https://www.iso.org/standard/70907.html
-      title: ISO 8601-1:2019
     release_priority: 5
     title: ISO 8601 with Time Zone Name
-  - aliases: null
-    description: null
+    description: ISO 8601 with Z for UTC or time zone offset - 2023-12-29T10:45:30-05:00
+    references:
+    - title: ISO 8601-1:2019
+      link: https://www.iso.org/standard/70907.html
+    aliases: []
+    notes: null
+  - name: periodicity
     designation: broad_words
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references: null
     release_priority: 1
     title: Periodicity.
-  - aliases: []
-    description: Email header date and time format
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: rfc_2822
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references:
-    - link: https://www.rfc-editor.org/rfc/rfc2822
-      title: RFC 2822
     release_priority: 5
     title: RFC 2822
-  - aliases: []
-    description: RFC 2822 format with ordinal indicators
+    description: Email header date and time format
+    references:
+    - title: RFC 2822
+      link: https://www.rfc-editor.org/rfc/rfc2822
+    aliases: []
+    notes: null
+  - name: rfc_2822_with_ordinals
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references:
-    - link: https://www.rfc-editor.org/rfc/rfc2822
-      title: RFC 2822
     release_priority: 5
     title: RFC 2822 with Ordinals
-  - aliases: []
-    description: null
+    description: RFC 2822 format with ordinal indicators
+    references:
+    - title: RFC 2822
+      link: https://www.rfc-editor.org/rfc/rfc2822
+    aliases: []
+    notes: null
+  - name: rfc_3339
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references: []
     release_priority: 1
     title: Default title for datetime.rfc_3339
-  - aliases: []
     description: null
+    references: []
+    aliases: []
+    notes: null
+  - name: short_dmy
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references: []
     release_priority: 1
     title: Default title for datetime.short_dmy
-  - aliases: []
     description: null
+    references: []
+    aliases: []
+    notes: null
+  - name: short_mdy
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references: []
     release_priority: 1
     title: Default title for datetime.short_mdy
-  - aliases: []
     description: null
+    references: []
+    aliases: []
+    notes: null
+  - name: short_ymd
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references: []
     release_priority: 1
     title: Default title for datetime.short_ymd
-  - aliases: []
-    description: Common SQL format for datetime values
+    description: null
+    references: []
+    aliases: []
+    notes: null
+  - name: sql_standard
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references:
-    - link: https://www.iso.org/standard/76583.html
-      title: SQL Standard (ISO/IEC 9075)
     release_priority: 5
     title: SQL Standard
-  - aliases: []
-    description: null
+    description: Common SQL format for datetime values
+    references:
+    - title: SQL Standard (ISO/IEC 9075)
+      link: https://www.iso.org/standard/76583.html
+    aliases: []
+    notes: null
+  - name: time
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references: []
     release_priority: 1
     title: Default title for datetime.time
-  - aliases: null
     description: null
+    references: []
+    aliases: []
+    notes: null
+  - name: timestamp
     designation: universal
+    primitive: int
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: int
-    references: null
     release_priority: 5
     title: Timestamp.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: timezone
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references: null
     release_priority: 5
     title: Timezone.
-  - aliases: []
-    description: Unix timestamp with milliseconds precision
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: unix_epoch_in_milliseconds
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references:
-    - link: https://pubs.opengroup.org/onlinepubs/9699919799/
-      title: The Open Group Base Specifications Issue 7, IEEE Std 1003.1-2017
     release_priority: 5
     title: Unix Epoch in Milliseconds
-  - aliases: []
-    description: Seconds since 1970-01-01 00:00:00 UTC
+    description: Unix timestamp with milliseconds precision
+    references:
+    - title: The Open Group Base Specifications Issue 7, IEEE Std 1003.1-2017
+      link: https://pubs.opengroup.org/onlinepubs/9699919799/
+    aliases: []
+    notes: null
+  - name: unix_timestamp
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: null
-    primitive: str
-    references:
-    - link: https://pubs.opengroup.org/onlinepubs/9699919799/
-      title: The Open Group Base Specifications Issue 7, IEEE Std 1003.1-2017
     release_priority: 5
     title: Unix Timestamp
-  - aliases: null
-    description: null
+    description: Seconds since 1970-01-01 00:00:00 UTC
+    references:
+    - title: The Open Group Base Specifications Issue 7, IEEE Std 1003.1-2017
+      link: https://pubs.opengroup.org/onlinepubs/9699919799/
+    aliases: []
+    notes: null
+  - name: week_date
     designation: duplicate
+    primitive: str
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: Duplicate of structured datetimes
-    primitive: str
-    references: null
     release_priority: 1
     title: Week number.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: Duplicate of structured datetimes
+  - name: year
     designation: duplicate
+    primitive: int
     locales:
     - UNIVERSAL
-    name: datetime
-    notes: Duplicate of structured datetimes
-    primitive: int
-    references: null
     release_priority: 1
     title: Year.
-  name: datetime
+    description: null
+    references: null
+    aliases: null
+    notes: Duplicate of structured datetimes

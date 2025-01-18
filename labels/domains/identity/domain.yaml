@@ -1,42 +1,43 @@
 name: identity
 sectors:
-- definitions:
-  - aliases: null
-    description: null
+- name: person
+  definitions:
+  - name: academic_degree
     designation: broad_words
+    primitive: str
     locales:
     - UNIVERSAL
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 0
     title: Degree.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: blood_type
     designation: broad_characters
+    primitive: str
     locales:
     - UNIVERSAL
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 0
     title: Blood type (blood group).
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: email
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 4
     title: Email address.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: first_name
     designation: locale_specific
+    primitive: str
     locales:
     - AR_AE
     - AR_DZ
@@ -70,7 +71,7 @@ sectors:
     - KO
     - NL
     - NL_BE
-    - NO
+    - 'NO'
     - PL
     - PT
     - PT_BR
@@ -80,15 +81,15 @@ sectors:
     - TR
     - UK
     - ZH
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 4
     title: First name.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: full_name
     designation: locale_specific
+    primitive: str
     locales:
     - AR_AE
     - AR_DZ
@@ -122,7 +123,7 @@ sectors:
     - KO
     - NL
     - NL_BE
-    - NO
+    - 'NO'
     - PL
     - PT
     - PT_BR
@@ -132,15 +133,15 @@ sectors:
     - TR
     - UK
     - ZH
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 4
     title: Full name.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: gender
     designation: locale_specific
+    primitive: str
     locales:
     - AR_AE
     - AR_DZ
@@ -174,7 +175,7 @@ sectors:
     - KO
     - NL
     - NL_BE
-    - NO
+    - 'NO'
     - PL
     - PT
     - PT_BR
@@ -184,70 +185,70 @@ sectors:
     - TR
     - UK
     - ZH
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 3
     title: null
-  - aliases: null
     description: null
-    designation: broad_numbers
-    locales:
-    - UNIVERSAL
-    name: identity
+    references: null
+    aliases: null
     notes: null
+  - name: gender_code
+    designation: broad_numbers
     primitive: int
-    references: null
+    locales:
+    - UNIVERSAL
     release_priority: 0
     title: null
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: gender_symbol
     designation: broad_characters
+    primitive: str
     locales:
     - UNIVERSAL
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 0
     title: null
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: height
     designation: broad_numbers
+    primitive: str
     locales:
     - UNIVERSAL
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 0
     title: Height.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: identifier
     designation: broad_characters
+    primitive: str
     locales:
     - UNIVERSAL
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 0
     title: An identifier.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: language
     designation: broad_words
+    primitive: str
     locales:
     - UNIVERSAL
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 0
     title: Random language.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: last_name
     designation: locale_specific
+    primitive: str
     locales:
     - AR_AE
     - AR_DZ
@@ -281,7 +282,7 @@ sectors:
     - KO
     - NL
     - NL_BE
-    - NO
+    - 'NO'
     - PL
     - PT
     - PT_BR
@@ -291,59 +292,59 @@ sectors:
     - TR
     - UK
     - ZH
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 4
     title: Last name.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: name
     designation: duplicate
+    primitive: str
     locales:
     - UNIVERSAL
-    name: identity
-    notes: Duplicate of first_name
-    primitive: str
-    references: null
     release_priority: 0
     title: Name.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: Duplicate of first_name
+  - name: nationality
     designation: broad_words
+    primitive: str
     locales:
     - UNIVERSAL
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 0
     title: Nationality.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: occupation
     designation: broad_words
+    primitive: str
     locales:
     - UNIVERSAL
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 0
     title: The name of job.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: password
     designation: broad_characters
+    primitive: str
     locales:
     - UNIVERSAL
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 0
     title: Password or hash of password.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: phone_number
     designation: locale_specific
+    primitive: str
     locales:
     - AR_AE
     - AR_DZ
@@ -377,7 +378,7 @@ sectors:
     - KO
     - NL
     - NL_BE
-    - NO
+    - 'NO'
     - PL
     - PT
     - PT_BR
@@ -387,120 +388,119 @@ sectors:
     - TR
     - UK
     - ZH
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 4
     title: Phone number.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: political_views
     designation: broad_words
+    primitive: str
     locales:
     - UNIVERSAL
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 0
     title: Political views.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: sex
     designation: broad_words
+    primitive: str
     locales:
     - UNIVERSAL
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 0
     title: Sex.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: surname
     designation: duplicate
+    primitive: str
     locales:
     - UNIVERSAL
-    name: identity
-    notes: Duplicate of last_name
-    primitive: str
-    references: null
     release_priority: 0
     title: Surname.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: Duplicate of last_name
+  - name: telephone
     designation: duplicate
+    primitive: str
     locales:
     - UNIVERSAL
-    name: identity
-    notes: Duplicate of phone_number
-    primitive: str
-    references: null
     release_priority: 0
     title: null
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: Duplicate of phone_number
+  - name: title
     designation: broad_words
+    primitive: str
     locales:
     - UNIVERSAL
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 0
     title: The title.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: university
     designation: broad_words
+    primitive: str
     locales:
     - UNIVERSAL
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 0
     title: University name.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: username
     designation: broad_characters
+    primitive: str
     locales:
     - UNIVERSAL
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 0
     title: Username as string.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: views_on
     designation: broad_words
+    primitive: str
     locales:
     - UNIVERSAL
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 0
     title: Views on.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: weight
     designation: broad_numbers
+    primitive: int
     locales:
     - UNIVERSAL
-    name: identity
-    notes: null
-    primitive: int
-    references: null
     release_priority: 0
     title: Weight.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: worldview
     designation: broad_words
+    primitive: str
     locales:
     - UNIVERSAL
-    name: identity
-    notes: null
-    primitive: str
-    references: null
     release_priority: 0
     title: Worldview.
-  name: person
+    description: null
+    references: null
+    aliases: null
+    notes: null

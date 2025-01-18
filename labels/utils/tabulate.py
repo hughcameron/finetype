@@ -26,7 +26,7 @@ for key in release_data:
         classification_qual = f"{release.provider}.{release.method}.{locale_name}"
         cls_record = release_record.copy()
         cls_record["classification"] = classification_qual
-        cls_record["locale"] = locale_name
+        cls_record["locale"] = locale_name.value
         classifications.append(cls_record)
 
 # Write definitions to definitions.ndjson

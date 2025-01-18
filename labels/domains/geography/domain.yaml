@@ -1,9 +1,10 @@
 name: geography
 sectors:
-- definitions:
-  - aliases: null
-    description: null
+- name: address
+  definitions:
+  - name: address
     designation: locale_specific
+    primitive: str
     locales:
     - AR_AE
     - AR_DZ
@@ -37,7 +38,7 @@ sectors:
     - KO
     - NL
     - NL_BE
-    - NO
+    - 'NO'
     - PL
     - PT
     - PT_BR
@@ -47,15 +48,15 @@ sectors:
     - TR
     - UK
     - ZH
-    name: geography
-    notes: null
-    primitive: str
-    references: null
     release_priority: 3
     title: Full address.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: calling_code
     designation: locale_specific
+    primitive: str
     locales:
     - AR_AE
     - AR_DZ
@@ -89,7 +90,7 @@ sectors:
     - KO
     - NL
     - NL_BE
-    - NO
+    - 'NO'
     - PL
     - PT
     - PT_BR
@@ -99,15 +100,15 @@ sectors:
     - TR
     - UK
     - ZH
-    name: geography
-    notes: null
-    primitive: str
-    references: null
     release_priority: 3
     title: Calling code.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: city
     designation: locale_specific
+    primitive: str
     locales:
     - AR_AE
     - AR_DZ
@@ -141,7 +142,7 @@ sectors:
     - KO
     - NL
     - NL_BE
-    - NO
+    - 'NO'
     - PL
     - PT
     - PT_BR
@@ -151,15 +152,15 @@ sectors:
     - TR
     - UK
     - ZH
-    name: geography
-    notes: null
-    primitive: str
-    references: null
     release_priority: 3
     title: City name.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: continent
     designation: locale_specific
+    primitive: str
     locales:
     - AR_AE
     - AR_DZ
@@ -193,7 +194,7 @@ sectors:
     - KO
     - NL
     - NL_BE
-    - NO
+    - 'NO'
     - PL
     - PT
     - PT_BR
@@ -203,26 +204,26 @@ sectors:
     - TR
     - UK
     - ZH
-    name: geography
-    notes: null
-    primitive: str
-    references: null
     release_priority: 3
     title: Continent name.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: coordinates
     designation: broad_object
+    primitive: Dict[str, float]
     locales:
     - UNIVERSAL
-    name: geography
-    notes: Find a universal format
-    primitive: Dict[str, float]
-    references: null
     release_priority: 0
     title: Dict with coordinates.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: Find a universal format
+  - name: country
     designation: locale_specific
+    primitive: str
     locales:
     - AR_AE
     - AR_DZ
@@ -256,7 +257,7 @@ sectors:
     - KO
     - NL
     - NL_BE
-    - NO
+    - 'NO'
     - PL
     - PT
     - PT_BR
@@ -266,48 +267,48 @@ sectors:
     - TR
     - UK
     - ZH
-    name: geography
-    notes: null
-    primitive: str
-    references: null
     release_priority: 3
     title: The Country.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: country_code
     designation: broad_characters
+    primitive: str
     locales:
     - UNIVERSAL
-    name: geography
-    notes: 'Split out country codes: ISO 3166'
-    primitive: str
-    references: null
     release_priority: 0
     title: Country code in selected format.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: 'Split out country codes: ISO 3166'
+  - name: country_emoji_flag
     designation: broad_characters
+    primitive: str
     locales:
     - UNIVERSAL
-    name: geography
-    notes: null
-    primitive: str
-    references: null
     release_priority: 0
     title: Flag emoji.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: default_country
     designation: duplicate
+    primitive: str
     locales:
     - UNIVERSAL
-    name: geography
-    notes: Duplicate of country
-    primitive: str
-    references: null
     release_priority: 0
     title: The country associated with current locale.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: Duplicate of country
+  - name: federal_subject
     designation: locale_specific
+    primitive: str
     locales:
     - AR_AE
     - AR_DZ
@@ -341,7 +342,7 @@ sectors:
     - KO
     - NL
     - NL_BE
-    - NO
+    - 'NO'
     - PL
     - PT
     - PT_BR
@@ -351,70 +352,70 @@ sectors:
     - TR
     - UK
     - ZH
-    name: geography
-    notes: null
-    primitive: str
-    references: null
     release_priority: 3
     title: null
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: iata_code
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: geography
-    notes: null
-    primitive: str
-    references: null
     release_priority: 4
     title: IATA code.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: icao_code
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: geography
-    notes: null
-    primitive: str
-    references: null
     release_priority: 4
     title: ICAO code.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: isd_code
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: geography
-    notes: null
-    primitive: str
-    references: null
     release_priority: 4
     title: null
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: latitude
     designation: broad_numbers
+    primitive: float
     locales:
     - UNIVERSAL
-    name: geography
-    notes: null
-    primitive: float
-    references: null
     release_priority: 0
     title: Value of longitude.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: longitude
     designation: broad_numbers
+    primitive: float
     locales:
     - UNIVERSAL
-    name: geography
-    notes: null
-    primitive: float
-    references: null
     release_priority: 0
     title: Value of longitude.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: postal_code
     designation: locale_specific
+    primitive: str
     locales:
     - AR_AE
     - AR_DZ
@@ -448,7 +449,7 @@ sectors:
     - KO
     - NL
     - NL_BE
-    - NO
+    - 'NO'
     - PL
     - PT
     - PT_BR
@@ -458,15 +459,15 @@ sectors:
     - TR
     - UK
     - ZH
-    name: geography
-    notes: null
-    primitive: str
-    references: null
     release_priority: 3
     title: Postal code.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: prefecture
     designation: locale_specific
+    primitive: str
     locales:
     - AR_AE
     - AR_DZ
@@ -500,7 +501,7 @@ sectors:
     - KO
     - NL
     - NL_BE
-    - NO
+    - 'NO'
     - PL
     - PT
     - PT_BR
@@ -510,15 +511,15 @@ sectors:
     - TR
     - UK
     - ZH
-    name: geography
-    notes: null
-    primitive: str
-    references: null
     release_priority: 3
     title: null
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: province
     designation: locale_specific
+    primitive: str
     locales:
     - AR_AE
     - AR_DZ
@@ -552,7 +553,7 @@ sectors:
     - KO
     - NL
     - NL_BE
-    - NO
+    - 'NO'
     - PL
     - PT
     - PT_BR
@@ -562,15 +563,15 @@ sectors:
     - TR
     - UK
     - ZH
-    name: geography
-    notes: null
-    primitive: str
-    references: null
     release_priority: 3
     title: null
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: region
     designation: locale_specific
+    primitive: str
     locales:
     - AR_AE
     - AR_DZ
@@ -604,7 +605,7 @@ sectors:
     - KO
     - NL
     - NL_BE
-    - NO
+    - 'NO'
     - PL
     - PT
     - PT_BR
@@ -614,15 +615,15 @@ sectors:
     - TR
     - UK
     - ZH
-    name: geography
-    notes: null
-    primitive: str
-    references: null
     release_priority: 3
     title: null
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: state
     designation: locale_specific
+    primitive: str
     locales:
     - AR_AE
     - AR_DZ
@@ -656,7 +657,7 @@ sectors:
     - KO
     - NL
     - NL_BE
-    - NO
+    - 'NO'
     - PL
     - PT
     - PT_BR
@@ -666,15 +667,15 @@ sectors:
     - TR
     - UK
     - ZH
-    name: geography
-    notes: null
-    primitive: str
-    references: null
     release_priority: 3
     title: Administrative district.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: street_name
     designation: locale_specific
+    primitive: str
     locales:
     - AR_AE
     - AR_DZ
@@ -708,7 +709,7 @@ sectors:
     - KO
     - NL
     - NL_BE
-    - NO
+    - 'NO'
     - PL
     - PT
     - PT_BR
@@ -718,26 +719,26 @@ sectors:
     - TR
     - UK
     - ZH
-    name: geography
-    notes: null
-    primitive: str
-    references: null
     release_priority: 3
     title: Street name.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: street_number
     designation: broad_numbers
+    primitive: str
     locales:
     - UNIVERSAL
-    name: geography
-    notes: null
-    primitive: str
-    references: null
     release_priority: 0
     title: Street number.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: street_suffix
     designation: locale_specific
+    primitive: str
     locales:
     - AR_AE
     - AR_DZ
@@ -771,7 +772,7 @@ sectors:
     - KO
     - NL
     - NL_BE
-    - NO
+    - 'NO'
     - PL
     - PT
     - PT_BR
@@ -781,15 +782,15 @@ sectors:
     - TR
     - UK
     - ZH
-    name: geography
-    notes: null
-    primitive: str
-    references: null
     release_priority: 3
     title: Street suffix.
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: zip_code
     designation: locale_specific
+    primitive: str
     locales:
     - AR_AE
     - AR_DZ
@@ -823,7 +824,7 @@ sectors:
     - KO
     - NL
     - NL_BE
-    - NO
+    - 'NO'
     - PL
     - PT
     - PT_BR
@@ -833,23 +834,22 @@ sectors:
     - TR
     - UK
     - ZH
-    name: geography
-    notes: null
-    primitive: str
-    references: null
     release_priority: 4
     title: Zip code.
-  name: address
-- definitions:
-  - aliases: null
     description: null
+    references: null
+    aliases: null
+    notes: null
+- name: code
+  definitions:
+  - name: locale_code
     designation: universal
+    primitive: str
     locales:
     - UNIVERSAL
-    name: geography
-    notes: null
-    primitive: str
-    references: null
     release_priority: 3
     title: Locale code.
-  name: code
+    description: null
+    references: null
+    aliases: null
+    notes: null

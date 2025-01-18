@@ -4,9 +4,9 @@ from pathlib import Path
 from typing import Any
 
 import yaml
+from domains.collection import save_yaml_model
 from models.core import Definition, Designation, Domain, Locale, Reference
 from pydantic import BaseModel, field_validator
-from pydantic_yaml import to_yaml_file
 
 DOMAINS_FILE = "domain_match.tsv"
 DEFINITIONS_FILE = Path("definitions.yaml")
@@ -115,7 +115,7 @@ def build_definition_tree(releases, domains):
         sector_name = r_data.pop("provider")
         definition_name = r_data.pop("method")
         domain_name = domains[f"{sector_name}.{definition_name}"]
-        r_data["name"] = domain_name
+        r_data["name"] = definition_name
 
         if domain_name not in definition_tree:
             definition_tree[domain_name] = {}
@@ -147,7 +147,7 @@ def save_definition_tree(definition_tree):
 
         doc_path = Path(f"domains/{domain_name}/domain.yaml")
         doc_path.parent.mkdir(parents=True, exist_ok=True)
-        to_yaml_file(doc_path, domain_data, default_flow_style=False)
+        save_yaml_model(domain_data, doc_path)
 
         for sector_name in sectors:
             sector_path = Path(f"domains/{domain_name}/{sector_name}.py")
