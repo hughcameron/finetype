@@ -1,0 +1,506 @@
+name: identity
+sectors:
+- definitions:
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Degree.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Blood type (blood group).
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 4
+    title: Email address.
+  - aliases: null
+    description: null
+    designation: locale_specific
+    locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 4
+    title: First name.
+  - aliases: null
+    description: null
+    designation: locale_specific
+    locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 4
+    title: Full name.
+  - aliases: null
+    description: null
+    designation: locale_specific
+    locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 3
+    title: null
+  - aliases: null
+    description: null
+    designation: broad_numbers
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: null
+    primitive: int
+    references: null
+    release_priority: 0
+    title: null
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: null
+  - aliases: null
+    description: null
+    designation: broad_numbers
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Height.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: An identifier.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Random language.
+  - aliases: null
+    description: null
+    designation: locale_specific
+    locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 4
+    title: Last name.
+  - aliases: null
+    description: null
+    designation: duplicate
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: Duplicate of first_name
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Name.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Nationality.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: The name of job.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Password or hash of password.
+  - aliases: null
+    description: null
+    designation: locale_specific
+    locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 4
+    title: Phone number.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Political views.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Sex.
+  - aliases: null
+    description: null
+    designation: duplicate
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: Duplicate of last_name
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Surname.
+  - aliases: null
+    description: null
+    designation: duplicate
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: Duplicate of phone_number
+    primitive: str
+    references: null
+    release_priority: 0
+    title: null
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: The title.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: University name.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Username as string.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Views on.
+  - aliases: null
+    description: null
+    designation: broad_numbers
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: null
+    primitive: int
+    references: null
+    release_priority: 0
+    title: Weight.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: identity
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Worldview.
+  name: person

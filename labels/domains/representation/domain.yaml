@@ -1,0 +1,364 @@
+name: representation
+sectors:
+- definitions:
+  - aliases: null
+    description: null
+    designation: broad_numbers
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: PIN code.
+  name: code
+- definitions:
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: Split out hash types - eg MD5, SHA256
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Hash.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Mnemonic phrase.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Token.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: URL-safe token.
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 5
+    title: UUID4 as string.
+  name: cryptographic
+- definitions:
+  - aliases: []
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: []
+    release_priority: 1
+    title: Default title for numeric.complex_number
+  - aliases: []
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: []
+    release_priority: 1
+    title: Default title for numeric.complexes
+  - aliases: []
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: []
+    release_priority: 1
+    title: Default title for numeric.decimal_number
+  - aliases: []
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: []
+    release_priority: 1
+    title: Default title for numeric.decimals
+  - aliases: null
+    description: null
+    designation: broad_numbers
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: float
+    references: null
+    release_priority: 0
+    title: Float.
+  - aliases: null
+    description: null
+    designation: broad_numbers
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: List[float]
+    references: null
+    release_priority: 0
+    title: The list of floating-point numbers.
+  - aliases: null
+    description: null
+    designation: broad_numbers
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: int
+    references: null
+    release_priority: 0
+    title: Integer.
+  - aliases: null
+    description: null
+    designation: broad_numbers
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: int
+    references: null
+    release_priority: 0
+    title: Integer.
+  - aliases: null
+    description: null
+    designation: broad_object
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: List[int]
+    references: null
+    release_priority: 0
+    title: List of integers.
+  - aliases: null
+    description: null
+    designation: broad_object
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: List[List[float]]
+    references: null
+    release_priority: 0
+    title: A matrix of random numbers.
+  name: numeric
+- definitions:
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 5
+    title: DNA sequence.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Unit.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Metric prefix for SI measure units.
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 5
+    title: RNA sequence.
+  name: science
+- definitions:
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: List[str]
+    references: null
+    release_priority: 0
+    title: Alphabet.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: An answer.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Color name.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Emoji code.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Level.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Random quote.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: List[int]
+    references: null
+    release_priority: 0
+    title: RGB tuple.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Sentence.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Text.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: The title.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Single word.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: representation
+    notes: null
+    primitive: List[str]
+    references: null
+    release_priority: 0
+    title: Word list.
+  name: text

@@ -1,5 +1,6 @@
+from __future__ import annotations
+
 from enum import Enum
-from typing import Any, List, Optional
 
 from pydantic import BaseModel, field_validator
 
@@ -60,8 +61,18 @@ class Locale(Enum):
     UNIVERSAL = "universal"
 
     @classmethod
-    def values(cls) -> List[str]:
-        return [i.value for i in cls.__members__.values()]
+    def _missing_(cls, value: str) -> Locale:
+        for member in cls:
+            if member.value == value:
+                return member
+        raise ValueError(f"{value} is not a valid {cls.__name__}")
+
+    @classmethod
+    def from_value(cls, value: str) -> Locale:
+        try:
+            return cls[value]
+        except KeyError:
+            return cls._missing_(value)
 
 
 class Designation(str, Enum):
@@ -83,36 +94,38 @@ class Definition(BaseModel):
     name: str
     designation: Designation
     primitive: str
-    locales: List[Locale]
-    samples: List[Any]
+    locales: list[Locale]
     release_priority: int
-    title: Optional[str] = None
-    description: Optional[str] = None
-    references: Optional[List[Reference]] = None
-    aliases: Optional[List[str]] = None
-    notes: Optional[str] = None
+    title: str | None = None
+    description: str | None = None
+    references: list[Reference] | None = None
+    aliases: list[str] | None = None
+    notes: str | None = None
 
     @field_validator("locales", mode="before")
     @classmethod
-    def convert_locales(cls, values):
+    def lower_locales(cls, values: list[str]) -> list[Locale] | bool:
         if isinstance(values, list):
-            for v in values:
-                assert hasattr(Locale, v), f"{v} is not an attribute of Locale"
-            return [getattr(Locale, value) for value in values]
+            return [Locale.from_value(value) for value in values]
+        return False
+
+    class Config:
+        use_enum_values = False
+        json_encoders = {Locale: lambda v: v.name}
 
 
 class Sector(BaseModel):
     name: str
-    definitions: List[Definition]
+    definitions: list[Definition]
 
 
 class Domain(BaseModel):
     name: str
-    sectors: List[Sector]
+    sectors: list[Sector]
 
 
 class Release(BaseModel):
-    domains: List[Domain]
+    domains: list[Domain]
 
 
 class Record(BaseModel):

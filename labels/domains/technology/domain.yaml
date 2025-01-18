@@ -1,0 +1,1064 @@
+name: technology
+sectors:
+- definitions:
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 4
+    title: EAN.
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 4
+    title: IMEI.
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 4
+    title: ISBN.
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 4
+    title: ISSN.
+  name: code
+- definitions:
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: bool
+    references: null
+    release_priority: 3
+    title: True of False.
+  - aliases: null
+    description: null
+    designation: duplicate
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: Duplicate of structured datetimes
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Calendar versioning string.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: null
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: The name of OS.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Programming language.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: License name.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Release stage.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: System quality attribute.
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 3
+    title: Semantic versioning string.
+  name: development
+- definitions:
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 3
+    title: Extension of the file.
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 3
+    title: File name.
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 4
+    title: Mime type.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Size of file.
+  name: file
+- definitions:
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Bank name.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Company name.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Types of business entity.
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 3
+    title: Symbol of cryptocurrency.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Symbol of cryptocurrency.
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 3
+    title: Currency code.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Currency symbol.
+  - aliases: null
+    description: null
+    designation: broad_numbers
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: float
+    references: null
+    release_priority: 0
+    title: Price.
+  - aliases: null
+    description: null
+    designation: broad_numbers
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: float
+    references: null
+    release_priority: 0
+    title: Price in BTC.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Returns exchange name.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Stock name.
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 3
+    title: Ticker.
+  name: finance
+- definitions:
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Dish name.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Drink name.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Fruit name.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: The name of the spices or herbs.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Vegetable name.
+  name: food
+- definitions:
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: CPU name.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: CPU code name.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Frequency of CPU.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Generation of something.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Graphics.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Manufacturer.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Phone model.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: RAM size.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Type of RAM.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Resolution of screen.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Screen size.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: HDD or SSD.
+  name: hardware
+- definitions:
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 5
+    title: ASN number as a string.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Content type.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: null
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Hostname.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: HTTP method.
+  - aliases: null
+    description: null
+    designation: broad_object
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: Dict[Union[str], Union[int, str]]
+    references: null
+    release_priority: 0
+    title: Request headers as dict.
+  - aliases: null
+    description: null
+    designation: broad_object
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: Dict[Union[str], Union[int, str]]
+    references: null
+    release_priority: 0
+    title: Response headers as dict.
+  - aliases: null
+    description: null
+    designation: broad_numbers
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: int
+    references: null
+    release_priority: 0
+    title: HTTP status.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: HTTP status message.
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 5
+    title: null
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 5
+    title: IPv4 address as string.
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 5
+    title: IPv6 address string.
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 5
+    title: Random MAC address.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Path.
+  - aliases: null
+    description: null
+    designation: broad_numbers
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: int
+    references: null
+    release_priority: 0
+    title: Port number.
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 5
+    title: null
+  - aliases: null
+    description: null
+    designation: broad_object
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: Dict[str, str]
+    references: null
+    release_priority: 0
+    title: Dict of query parameters.
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 3
+    title: Query string.
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 3
+    title: Slug.
+  - aliases: null
+    description: null
+    designation: duplicate
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: Duplicate of ip_v4
+    primitive: str
+    references: null
+    release_priority: 0
+    title: IPv4 address as string.
+  - aliases: null
+    description: null
+    designation: duplicate
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: Duplicate of url
+    primitive: str
+    references: null
+    release_priority: 0
+    title: URL of the image.
+  - aliases: null
+    description: null
+    designation: duplicate
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: Duplicate of top level domain
+    primitive: str
+    references: null
+    release_priority: 0
+    title: null
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 4
+    title: Top level domain.
+  - aliases: null
+    description: null
+    designation: duplicate
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: Duplicate of url
+    primitive: str
+    references: null
+    release_priority: 0
+    title: URI.
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 4
+    title: URL.
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 5
+    title: User agent.
+  name: internet
+- definitions:
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Path.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Home path.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Path to project.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Root dir.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Path to user.
+  - aliases: null
+    description: null
+    designation: broad_characters
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Path.
+  name: path
+- definitions:
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: May need to be split (https://bitcoin.design/guide/glossary/address)
+    primitive: str
+    references: null
+    release_priority: 5
+    title: Bitcoin address.
+  - aliases: null
+    description: null
+    designation: broad_numbers
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: CID code.
+  - aliases: null
+    description: null
+    designation: duplicate
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: Duplicate of structured datetimes
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Expiration date of credit card.
+  - aliases: null
+    description: null
+    designation: broad_numbers
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Credit card network
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 5
+    title: Credit card number.
+  - aliases: null
+    description: null
+    designation: broad_object
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: Dict[str, str]
+    references: null
+    release_priority: 0
+    title: null
+  - aliases: null
+    description: null
+    designation: broad_numbers
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: CVV code.
+  - aliases: null
+    description: null
+    designation: universal
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 5
+    title: Ethereum address.
+  - aliases: null
+    description: null
+    designation: duplicate
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: Duplicate of email
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Email of PapPal user.
+  name: payment
+- definitions:
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: Airplane model.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: A vehicle.
+  - aliases: null
+    description: null
+    designation: broad_words
+    locales:
+    - UNIVERSAL
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 0
+    title: A car manufacturer
+  - aliases: null
+    description: null
+    designation: locale_specific
+    locales:
+    - AR_AE
+    - AR_DZ
+    - AR_EG
+    - AR_JO
+    - AR_OM
+    - AR_SY
+    - AR_YE
+    - CS
+    - DA
+    - DE
+    - DE_AT
+    - DE_CH
+    - EL
+    - EN
+    - EN_AU
+    - EN_CA
+    - EN_GB
+    - ES
+    - ES_MX
+    - ET
+    - FA
+    - FI
+    - FR
+    - HU
+    - HR
+    - IS
+    - IT
+    - JA
+    - KK
+    - KO
+    - NL
+    - NL_BE
+    - NO
+    - PL
+    - PT
+    - PT_BR
+    - RU
+    - SK
+    - SV
+    - TR
+    - UK
+    - ZH
+    name: technology
+    notes: null
+    primitive: str
+    references: null
+    release_priority: 3
+    title: Vehicle registration code.
+  name: transport

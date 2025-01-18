@@ -5,7 +5,7 @@ from pathlib import Path
 import aiofiles
 from domains.collection import generic_set, load_releases
 from mimesis import random
-from models.core import Record
+from models.core import Definition, Record, Sector
 from tqdm.asyncio import tqdm
 
 parser = argparse.ArgumentParser(
@@ -15,7 +15,7 @@ parser.add_argument(
     "--release",
     type=str,
     default="definitions_tier.yaml",
-    help="Path to the release definitions file (default: definitions_tier.yaml)",
+    help="Path to the release definitions file.",
 )
 parser.add_argument(
     "--texts",
@@ -63,8 +63,8 @@ for domain in release.domains:
 
 
 async def generate_data_for_locale(
-    sector,
-    definition,
+    sector: Sector,
+    definition: Definition,
     locale,
     texts,
     ndjson_file,
