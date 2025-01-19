@@ -28,5 +28,7 @@ To Do:
 - [ ] Excel Custom Number Formats
 - [ ] Finance Identifiers - ISIN, CUSIP, SEDOL, SWIFT, LEI
 - [ ] [Currency Formats](https://en.wikipedia.org/wiki/ISO_4217)
+- [ ] Medical Identifiers - NPI, DEA, UPIN, NDC
+- [ ] Move Blood Type to a medical section
 - [ ] [String Formats](https://mkaz.blog/working-with-python/string-formatting)
 - [ ] Generate data from [CLDR releases](https://cldr.unicode.org/)

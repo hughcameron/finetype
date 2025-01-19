@@ -8,4 +8,3 @@ class Time(MimesisDatetime):
 
     class Meta:
         name = "time"
-        # datafile = f"{name}.json"

@@ -1,0 +1,399 @@
+name: datetime
+definitions:
+- name: american
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 5
+  title: American
+  description: Common U.S. date and time format
+  references:
+  - title: Common Style Guides
+    link: https://en.wikipedia.org/wiki/Date_by_country#United_States
+  aliases:
+  - Middle-Endian
+  notes: null
+- name: century
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 3
+  title: Century.
+  description: null
+  references: null
+  aliases: null
+  notes: Rename to Roman Numberals
+- name: date
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 1
+  title: Default title for datetime.date
+  description: null
+  references: []
+  aliases: []
+  notes: null
+- name: datetime
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 1
+  title: Default title for datetime.datetime
+  description: null
+  references: []
+  aliases: []
+  notes: null
+- name: day_of_month
+  designation: broad_numbers
+  primitive: int
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 1
+  title: Random value from 1 to 31.
+  description: null
+  references: null
+  aliases: null
+  notes: null
+- name: day_of_week
+  designation: duplicate
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 1
+  title: Day of the week.
+  description: null
+  references: null
+  aliases: null
+  notes: Duplicate of structured datetimes
+- name: duration
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 1
+  title: Default title for datetime.duration
+  description: null
+  references: []
+  aliases: []
+  notes: null
+- name: european
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 5
+  title: European
+  description: Common European date and time format
+  references:
+  - title: Common Style Guides
+    link: https://en.wikipedia.org/wiki/Date_by_country#Europe
+  aliases:
+  - Little-Endian
+  notes: null
+- name: formatted_date
+  designation: duplicate
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 1
+  title: Formatted date.
+  description: null
+  references: null
+  aliases: null
+  notes: Duplicate of structured datetimes
+- name: formatted_datetime
+  designation: duplicate
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 1
+  title: Formatted datetime string.
+  description: null
+  references: null
+  aliases: null
+  notes: Duplicate of structured datetimes
+- name: formatted_time
+  designation: duplicate
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 1
+  title: String formatted time.
+  description: null
+  references: null
+  aliases: null
+  notes: Duplicate of structured datetimes
+- name: gmt_offset
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 4
+  title: GMT Offset.
+  description: null
+  references: null
+  aliases: null
+  notes: null
+- name: iso_8601
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 5
+  title: ISO 8601
+  description: Standard international format
+  references:
+  - title: ISO 8601-1:2019
+    link: https://www.iso.org/standard/70907.html
+  - title: Date and Time Formats
+    link: https://www.w3.org/TR/NOTE-datetime
+  aliases:
+  - Big-Endian
+  notes: null
+- name: iso_8601_compact
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 5
+  title: ISO 8601 Compact
+  description: Compact ISO 8601 without separators
+  references:
+  - title: ISO 8601-1:2019
+    link: https://www.iso.org/standard/70907.html
+  aliases: []
+  notes: null
+- name: iso_8601_ext
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 1
+  title: Default title for datetime.iso_8601_ext
+  description: null
+  references: []
+  aliases: []
+  notes: null
+- name: iso_8601_with_time_zone_name
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 5
+  title: ISO 8601 with Time Zone Name
+  description: ISO 8601 with Z for UTC or time zone offset - 2023-12-29T10:45:30-05:00
+  references:
+  - title: ISO 8601-1:2019
+    link: https://www.iso.org/standard/70907.html
+  aliases: []
+  notes: null
+- name: periodicity
+  designation: broad_words
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 1
+  title: Periodicity.
+  description: null
+  references: null
+  aliases: null
+  notes: null
+- name: rfc_2822
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 5
+  title: RFC 2822
+  description: Email header date and time format
+  references:
+  - title: RFC 2822
+    link: https://www.rfc-editor.org/rfc/rfc2822
+  aliases: []
+  notes: null
+- name: rfc_2822_with_ordinals
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 5
+  title: RFC 2822 with Ordinals
+  description: RFC 2822 format with ordinal indicators
+  references:
+  - title: RFC 2822
+    link: https://www.rfc-editor.org/rfc/rfc2822
+  aliases: []
+  notes: null
+- name: rfc_3339
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 1
+  title: Default title for datetime.rfc_3339
+  description: null
+  references: []
+  aliases: []
+  notes: null
+- name: short_dmy
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 1
+  title: Default title for datetime.short_dmy
+  description: null
+  references: []
+  aliases: []
+  notes: null
+- name: short_mdy
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 1
+  title: Default title for datetime.short_mdy
+  description: null
+  references: []
+  aliases: []
+  notes: null
+- name: short_ymd
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 1
+  title: Default title for datetime.short_ymd
+  description: null
+  references: []
+  aliases: []
+  notes: null
+- name: sql_standard
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 5
+  title: SQL Standard
+  description: Common SQL format for datetime values
+  references:
+  - title: SQL Standard (ISO/IEC 9075)
+    link: https://www.iso.org/standard/76583.html
+  aliases: []
+  notes: null
+- name: time
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 1
+  title: Default title for datetime.time
+  description: null
+  references: []
+  aliases: []
+  notes: null
+- name: timestamp
+  designation: universal
+  primitive: int
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 5
+  title: Timestamp.
+  description: null
+  references: null
+  aliases: null
+  notes: null
+- name: timezone
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 5
+  title: Timezone.
+  description: null
+  references: null
+  aliases: null
+  notes: null
+- name: unix_epoch_in_milliseconds
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 5
+  title: Unix Epoch in Milliseconds
+  description: Unix timestamp with milliseconds precision
+  references:
+  - title: The Open Group Base Specifications Issue 7, IEEE Std 1003.1-2017
+    link: https://pubs.opengroup.org/onlinepubs/9699919799/
+  aliases: []
+  notes: null
+- name: unix_timestamp
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 5
+  title: Unix Timestamp
+  description: Seconds since 1970-01-01 00:00:00 UTC
+  references:
+  - title: The Open Group Base Specifications Issue 7, IEEE Std 1003.1-2017
+    link: https://pubs.opengroup.org/onlinepubs/9699919799/
+  aliases: []
+  notes: null
+- name: week_date
+  designation: duplicate
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 1
+  title: Week number.
+  description: null
+  references: null
+  aliases: null
+  notes: Duplicate of structured datetimes
+- name: year
+  designation: duplicate
+  primitive: int
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 1
+  title: Year.
+  description: null
+  references: null
+  aliases: null
+  notes: Duplicate of structured datetimes

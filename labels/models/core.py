@@ -5,9 +5,20 @@ from enum import Enum
 from pydantic import BaseModel, field_validator
 
 
-class Reference(BaseModel):
-    title: str
-    link: str
+class Designation(str, Enum):
+    universal = "universal"
+    locale_specific = "locale_specific"
+    broad_characters = "broad_characters"
+    broad_numbers = "broad_numbers"
+    broad_object = "broad_object"
+    broad_words = "broad_words"
+    duplicate = "duplicate"
+    system_internal = "system_internal"
+
+
+class Domain(BaseModel):
+    name: str
+    sectors: list[Sector]
 
 
 class Locale(Enum):
@@ -75,15 +86,32 @@ class Locale(Enum):
             return cls._missing_(value)
 
 
-class Designation(str, Enum):
-    universal = "universal"
-    locale_specific = "locale_specific"
-    broad_characters = "broad_characters"
-    broad_numbers = "broad_numbers"
-    broad_object = "broad_object"
-    broad_words = "broad_words"
-    duplicate = "duplicate"
-    system_internal = "system_internal"
+class Record(BaseModel):
+    """
+    A record of data generated.
+    """
+
+    classification: str
+    text: str
+
+
+class Reference(BaseModel):
+    title: str
+    link: str
+
+
+class Release(BaseModel):
+    domains: list[Domain]
+
+
+class Sector(BaseModel):
+    name: str
+    definitions: list[Definition]
+
+
+class Variation(BaseModel):
+    name: str
+    arguments: dict
 
 
 class Definition(BaseModel):
@@ -95,6 +123,7 @@ class Definition(BaseModel):
     designation: Designation
     primitive: str
     locales: list[Locale]
+    variations: list[Variation]
     release_priority: int
     title: str | None = None
     description: str | None = None
@@ -112,26 +141,3 @@ class Definition(BaseModel):
     class Config:
         use_enum_values = False
         json_encoders = {Locale: lambda v: v.name}
-
-
-class Sector(BaseModel):
-    name: str
-    definitions: list[Definition]
-
-
-class Domain(BaseModel):
-    name: str
-    sectors: list[Sector]
-
-
-class Release(BaseModel):
-    domains: list[Domain]
-
-
-class Record(BaseModel):
-    """
-    A record of data generated.
-    """
-
-    classification: str
-    text: str

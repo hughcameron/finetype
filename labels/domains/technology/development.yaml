@@ -1,0 +1,110 @@
+name: development
+definitions:
+- name: boolean
+  designation: universal
+  primitive: bool
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 3
+  title: True of False.
+  description: null
+  references: null
+  aliases: null
+  notes: null
+- name: calver
+  designation: duplicate
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 0
+  title: Calendar versioning string.
+  description: null
+  references: null
+  aliases: null
+  notes: Duplicate of structured datetimes
+- name: ility
+  designation: broad_words
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 0
+  title: null
+  description: null
+  references: null
+  aliases: null
+  notes: null
+- name: os
+  designation: broad_words
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 0
+  title: The name of OS.
+  description: null
+  references: null
+  aliases: null
+  notes: null
+- name: programming_language
+  designation: broad_words
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 0
+  title: Programming language.
+  description: null
+  references: null
+  aliases: null
+  notes: null
+- name: software_license
+  designation: broad_words
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 0
+  title: License name.
+  description: null
+  references: null
+  aliases: null
+  notes: null
+- name: stage
+  designation: broad_words
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 0
+  title: Release stage.
+  description: null
+  references: null
+  aliases: null
+  notes: null
+- name: system_quality_attribute
+  designation: broad_words
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 0
+  title: System quality attribute.
+  description: null
+  references: null
+  aliases: null
+  notes: null
+- name: version
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 3
+  title: Semantic versioning string.
+  description: null
+  references: null
+  aliases: null
+  notes: null

@@ -1,0 +1,126 @@
+name: date
+definitions:
+- name: abbreviated_month
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 5
+  title: Abbreviated Month Date
+  description: Date format with abbreviated month names
+  references: null
+  aliases: []
+  notes: null
+- name: full_weekday_abbreviated_month
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 5
+  title: Full Weekday and Abbreviated Month Date
+  description: Date format with full weekday name and abbreviated month
+  references: null
+  aliases: []
+  notes: null
+- name: julian
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 5
+  title: Julian Date
+  description: Days since a fixed astronomical epoch
+  references:
+  - title: Astronomical Julian Day Number
+    link: https://en.wikipedia.org/wiki/Julian_day
+  aliases: []
+  notes: null
+- name: long_full_month_name
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 5
+  title: Long Date with Full Month Name
+  description: Date format with full month names and day
+  references: null
+  aliases: []
+  notes: null
+- name: long_weekday_month_name
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 5
+  title: Long Date with Weekday and Month Name
+  description: Date format with weekday, day, and full month name
+  references: null
+  aliases: []
+  notes: null
+- name: month
+  designation: duplicate
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 1
+  title: Month name.
+  description: null
+  references: null
+  aliases: null
+  notes: Duplicate of structured datetimes
+- name: numeric_dmy
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 1
+  title: Default title for datetime.numeric_dmy
+  description: null
+  references: []
+  aliases: []
+  notes: null
+- name: numeric_mdy
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 1
+  title: Default title for datetime.numeric_mdy
+  description: null
+  references: []
+  aliases: []
+  notes: null
+- name: numeric_ymd
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 1
+  title: Default title for datetime.numeric_ymd
+  description: null
+  references: []
+  aliases: []
+  notes: null
+- name: ordinal
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 5
+  title: Ordinal Date
+  description: Year and day of the year
+  references:
+  - title: ISO 8601-1:2019
+    link: https://www.iso.org/standard/70907.html
+  aliases: []
+  notes: null

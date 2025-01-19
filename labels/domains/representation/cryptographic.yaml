@@ -1,0 +1,62 @@
+name: cryptographic
+definitions:
+- name: hash
+  designation: broad_characters
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 0
+  title: Hash.
+  description: null
+  references: null
+  aliases: null
+  notes: Split out hash types - eg MD5, SHA256
+- name: mnemonic_phrase
+  designation: broad_words
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 0
+  title: Mnemonic phrase.
+  description: null
+  references: null
+  aliases: null
+  notes: null
+- name: token_hex
+  designation: broad_characters
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 0
+  title: Token.
+  description: null
+  references: null
+  aliases: null
+  notes: null
+- name: token_urlsafe
+  designation: broad_characters
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 0
+  title: URL-safe token.
+  description: null
+  references: null
+  aliases: null
+  notes: null
+- name: uuid
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 5
+  title: UUID4 as string.
+  description: null
+  references: null
+  aliases: null
+  notes: null

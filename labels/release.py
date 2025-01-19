@@ -3,13 +3,10 @@ import asyncio
 from pathlib import Path
 
 import aiofiles
-from domains.collection import generic_set, load_releases
+from domains.collection import generic_set, load_release
 from mimesis import random
 from models.core import Definition, Record, Sector
 from tqdm.asyncio import tqdm
-
-DOMAINS_DIR = Path("domains")
-DOMAIN_CONFIGS = DOMAINS_DIR.rglob("domain.yaml")
 
 parser = argparse.ArgumentParser(
     description="Release data using mimesis with given definitions.",
@@ -17,7 +14,6 @@ parser = argparse.ArgumentParser(
 parser.add_argument(
     "--release",
     type=str,
-    default=DOMAIN_CONFIGS,
     help="Path to the release definitions file.",
 )
 parser.add_argument(
@@ -55,7 +51,7 @@ SEED = args.seed
 
 random.global_seed = SEED
 
-release = load_releases(RELEASE_PATH)
+release = load_release(RELEASE_PATH) if RELEASE_PATH else load_release()
 
 total_iterations = 0
 for domain in release.domains:

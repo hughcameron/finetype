@@ -1,0 +1,50 @@
+name: file
+definitions:
+- name: extension
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 3
+  title: Extension of the file.
+  description: null
+  references: null
+  aliases: null
+  notes: null
+- name: file_name
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 3
+  title: File name.
+  description: null
+  references: null
+  aliases: null
+  notes: null
+- name: mime_type
+  designation: universal
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 4
+  title: Mime type.
+  description: null
+  references: null
+  aliases: null
+  notes: null
+- name: size
+  designation: broad_characters
+  primitive: str
+  locales:
+  - UNIVERSAL
+  variations: []
+  release_priority: 0
+  title: Size of file.
+  description: null
+  references: null
+  aliases: null
+  notes: null

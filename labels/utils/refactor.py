@@ -5,7 +5,7 @@ from typing import Any
 
 import yaml
 from domains.collection import save_yaml_model
-from models.core import Definition, Designation, Domain, Locale, Reference
+from models.core import Definition, Designation, Locale, Reference, Sector
 from pydantic import BaseModel, field_validator
 
 DOMAINS_FILE = "domain_match.tsv"
@@ -116,6 +116,7 @@ def build_definition_tree(releases, domains):
         definition_name = r_data.pop("method")
         domain_name = domains[f"{sector_name}.{definition_name}"]
         r_data["name"] = definition_name
+        r_data["variations"] = []
 
         if domain_name not in definition_tree:
             definition_tree[domain_name] = {}
@@ -143,16 +144,16 @@ def save_definition_tree(definition_tree):
         print("domain name:", domain_name)
 
         domain_dict = {"name": domain_name, "sectors": list(sectors.values())}
-        domain_data = Domain(**domain_dict)
 
-        doc_path = Path(f"domains/{domain_name}/domain.yaml")
-        doc_path.parent.mkdir(parents=True, exist_ok=True)
-        save_yaml_model(domain_data, doc_path)
-
-        for sector_name in sectors:
+        for i, sector_name in enumerate(sectors):
             sector_path = Path(f"domains/{domain_name}/{sector_name}.py")
             if not sector_path.exists():
                 sector_path.write_text("")
+
+            doc_path = Path(f"domains/{domain_name}/{sector_name}.yaml")
+            doc_path.parent.mkdir(parents=True, exist_ok=True)
+            sector_data = Sector(**sectors[sector_name])
+            save_yaml_model(sector_data, doc_path)
 
 
 def main():

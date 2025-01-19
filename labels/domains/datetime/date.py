@@ -9,7 +9,6 @@ class Date(MimesisDatetime):
 
     class Meta:
         name = "date"
-        # datafile = f"{name}.json"
 
     def short_ymd(self) -> str:
         format = "yy-MM-dd"

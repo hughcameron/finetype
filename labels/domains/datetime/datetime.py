@@ -9,7 +9,6 @@ class Datetime(MimesisDatetime):
 
     class Meta:
         name = "datetime"
-        # datafile = f"{name}.json"
 
     def iso_8601(self) -> str:
         """Generate a random date in ISO8601 format.
