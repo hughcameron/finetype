@@ -1,110 +1,110 @@
 name: payment
 definitions:
-- name: bitcoin_address
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 5
-  title: Bitcoin address.
-  description: null
-  references: null
-  aliases: null
-  notes: May need to be split (https://bitcoin.design/guide/glossary/address)
-- name: cid
-  designation: broad_numbers
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: CID code.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: credit_card_expiration_date
-  designation: duplicate
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Expiration date of credit card.
-  description: null
-  references: null
-  aliases: null
-  notes: Duplicate of structured datetimes
-- name: credit_card_network
-  designation: broad_numbers
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Credit card network
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: credit_card_number
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 5
-  title: Credit card number.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: credit_card_owner
-  designation: broad_object
-  primitive: Dict[str, str]
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: null
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: cvv
-  designation: broad_numbers
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: CVV code.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: ethereum_address
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 5
-  title: Ethereum address.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: paypal
-  designation: duplicate
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Email of PapPal user.
-  description: null
-  references: null
-  aliases: null
-  notes: Duplicate of email
+  - name: bitcoin_address
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 5
+    title: Bitcoin address.
+    description: null
+    references: null
+    aliases: null
+    notes: May need to be split (https://bitcoin.design/guide/glossary/address)
+  - name: cid
+    designation: broad_numbers
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: CID code.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: credit_card_expiration_date
+    designation: duplicate
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Expiration date of credit card.
+    description: null
+    references: null
+    aliases: null
+    notes: Duplicate of structured datetimes
+  - name: credit_card_network
+    designation: broad_numbers
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Credit card network
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: credit_card_number
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 5
+    title: Credit card number.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: credit_card_owner
+    designation: broad_object
+    primitive: Dict[str, str]
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: null
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: cvv
+    designation: broad_numbers
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: CVV code.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: ethereum_address
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 5
+    title: Ethereum address.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: paypal
+    designation: duplicate
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Email of PapPal user.
+    description: null
+    references: null
+    aliases: null
+    notes: Duplicate of email

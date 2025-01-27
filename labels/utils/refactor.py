@@ -116,7 +116,7 @@ def build_definition_tree(releases, domains):
         definition_name = r_data.pop("method")
         domain_name = domains[f"{sector_name}.{definition_name}"]
         r_data["name"] = definition_name
-        r_data["variations"] = []
+        r_data["variants"] = []
 
         if domain_name not in definition_tree:
             definition_tree[domain_name] = {}

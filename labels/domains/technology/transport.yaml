@@ -1,91 +1,91 @@
 name: transport
 definitions:
-- name: airplane
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Airplane model.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: car
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: A vehicle.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: manufacturer
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: A car manufacturer
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: vehicle_registration_code
-  designation: locale_specific
-  primitive: str
-  locales:
-  - AR_AE
-  - AR_DZ
-  - AR_EG
-  - AR_JO
-  - AR_OM
-  - AR_SY
-  - AR_YE
-  - CS
-  - DA
-  - DE
-  - DE_AT
-  - DE_CH
-  - EL
-  - EN
-  - EN_AU
-  - EN_CA
-  - EN_GB
-  - ES
-  - ES_MX
-  - ET
-  - FA
-  - FI
-  - FR
-  - HU
-  - HR
-  - IS
-  - IT
-  - JA
-  - KK
-  - KO
-  - NL
-  - NL_BE
-  - 'NO'
-  - PL
-  - PT
-  - PT_BR
-  - RU
-  - SK
-  - SV
-  - TR
-  - UK
-  - ZH
-  variations: []
-  release_priority: 3
-  title: Vehicle registration code.
-  description: null
-  references: null
-  aliases: null
-  notes: null
+  - name: airplane
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Airplane model.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: car
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: A vehicle.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: manufacturer
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: A car manufacturer
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: vehicle_registration_code
+    designation: locale_specific
+    primitive: str
+    locales:
+      - AR_AE
+      - AR_DZ
+      - AR_EG
+      - AR_JO
+      - AR_OM
+      - AR_SY
+      - AR_YE
+      - CS
+      - DA
+      - DE
+      - DE_AT
+      - DE_CH
+      - EL
+      - EN
+      - EN_AU
+      - EN_CA
+      - EN_GB
+      - ES
+      - ES_MX
+      - ET
+      - FA
+      - FI
+      - FR
+      - HU
+      - HR
+      - IS
+      - IT
+      - JA
+      - KK
+      - KO
+      - NL
+      - NL_BE
+      - "NO"
+      - PL
+      - PT
+      - PT_BR
+      - RU
+      - SK
+      - SV
+      - TR
+      - UK
+      - ZH
+    variants: []
+    release_priority: 3
+    title: Vehicle registration code.
+    description: null
+    references: null
+    aliases: null
+    notes: null

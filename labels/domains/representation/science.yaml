@@ -1,50 +1,50 @@
 name: science
 definitions:
-- name: dna_sequence
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 5
-  title: DNA sequence.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: measure_unit
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Unit.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: metric_prefix
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Metric prefix for SI measure units.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: rna_sequence
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 5
-  title: RNA sequence.
-  description: null
-  references: null
-  aliases: null
-  notes: null
+  - name: dna_sequence
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 5
+    title: DNA sequence.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: measure_unit
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Unit.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: metric_prefix
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Metric prefix for SI measure units.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: rna_sequence
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 5
+    title: RNA sequence.
+    description: null
+    references: null
+    aliases: null
+    notes: null

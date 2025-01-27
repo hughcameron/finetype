@@ -5,7 +5,7 @@ from pathlib import Path
 import aiofiles
 from domains.collection import generic_set, load_release
 from mimesis import random
-from models.core import Definition, Record, Sector
+from models.core import Definition, Domain, Record, Sector
 from tqdm.asyncio import tqdm
 
 parser = argparse.ArgumentParser(
@@ -48,7 +48,6 @@ RELEASE_PATH = args.release
 OUTFILE = Path(args.output)
 SEED = args.seed
 
-
 random.global_seed = SEED
 
 release = load_release(RELEASE_PATH) if RELEASE_PATH else load_release()
@@ -59,13 +58,15 @@ for domain in release.domains:
         for definition in sector.definitions:
             if definition.release_priority >= PRIORITY:
                 total_iterations += len(definition.locales) * TEXTS
+                for variant in definition.variants:
+                    total_iterations += len(definition.locales) * TEXTS
 
 
 async def generate_data_for_locale(
+    domain: Domain,
     sector: Sector,
     definition: Definition,
     locale,
-    texts,
     ndjson_file,
     pbar,
 ):
@@ -74,13 +75,21 @@ async def generate_data_for_locale(
     method = getattr(provider, definition.name)
 
     records = []
-    for _ in range(texts):
+    for _ in range(TEXTS):
         record = Record(
-            classification=f"{sector.name}.{definition.name}.{locale.name}",
+            classification=f"{domain.name}.{sector.name}.{definition.name}.{locale.name}",
             text=str(method()),
         )
         records.append(record.model_dump_json())
         pbar.update(1)  # Update the progress bar for each iteration
+    for variant in definition.variants:
+        for _ in range(TEXTS):
+            record = Record(
+                classification=f"{domain.name}.{sector.name}.{definition.name}__{variant.name}.{locale.name}",
+                text=str(method(**variant.arguments)),
+            )
+            records.append(record.model_dump_json())
+            pbar.update(1)  # Update the progress bar for each iteration
 
     await ndjson_file.write("\n".join(records) + "\n")
 
@@ -96,10 +105,10 @@ async def main():
                         if definition.release_priority >= PRIORITY:
                             for locale in definition.locales:
                                 task = generate_data_for_locale(
+                                    domain,
                                     sector,
                                     definition,
                                     locale,
-                                    TEXTS,
                                     ndjson_file,
                                     pbar,
                                 )

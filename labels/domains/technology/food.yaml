@@ -1,62 +1,62 @@
 name: food
 definitions:
-- name: dish
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Dish name.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: drink
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Drink name.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: fruit
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Fruit name.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: spices
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: The name of the spices or herbs.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: vegetable
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Vegetable name.
-  description: null
-  references: null
-  aliases: null
-  notes: null
+  - name: dish
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Dish name.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: drink
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Drink name.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: fruit
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Fruit name.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: spices
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: The name of the spices or herbs.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: vegetable
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Vegetable name.
+    description: null
+    references: null
+    aliases: null
+    notes: null

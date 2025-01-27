@@ -1,314 +1,314 @@
 name: internet
 definitions:
-- name: asn
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 5
-  title: ASN number as a string.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: content_type
-  designation: broad_characters
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Content type.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: dsn
-  designation: broad_characters
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: null
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: hostname
-  designation: broad_characters
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Hostname.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: http_method
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: HTTP method.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: http_request_headers
-  designation: broad_object
-  primitive: Dict[Union[str], Union[int, str]]
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Request headers as dict.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: http_response_headers
-  designation: broad_object
-  primitive: Dict[Union[str], Union[int, str]]
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Response headers as dict.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: http_status_code
-  designation: broad_numbers
-  primitive: int
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: HTTP status.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: http_status_message
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: HTTP status message.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: ip_v4
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 5
-  title: null
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: ip_v4_with_port
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 5
-  title: IPv4 address as string.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: ip_v6
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 5
-  title: IPv6 address string.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: mac_address
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 5
-  title: Random MAC address.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: path
-  designation: broad_characters
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Path.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: port
-  designation: broad_numbers
-  primitive: int
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Port number.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: public_dns
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 5
-  title: null
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: query_parameters
-  designation: broad_object
-  primitive: Dict[str, str]
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Dict of query parameters.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: query_string
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 3
-  title: Query string.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: slug
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 3
-  title: Slug.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: special_ip_v4
-  designation: duplicate
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: IPv4 address as string.
-  description: null
-  references: null
-  aliases: null
-  notes: Duplicate of ip_v4
-- name: stock_image_url
-  designation: duplicate
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: URL of the image.
-  description: null
-  references: null
-  aliases: null
-  notes: Duplicate of url
-- name: tld
-  designation: duplicate
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: null
-  description: null
-  references: null
-  aliases: null
-  notes: Duplicate of top level domain
-- name: top_level_domain
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 4
-  title: Top level domain.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: uri
-  designation: duplicate
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: URI.
-  description: null
-  references: null
-  aliases: null
-  notes: Duplicate of url
-- name: url
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 4
-  title: URL.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: user_agent
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 5
-  title: User agent.
-  description: null
-  references: null
-  aliases: null
-  notes: null
+  - name: asn
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 5
+    title: ASN number as a string.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: content_type
+    designation: broad_characters
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Content type.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: dsn
+    designation: broad_characters
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: null
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: hostname
+    designation: broad_characters
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Hostname.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: http_method
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: HTTP method.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: http_request_headers
+    designation: broad_object
+    primitive: Dict[Union[str], Union[int, str]]
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Request headers as dict.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: http_response_headers
+    designation: broad_object
+    primitive: Dict[Union[str], Union[int, str]]
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Response headers as dict.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: http_status_code
+    designation: broad_numbers
+    primitive: int
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: HTTP status.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: http_status_message
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: HTTP status message.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: ip_v4
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 5
+    title: null
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: ip_v4_with_port
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 5
+    title: IPv4 address as string.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: ip_v6
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 5
+    title: IPv6 address string.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: mac_address
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 5
+    title: Random MAC address.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: path
+    designation: broad_characters
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Path.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: port
+    designation: broad_numbers
+    primitive: int
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Port number.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: public_dns
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 5
+    title: null
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: query_parameters
+    designation: broad_object
+    primitive: Dict[str, str]
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Dict of query parameters.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: query_string
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 3
+    title: Query string.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: slug
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 3
+    title: Slug.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: special_ip_v4
+    designation: duplicate
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: IPv4 address as string.
+    description: null
+    references: null
+    aliases: null
+    notes: Duplicate of ip_v4
+  - name: stock_image_url
+    designation: duplicate
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: URL of the image.
+    description: null
+    references: null
+    aliases: null
+    notes: Duplicate of url
+  - name: tld
+    designation: duplicate
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: null
+    description: null
+    references: null
+    aliases: null
+    notes: Duplicate of top level domain
+  - name: top_level_domain
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 4
+    title: Top level domain.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: uri
+    designation: duplicate
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: URI.
+    description: null
+    references: null
+    aliases: null
+    notes: Duplicate of url
+  - name: url
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 4
+    title: URL.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: user_agent
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 5
+    title: User agent.
+    description: null
+    references: null
+    aliases: null
+    notes: null

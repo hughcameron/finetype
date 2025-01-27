@@ -1,146 +1,146 @@
 name: text
 definitions:
-- name: alphabet
-  designation: broad_characters
-  primitive: List[str]
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Alphabet.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: answer
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: An answer.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: color
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Color name.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: emoji
-  designation: broad_characters
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Emoji code.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: level
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Level.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: quote
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Random quote.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: rgb_color
-  designation: broad_characters
-  primitive: List[int]
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: RGB tuple.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: sentence
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Sentence.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: text
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Text.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: title
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: The title.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: word
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Single word.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: words
-  designation: broad_words
-  primitive: List[str]
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Word list.
-  description: null
-  references: null
-  aliases: null
-  notes: null
+  - name: alphabet
+    designation: broad_characters
+    primitive: List[str]
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Alphabet.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: answer
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: An answer.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: color
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Color name.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: emoji
+    designation: broad_characters
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Emoji code.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: level
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Level.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: quote
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Random quote.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: rgb_color
+    designation: broad_characters
+    primitive: List[int]
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: RGB tuple.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: sentence
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Sentence.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: text
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Text.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: title
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: The title.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: word
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Single word.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: words
+    designation: broad_words
+    primitive: List[str]
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Word list.
+    description: null
+    references: null
+    aliases: null
+    notes: null

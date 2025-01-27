@@ -1,50 +1,50 @@
 name: code
 definitions:
-- name: ean
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 4
-  title: EAN.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: imei
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 4
-  title: IMEI.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: isbn
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 4
-  title: ISBN.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: issn
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 4
-  title: ISSN.
-  description: null
-  references: null
-  aliases: null
-  notes: null
+  - name: ean
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 4
+    title: EAN.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: imei
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 4
+    title: IMEI.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: isbn
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 4
+    title: ISBN.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: issn
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 4
+    title: ISSN.
+    description: null
+    references: null
+    aliases: null
+    notes: null

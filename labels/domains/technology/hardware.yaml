@@ -1,146 +1,146 @@
 name: hardware
 definitions:
-- name: cpu
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: CPU name.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: cpu_codename
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: CPU code name.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: cpu_frequency
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Frequency of CPU.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: generation
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Generation of something.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: graphics
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Graphics.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: manufacturer
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Manufacturer.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: phone_model
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Phone model.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: ram_size
-  designation: broad_characters
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: RAM size.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: ram_type
-  designation: broad_characters
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Type of RAM.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: resolution
-  designation: broad_characters
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Resolution of screen.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: screen_size
-  designation: broad_characters
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Screen size.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: ssd_or_hdd
-  designation: broad_characters
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: HDD or SSD.
-  description: null
-  references: null
-  aliases: null
-  notes: null
+  - name: cpu
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: CPU name.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: cpu_codename
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: CPU code name.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: cpu_frequency
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Frequency of CPU.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: generation
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Generation of something.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: graphics
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Graphics.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: manufacturer
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Manufacturer.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: phone_model
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Phone model.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: ram_size
+    designation: broad_characters
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: RAM size.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: ram_type
+    designation: broad_characters
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Type of RAM.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: resolution
+    designation: broad_characters
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Resolution of screen.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: screen_size
+    designation: broad_characters
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Screen size.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: ssd_or_hdd
+    designation: broad_characters
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: HDD or SSD.
+    description: null
+    references: null
+    aliases: null
+    notes: null

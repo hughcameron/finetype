@@ -109,7 +109,7 @@ class Sector(BaseModel):
     definitions: list[Definition]
 
 
-class Variation(BaseModel):
+class Variant(BaseModel):
     name: str
     arguments: dict
 
@@ -123,7 +123,7 @@ class Definition(BaseModel):
     designation: Designation
     primitive: str
     locales: list[Locale]
-    variations: list[Variation]
+    variants: list[Variant]
     release_priority: int
     title: str | None = None
     description: str | None = None

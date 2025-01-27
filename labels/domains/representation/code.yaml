@@ -1,14 +1,14 @@
 name: code
 definitions:
-- name: pin
-  designation: broad_numbers
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: PIN code.
-  description: null
-  references: null
-  aliases: null
-  notes: null
+  - name: pin
+    designation: broad_numbers
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: PIN code.
+    description: null
+    references: null
+    aliases: null
+    notes: null

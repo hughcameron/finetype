@@ -1,146 +1,146 @@
 name: finance
 definitions:
-- name: bank
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Bank name.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: company
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Company name.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: company_type
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Types of business entity.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: cryptocurrency_iso_code
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 3
-  title: Symbol of cryptocurrency.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: cryptocurrency_symbol
-  designation: broad_characters
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Symbol of cryptocurrency.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: currency_iso_code
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 3
-  title: Currency code.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: currency_symbol
-  designation: broad_characters
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Currency symbol.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: price
-  designation: broad_numbers
-  primitive: float
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Price.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: price_in_btc
-  designation: broad_numbers
-  primitive: float
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Price in BTC.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: stock_exchange
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Returns exchange name.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: stock_name
-  designation: broad_words
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Stock name.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: stock_ticker
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 3
-  title: Ticker.
-  description: null
-  references: null
-  aliases: null
-  notes: null
+  - name: bank
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Bank name.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: company
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Company name.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: company_type
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Types of business entity.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: cryptocurrency_iso_code
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 3
+    title: Symbol of cryptocurrency.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: cryptocurrency_symbol
+    designation: broad_characters
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Symbol of cryptocurrency.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: currency_iso_code
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 3
+    title: Currency code.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: currency_symbol
+    designation: broad_characters
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Currency symbol.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: price
+    designation: broad_numbers
+    primitive: float
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Price.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: price_in_btc
+    designation: broad_numbers
+    primitive: float
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Price in BTC.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: stock_exchange
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Returns exchange name.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: stock_name
+    designation: broad_words
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Stock name.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: stock_ticker
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 3
+    title: Ticker.
+    description: null
+    references: null
+    aliases: null
+    notes: null

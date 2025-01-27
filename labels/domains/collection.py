@@ -40,6 +40,7 @@ def save_yaml_model(model: BaseModel, path: Path):
             Dumper=yaml.Dumper,
             allow_unicode=True,
             sort_keys=False,
+            indent=2,
         )
 
 

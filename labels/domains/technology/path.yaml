@@ -1,74 +1,74 @@
 name: path
 definitions:
-- name: dev_dir
-  designation: broad_characters
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Path.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: home
-  designation: broad_characters
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Home path.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: project_dir
-  designation: broad_characters
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Path to project.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: root
-  designation: broad_characters
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Root dir.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: user
-  designation: broad_characters
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Path to user.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: users_folder
-  designation: broad_characters
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Path.
-  description: null
-  references: null
-  aliases: null
-  notes: null
+  - name: dev_dir
+    designation: broad_characters
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Path.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: home
+    designation: broad_characters
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Home path.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: project_dir
+    designation: broad_characters
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Path to project.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: root
+    designation: broad_characters
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Root dir.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: user
+    designation: broad_characters
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Path to user.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: users_folder
+    designation: broad_characters
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Path.
+    description: null
+    references: null
+    aliases: null
+    notes: null

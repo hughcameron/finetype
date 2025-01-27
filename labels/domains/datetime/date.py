@@ -10,16 +10,8 @@ class Date(MimesisDatetime):
     class Meta:
         name = "date"
 
-    def short_ymd(self) -> str:
-        format = "yy-MM-dd"
-        return format_datetime(self.datetime(), format=format, locale=self.locale)
-
-    def short_dmy(self) -> str:
-        format = "dd-MM-yy"
-        return format_datetime(self.datetime(), format=format, locale=self.locale)
-
-    def short_mdy(self) -> str:
-        format = "MM-dd-yy"
+    def short_year(self, format: str = "dd-MM-yy") -> str:
+        # format = "yy-MM-dd"
         return format_datetime(self.datetime(), format=format, locale=self.locale)
 
     def numeric_ymd(self) -> str:

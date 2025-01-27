@@ -1,122 +1,122 @@
 name: numeric
 definitions:
-- name: complex_number
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 1
-  title: Default title for numeric.complex_number
-  description: null
-  references: []
-  aliases: []
-  notes: null
-- name: complexes
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 1
-  title: Default title for numeric.complexes
-  description: null
-  references: []
-  aliases: []
-  notes: null
-- name: decimal_number
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 1
-  title: Default title for numeric.decimal_number
-  description: null
-  references: []
-  aliases: []
-  notes: null
-- name: decimals
-  designation: universal
-  primitive: str
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 1
-  title: Default title for numeric.decimals
-  description: null
-  references: []
-  aliases: []
-  notes: null
-- name: float_number
-  designation: broad_numbers
-  primitive: float
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Float.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: floats
-  designation: broad_numbers
-  primitive: List[float]
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: The list of floating-point numbers.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: increment
-  designation: broad_numbers
-  primitive: int
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Integer.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: integer_number
-  designation: broad_numbers
-  primitive: int
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: Integer.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: integers
-  designation: broad_object
-  primitive: List[int]
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: List of integers.
-  description: null
-  references: null
-  aliases: null
-  notes: null
-- name: matrix
-  designation: broad_object
-  primitive: List[List[float]]
-  locales:
-  - UNIVERSAL
-  variations: []
-  release_priority: 0
-  title: A matrix of random numbers.
-  description: null
-  references: null
-  aliases: null
-  notes: null
+  - name: complex_number
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 1
+    title: Default title for numeric.complex_number
+    description: null
+    references: []
+    aliases: []
+    notes: null
+  - name: complexes
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 1
+    title: Default title for numeric.complexes
+    description: null
+    references: []
+    aliases: []
+    notes: null
+  - name: decimal_number
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 1
+    title: Default title for numeric.decimal_number
+    description: null
+    references: []
+    aliases: []
+    notes: null
+  - name: decimals
+    designation: universal
+    primitive: str
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 1
+    title: Default title for numeric.decimals
+    description: null
+    references: []
+    aliases: []
+    notes: null
+  - name: float_number
+    designation: broad_numbers
+    primitive: float
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Float.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: floats
+    designation: broad_numbers
+    primitive: List[float]
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: The list of floating-point numbers.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: increment
+    designation: broad_numbers
+    primitive: int
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Integer.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: integer_number
+    designation: broad_numbers
+    primitive: int
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: Integer.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: integers
+    designation: broad_object
+    primitive: List[int]
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: List of integers.
+    description: null
+    references: null
+    aliases: null
+    notes: null
+  - name: matrix
+    designation: broad_object
+    primitive: List[List[float]]
+    locales:
+      - UNIVERSAL
+    variants: []
+    release_priority: 0
+    title: A matrix of random numbers.
+    description: null
+    references: null
+    aliases: null
+    notes: null
