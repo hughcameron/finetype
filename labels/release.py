@@ -109,25 +109,23 @@ async def generate_data(release, texts: int, priority: int, output_file: Path):
     async with aiofiles.open(output_file, "w", encoding="utf-8") as ndjson_file:
         tasks = []
         pbar = tqdm(total=total_iterations, desc="Generating data", unit_scale=True)
-        try:
-            for domain in release.domains:
-                for sector in domain.sectors:
-                    for definition in sector.definitions:
-                        if definition.release_priority >= priority:
-                            for locale in definition.locales:
-                                task = generate_data_for_locale(
-                                    domain,
-                                    sector,
-                                    definition,
-                                    locale,
-                                    texts,
-                                    ndjson_file,
-                                    pbar,
-                                )
-                                tasks.append(task)
-            await asyncio.gather(*tasks)
-        finally:
-            pbar.close()
+        for domain in release.domains:
+            for sector in domain.sectors:
+                for definition in sector.definitions:
+                    if definition.release_priority >= priority:
+                        for locale in definition.locales:
+                            task = generate_data_for_locale(
+                                domain,
+                                sector,
+                                definition,
+                                locale,
+                                texts,
+                                ndjson_file,
+                                pbar,
+                            )
+                            tasks.append(task)
+        await asyncio.gather(*tasks)
+        pbar.close()
 
     print(f"Data generation complete. Saved to {output_file}.")
 
